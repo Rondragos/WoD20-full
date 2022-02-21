@@ -1,0 +1,3538 @@
+/*Border and Logo */
+.border-div {
+	background-color:transparent;
+	border-style: solid;
+	border-width: 40px 30px 30px;
+	border-image-source: url(http://i.imgur.com/hjjMqek.png);
+	border-image-slice: 75 56 58 54;
+	border-image-repeat: round stretch;
+}
+
+.logo-div {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9e/World_of_Darkness_Online_logo.svg);
+	background-size:100% 140px;
+	background-repeat: repeat-x;
+	background-position: 0px 10px;
+}
+
+.charsheet {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;	
+    background-color: white;
+}
+
+/*main layout*/
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.header {
+	min-height: 35px;
+	max-height: 140px;
+	height: 140px;
+}
+
+.navigation {
+
+}
+
+div.options {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+div.options > span {
+	display: block;
+	width: max-content;
+	font-weight: bold;
+	font-size: smaller;
+	text-align: right;
+}
+
+div.options > label
+{
+	width:25px;
+	height:25px;
+	margin-left: 5px;
+}
+
+div.options > label > input[type="checkbox"]
+{
+	position:absolute;
+	width:25px;
+	height:25px;
+	z-index:99;
+	opacity:0;
+}
+
+div.options > label > input[type="checkbox"] ~ span
+{
+	width:100%;
+}
+
+div.options > label > input[type="checkbox"] ~ span::before
+{
+	content: "y";
+	font-family:"pictos";
+	display: flex;
+	background-color: var(--grey);
+	border: 1px solid black;
+	color: #404040;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	line-height: 24px;
+	align-content: center;
+	height:25px;
+	font-size:20px;
+}
+
+div.options > label > input[type="checkbox"]:checked ~ span::before
+{
+	background-color: black;
+	color: var(--grey);
+}
+
+div.options > div.optionsExpand
+{
+	display: none;
+	width: 35%;
+	position: absolute;
+	margin-top: 20px;
+	background: white;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 20px;
+	margin-right: 40px;
+	z-index:999;
+	flex-flow: column;
+}
+
+/*div.options > div.optionsExpand > div:not(:first-of-type)
+{
+	margin-top:5px;
+}*/
+
+div.options > input[type="hidden"][value="1"] ~ div.optionsExpand
+{
+	display:flex;
+}
+
+div.optionsExpand > div {
+	display: flex;
+	width:100%;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+
+div.optionsExpand > div.line-heading {
+	display: block;
+}
+
+div.optionsExpand > div > h4 {
+	width: 65%;
+	text-align: right;
+}
+
+div.optionsExpand > div > select,
+div.optionsExpand > div > div {
+	width: 35%;
+	text-align: left;
+	padding-left: 4px;
+	margin-bottom: 0px;
+}
+
+div.optionsExpand > div > div > input[type="checkbox"],
+div.optionsExpand > div > div > input[type="radio"].option {
+	margin-left: 5px;	
+}
+
+/*div.optionsExpand > div > *:last-of-type {
+	width: 60%;
+	text-align: left;
+	background: yellow;
+}*/
+
+.sheet-content {
+	display: flex; 
+	flex-direction: column;
+}
+
+/*Sheet layouts*/
+/*primary sheet*/
+.sheet-primary {
+	display: flex;
+	flex-direction: column;
+}
+
+.grid-concept {
+	display: grid;
+	grid-template-columns: repeat(3, 13% 20%);
+	justify-items: stretch;
+}
+
+.grid-item-concept {
+	width: 100%;
+	align-items: center;
+}
+
+.grid-item-concept.sub-kind {
+	grid-column: 5 / 7;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	align-content: flex-start;
+	padding: 0 4px;
+}
+
+div.sub-kind {
+	/*flex-basis: 25%;*/
+	justify-content: center;
+	align-content: stretch;
+	padding: 2px;
+}
+
+.grid-item-concept.sub-kind > div > span {
+	vertical-align: top;
+	padding: 0px 2px;
+}
+
+.grid-item-concept.sub-kind > div > input[type="checkbox"] {
+	margin-top: 2px;
+}
+
+.grid-item-concept > h3 {
+	text-align: right;
+	width: 100%;
+	/*padding: 0 10px;*/
+	font-size: larger;
+}
+
+.grid-item-concept > input[type="text"] {
+	padding: 2px;
+	width: 100%;
+	height: fit-content;
+	/*margin: 2px 0;*/
+}
+
+div.trait {
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+}
+
+
+h4.attribute {
+	text-align: right;
+	width: 35%;
+}
+
+/*span.attribute {
+	font-weight: bold;
+	width: 35%;
+	text-align: right;
+}*/
+
+select.attribute.sheet-dots {
+	width: 30%;
+}
+
+input.attribute {
+	width: 35%;
+	padding: 2px;
+	height: fit-content;
+	margin: 0 0 4px 0;
+}
+
+div.ability {
+	width: 32%;
+	margin-left: 4px;
+	vertical-align: middle;
+}
+
+div.ability {
+	font-weight: bold;
+}
+
+select.ability.sheet-dots {
+	width: 28%;
+}
+
+input.ability {
+	width: 30%;
+	padding: 2px;
+	height: fit-content;
+	margin: 0 0 4px 0;
+}
+
+button[type=roll].ability {
+		width: 10%;
+}
+
+input.ability-name {
+	width: 32%;
+	margin-left: 4px;
+	margin-bottom: 4px;
+	padding: 2px;
+	height: fit-content;
+}
+
+h4.virtue {
+	width: 50%;
+	margin-left: 4px;
+}
+
+select.virtue.sheet-dots {
+	width: 40%;
+}
+
+textarea.moral {
+	height: 2.5em;
+	width: 80%;
+	margin: 5px 0px;
+}
+
+span.moral {
+	position: relative;
+    bottom: 8px;
+	margin-bottom: -8px;
+}
+
+div.pool-row {
+	width: 100%;
+	text-align: center;
+}
+
+div.pool-row.zero {
+	margin-left: -8px;
+}
+
+div.pool-row > h5 {
+	width: 100%;
+}
+
+div.pool-row > h5 > span {
+	margin-right: 0.5em;
+	text-align: left;
+}
+
+textarea.clanweakness {
+	width: 95%;
+	height: 3.75em;
+}
+
+/*div.blood > input.temp[type="radio"] + span::before {
+	display: none;
+}
+
+div.blood > input[type="hidden"][value="1"] ~ input.temp[type="radio"]:nth-of-type(-n+1) + span::before {
+	display: inline-block;
+}
+
+div.blood > input[type="hidden"][value="2"] ~ input.temp[type="radio"]:nth-of-type(-n+2) + span::before  {
+	display: inline-block;
+}
+
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="0"]~input.temp.trait-check:nth-of-type(1n+3)+span::before,
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="1"]~input.temp.trait-check:nth-of-type(1n+4)+span::before,
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="2"]~input.temp.trait-check:nth-of-type(1n+5)+span::before,
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="3"]~input.temp.trait-check:nth-of-type(1n+6)+span::before,
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="4"]~input.temp.trait-check:nth-of-type(1n+7)+span::before,
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="5"]~input.temp.trait-check:nth-of-type(1n+8)+span::before,
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="6"]~input.temp.trait-check:nth-of-type(1n+9)+span::before,
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="7"]~input.temp.trait-check:nth-of-type(1n+10)+span::before,
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="8"]~input.temp.trait-check:nth-of-type(1n+11)+span::before,
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="9"]~input.temp.trait-check:nth-of-type(1n+12)+span::before,
+div.blood > input[type"hidden"][name="attr_bloodpool_max"][value="10"]~input.temp.trait-check:nth-of-type(1n+13)+span::before {
+	opacity: 0;
+	background: none;
+	background-color: transparent;
+	
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}*/
+
+/*Quintessence & Paradox Wheel */
+div.quintPara {
+	display:none;
+	flex-wrap: wrap;
+	width:100%;
+	justify-content:space-evenly;	
+}
+
+div.quintPara > span {
+	width:8px;
+	height:20px;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-left:auto;
+	margin-right:10px;
+	font-size:20px;
+	align-items:center;
+}
+
+div.quintPara > div {
+	display:flex;
+	height:130px;
+	width:130px;
+	flex-wrap:wrap;
+	margin-right:auto;
+}
+
+div.quintPara > div > img {
+	position: absolute;
+	width: 95px;
+	margin-top: 14px;
+	margin-left: 14px;
+}
+
+div.quintPara > div > div {
+	display:flex;
+	height:65px;
+	width:130px;
+}
+
+div.quintPara > div > div:nth-of-type(1) {
+	align-items:flex-end;
+}
+
+div.quintPara > div > div:nth-of-type(2) {
+	align-items:flex-start;
+	margin-top:4px;
+}
+
+div.quintPara > div > div > label {
+	appearance:none;
+	margin:0px;
+	width:13px;
+	height:13px;
+	padding:0px;
+	-webkit-padding-start:4px;
+	cursor:pointer;
+	position:absolute;
+}
+
+div.quintPara > div > div > label > input[type="radio"] {
+	position:absolute;
+	display:none;
+	width:13px;
+	height:13px;
+	opacity:0;
+	z-index:99;
+}
+
+div.quintPara > div > div > label > span {
+	width:100%;
+}
+
+div.quintPara > div > div > label > span::before {
+	content:"";
+	display:flex;
+	width:12px;
+	height:12px;
+	border:1px solid #a8a8a8;
+	justify-content:center;
+	font-size:12px;
+	font-weight:normal;
+	line-height:14px;
+	background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+}
+
+div.quintPara > div > div > label > input[type="hidden"][value=""] ~ input[type="radio"]:nth-of-type(3),
+div.quintPara > div > div > label > input[type="hidden"][value="Quintessence"] ~ input[type="radio"]:nth-of-type(4),
+div.quintPara > div > div > label > input[type="hidden"][value="Paradox"] ~ input[type="radio"]:nth-of-type(2) {
+	display:flex;
+}
+
+div.quintPara > div > div > label > input[type="hidden"][value="Quintessence"] ~ span::before {
+	content:"Ψ";
+}
+
+div.quintPara > div > div > label > input[type="hidden"][value="Paradox"] ~ span::before {
+	content:"X";
+}
+
+div.quintPara > div > div:nth-of-type(1) > label:nth-of-type(1) {
+	transform:rotate(9deg);
+}
+
+div.quintPara > div > div:nth-of-type(1) > label:nth-of-type(2) {
+	transform:rotate(25deg);
+	margin-bottom:16px;
+	margin-left:5px;
+}
+
+div.quintPara > div > div:nth-of-type(1) > label:nth-of-type(3) {
+	transform:rotate(40deg);
+	margin-bottom:30px;
+	margin-left:14px;
+}
+
+div.quintPara > div > div:nth-of-type(1) > label:nth-of-type(4) {
+	transform:rotate(60deg);
+	margin-bottom:41px;
+	margin-left:27px;
+}
+
+div.quintPara > div > div:nth-of-type(1) > label:nth-of-type(5) {
+	transform:rotate(80deg);
+	margin-bottom:47px;
+	margin-left:43px;
+}
+
+div.quintPara > div > div:nth-of-type(1) > label:nth-of-type(6) {
+	transform:rotate(100deg);
+	margin-bottom:47px;
+	margin-left:60px;
+}
+
+div.quintPara > div > div:nth-of-type(1) > label:nth-of-type(7) {
+	transform:rotate(124deg);
+	margin-bottom:41px;
+	margin-left:76px;
+}
+
+div.quintPara > div > div:nth-of-type(1) > label:nth-of-type(8) {
+	transform:rotate(140deg);
+	margin-bottom:30px;
+	margin-left:89px;
+}
+
+div.quintPara > div > div:nth-of-type(1) > label:nth-of-type(9) {
+	transform:rotate(151deg);
+	margin-bottom:16px;
+	margin-left:98px;
+}
+
+div.quintPara > div > div:nth-of-type(1) > label:nth-of-type(10) {
+	transform:rotate(172deg);
+	margin-left:103px;
+}
+
+div.quintPara > div > div:nth-of-type(2) > label:nth-of-type(1) {
+	transform:rotate(-9deg);
+}
+
+div.quintPara > div > div:nth-of-type(2) > label:nth-of-type(2) {
+	transform:rotate(-25deg);
+	margin-top:16px;
+	margin-left:5px;
+}
+
+div.quintPara > div > div:nth-of-type(2) > label:nth-of-type(3) {
+	transform:rotate(-40deg);
+	margin-top:30px;
+	margin-left:14px;
+}
+
+div.quintPara > div > div:nth-of-type(2) > label:nth-of-type(4) {
+	transform:rotate(-60deg);
+	margin-top:41px;
+	margin-left:27px;
+}
+
+div.quintPara > div > div:nth-of-type(2) > label:nth-of-type(5) {
+	transform:rotate(-80deg);
+	margin-top:47px;
+	margin-left:43px;
+}
+
+div.quintPara > div > div:nth-of-type(2) > label:nth-of-type(6) {
+	transform:rotate(-100deg);
+	margin-top:47px;
+	margin-left:60px;
+}
+
+div.quintPara > div > div:nth-of-type(2) > label:nth-of-type(7) {
+	transform:rotate(-124deg);
+	margin-top:41px;
+	margin-left:76px;
+}
+
+div.quintPara > div > div:nth-of-type(2) > label:nth-of-type(8) {
+	transform:rotate(-140deg);
+	margin-top:30px;
+	margin-left:89px;
+}
+
+div.quintPara > div > div:nth-of-type(2) > label:nth-of-type(9) {
+	transform:rotate(-151deg);
+	margin-top:16px;
+	margin-left:98px;
+}
+
+div.quintPara > div > div:nth-of-type(2) > label:nth-of-type(10) {
+	transform:rotate(-172deg);
+	margin-left:103px;
+}
+
+div.row-full.rank {
+	justify-content: center; 
+}
+
+div.rank > span {
+	text-align: right;
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.rank > select {
+	width: fit-content;
+}
+
+div.pool-row > span.rank {
+	text-align: right;
+	font-weight: bold;
+}
+
+div.trait-column > div.rank.line-heading:not(:first-of-type) {
+	margin-top: 0;
+}
+
+
+/*backgrounds sheet*/
+.sheet-background {
+	display: flex;
+	flex-direction: column;
+}
+
+div.sheet-background > div.repcontainer > div.repitem > div.row-full {
+	flex-wrap: wrap;
+}
+
+div.sheet-background > div.row-full > div {
+	text-align: center;
+}
+
+div.sheet-background > div.row-full > div > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+.back-name {
+	width: 35%;
+	margin-left: 4px;
+}
+
+.pback-name {
+	width: 20%;
+	margin-left: 4px;
+}
+
+.back-rating {
+	width: 15%;
+}
+
+.back-anchor {
+	width: 20%;
+}
+
+.back-contr {
+	width: 12%;
+}
+
+.back-desc {
+	width: 40%;
+}
+
+.pback-desc {
+	width: 23%;
+}
+
+.back-arrow {
+	width: 10%;
+}
+
+select.back-rating {
+	width: 10%;
+}
+
+div.backbutton {
+	width: 5%;
+}
+
+div.back-description {
+	width: 100%;
+}
+
+div.back-description > textarea.back-description {
+	width: 90%;
+	height: 7em;
+	margin-left: 4px;
+}
+/* Merits&Flaws Sheet*/
+.sheet-meritsflaws {
+	display: flex;
+	flex-direction: column;
+}
+
+div.sheet-meritsflaws > div.repcontainer > div.repitem > div.row-full {
+	flex-wrap: wrap;
+}
+
+div.sheet-meritsflaws > div.row-full > div {
+	text-align: center;
+}
+
+div.sheet-meritsflaws > div.row-full > div > span {
+	font-weight: bold;
+	font-size: 1.17em;
+	text-align: center;
+}
+
+.mfname {
+	width: 20%;
+	margin-left: 4px;
+}
+
+.mfrating {
+	width: 15%;
+	text-align: center;
+}
+
+.mftype {
+	width: 20%;
+}
+
+.mfdesc {
+	width: 35%;
+}
+
+.mfarrow {
+	width: 10%;
+}
+
+div.mfdescription {
+	width: 100%;
+}
+
+div.mfdescription > textarea.mfdescription {
+	width: 90%;
+	height: 5em;
+	margin-left: 4px;
+}
+
+/*powers sheet*/
+.sheet-powers {
+	display: flex;
+	flex-direction: column;
+}
+
+.powers-vampireboost {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	align-content: center;
+}
+
+div.powers-boostrow {
+	display: flex;
+	justify-content: center;
+	width: 50%;	
+}
+
+div.powers-boostrow > span {
+	width: 35%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.powers-boostrow > span:first-child {
+	width: 30%;
+	text-align: right;
+}
+
+div.powers-boostrow > div {
+	width: 30%;
+	text-align: right;
+}
+
+div.powers-boostrow > div > span {
+	font-weight: bold;
+}
+
+div.powers-boostrow > select.sheet-dots {
+	width:35%;
+}
+
+/*div.sheet-powers > div.container-columns > div.trait-doublecolumn > div.repcontainer > div.repitem {
+	display: flex;
+	flex-wrap: wrap;
+}*/
+
+div.sheet-powers > div.container-columns > div.trait-doublecolumn > div.repcontainer,
+div.sheet-powers > div.container-columns > div.trait-doublecolumn > div.repcontainer > div.repitem {
+	width: 100%;
+}
+div.sheet-powers > div.container-columns > div.trait-doublecolumn > div.row-full.disciplines,
+div.sheet-powers > div.container-columns > div.trait-doublecolumn > div.repcontainer > div.repitem > div.row-full.disciplines {
+	justify-content: center;
+}
+
+div.discipline-row {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.discipline-name {
+	width: 50%;
+	text-align: center;
+}
+
+div.discipline-name > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.discipline-name > input[type="text"] {
+	width: 100%;
+}
+
+div.discipline-name > select {
+	width: 100%;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+div.discipline-name > select > option:first-child {
+	font-style: italic;
+}
+
+.discipline-rating {
+	width: 15%;
+	text-align: center;
+}
+
+div.discipline-rating > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.discipline-rating > select.sheet-dots {
+	width: 100%;
+}
+
+.discipline-physcheck,
+.discipline-bloodmagiccheck {
+	width: 8%;
+	text-align: center;
+}
+
+div.discipline-physcheck > span,
+div.discipline-bloodmagiccheck > span {
+	font-weight: bold;
+	font-size: .67em;
+}
+
+input.discphyscheck[type="hidden"][value="0"] ~ input.discbloodmagiccheck[type="hidden"][value="0"] ~ div.discipline-name > input[type="text"],
+input.discphyscheck[type="hidden"][value="1"] ~ div.discipline-name > select.discphyscheck,
+input.discbloodmagiccheck[type="hidden"][value="1"] ~ div.discipline-name > select.discbloodmagiccheck {
+	display: block;
+}
+
+input.discphyscheck[type="hidden"][value="1"] ~ div.discipline-name > input[type="text"],
+input.discbloodmagiccheck[type="hidden"][value="1"] ~ div.discipline-name > input[type="text"],
+input.discphyscheck[type="hidden"][value="0"] ~ div.discipline-name > select.discphyscheck,
+input.discbloodmagiccheck[type="hidden"][value="0"] ~ div.discipline-name > select.discbloodmagiccheck {
+	display: none;
+}
+
+div.sheet-powers > div.container-full > div.repcontainer > div.repitem > div.row-full {
+	flex-wrap: wrap;
+}
+
+.discpow-discipline {
+	width: 20%;
+	text-align: center;
+}
+
+div.discpow-discipline > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.discpow-discipline > input[type="text"] {
+	width: 95%
+}
+
+.discpow-name {
+	width: 20%;
+	text-align: center;
+}
+
+div.discpow-name > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.discpow-name > input[type="text"] {
+	width: 95%
+}
+
+.discpow-rating {
+	width: 10%;
+	text-align: center;
+}
+
+div.discpow-rating > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.discpow-rating > select {
+	width: 95%;
+}
+
+.discpow-attribute {
+	width: 15%;
+	text-align: center;
+}
+
+div.discpow-attribute > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.discpow-attribute > select {
+	width: 95%;
+}
+
+.discpow-ability {
+	width: 15%;
+	text-align: center;
+}
+
+div.discpow-ability > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.discpow-ability > select {
+	width: 95%;
+}
+
+.discpow-roll {
+	width: 5%;
+	text-align: center;
+}
+
+.discpow-dicepool {
+	width: 8%;
+	text-align: center;
+}
+
+div.discpow-dicepool > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.discpow-dicepool > input[type="number"]  {
+	width: 8%;
+}
+
+.discpow-difficulty {
+	width: 8%;
+	text-align: center;
+}
+
+div.discpow-difficulty > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.discpow-difficulty > input[type="number"]  {
+	width: 8%;
+}
+
+.discpow-arrow {
+	width: 5%;
+	text-align: center;
+}
+
+div.discpow-arrow > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.discpow-description {
+	width: 100%;
+}
+
+div.discpow-description > div > span {
+	width: 45%;
+	margin-left: 4px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.discpow-description > div > textarea.discpow-description {
+	width: 45%;
+	height: 5em;
+	margin-left: 4px;
+}
+
+.discpow-comboname {
+	width: 35%;
+	text-align: center;
+}
+
+div.discpow-comboname > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.discpow-comboname > input[type="text"] {
+	width: 95%
+}
+
+.discpow-comboattribute {
+	width: 22%;
+	text-align: center;
+}
+
+div.discpow-comboattribute > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.discpow-comboattribute > select {
+	width: 95%;
+}
+
+.discpow-comboability {
+	width: 23%;
+	text-align: center;
+}
+
+div.discpow-comboability > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.discpow-comboability > select {
+	width: 95%;
+}
+
+.discpow-comboreq {
+	width: 20%;
+	text-align: right;
+}
+
+div.discpow-comboreq > span {
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.discpow-combodiscipline {
+	width: 16%;
+	text-align: center;
+}
+
+div.discpow-combodiscipline > span {
+	font-weight: bold;
+}
+
+div.discpow-combodiscipline > input[type="text"] {
+	width: 95%
+}
+
+.discpow-comborating {
+	width: 10%;
+	text-align: center;
+}
+
+div.discpow-comborating > span {
+	font-weight: bold;
+}
+
+div.discpow-comborating > select {
+	width: 95%;
+}
+
+div.sheet-powers > div.container-columns > div.trait-doublecolumn > div.repcontainer > div.repitem > div.row-full {
+	flex-wrap: wrap;
+}
+
+div.bm-path {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+div.bm-path > div.row-full {
+	flex-wrap: wrap;
+}
+
+.bm-path-label {
+	width: 20%;
+	padding-left: 0.5em;
+}
+
+div.bm-path-label > span {
+	font-weight: bold;
+	font-size: 1.17em;
+	vertical-align: middle;
+}
+
+.bm-path-title {
+	width: 45%;
+}
+
+div.bm-path-title > input[type="text"] {
+	width: 95%
+}
+
+.bm-path-rating {
+	width: 15%;
+	text-align: center;
+}
+
+div.bm-path-rating > select {
+	width: 95%;
+}
+
+.bm-path-placeholder {
+	width: 11%;
+}
+
+.bm-path-arrow {
+	width: 5%;
+	text-align: center;
+}
+
+.bm-path-powername {
+	width: 20%;
+}
+
+div.bm-path-powername > input[type="text"] {
+	width: 95%;
+}
+
+.bm-path-value {
+	width: 10%;
+}
+
+div.bm-path-value {
+	padding-right: 0.5em;
+}
+
+div.bm-path-value > span {
+	font-size: x-small;
+}
+
+.bm-path-attribute {
+	width: 15%;
+	text-align: center;
+}
+
+div.bm-path-attribute > select {
+	width: 95%;
+}
+
+.bm-path-ability {
+	width: 15%;
+	text-align: center;
+}
+
+div.bm-path-ability > select {
+	width: 95%;
+}
+
+.bm-path-roll {
+	width: 5%;
+	text-align: center;
+}
+
+.bm-path-difficulty {
+	width: 5%;
+	text-align: center;
+}
+
+div.bm-path-difficulty > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.bm-path-difficulty > input[type="number"].bm-path-difficulty  {
+	max-width: 95%;
+	width: 2.5em;
+}
+
+div.bm-path-description {
+	width: 100%;
+}
+
+div.bm-path-description > div > span {
+	width: 45%;
+	margin-left: 4px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.bm-path-description > div > textarea.bm-path-description {
+	width: 45%;
+	height: 5em;
+	margin-left: 4px;
+}
+
+.bm-ritual {
+	flex-wrap: wrap;
+}
+
+.bm-ritual-name {
+	width: 30%;
+	text-align: center;
+}
+
+div.bm-ritual-name > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.bm-ritual-name > input[type="text"] {
+	width: 95%
+}
+
+.bm-ritual-level {
+	width: 10%;
+	text-align: center;
+}
+
+div.bm-ritual-level > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.bm-ritual-level > select {
+	width: 95%;
+}
+
+.bm-ritual-attribute {
+	width: 20%;
+	text-align: center;
+}
+
+div.bm-ritual-attribute > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.bm-ritual-attribute > select {
+	width: 95%;
+}
+
+.bm-ritual-ability {
+	width: 20%;
+	text-align: center;
+}
+
+div.bm-ritual-ability > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.bm-ritual-ability > select {
+	width: 95%;
+}
+
+.bm-ritual-roll {
+	width: 5%;
+	text-align: center;
+}
+
+.bm-ritual-difficulty {
+	width: 8%;
+	text-align: center;
+}
+
+div.bm-ritual-difficulty > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.bm-ritual-difficulty > input[type="number"]  {
+	width: 8%;
+}
+
+.bm-ritual-arrow {
+	width: 5%;
+	text-align: center;
+}
+
+div.bm-ritual-arrow > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.bm-ritual-description {
+	width: 100%;
+}
+
+div.bm-ritual-description > div > span {
+	width: 45%;
+	margin-left: 4px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.bm-ritual-description > div > textarea.bm-ritual-description {
+	width: 45%;
+	height: 5em;
+	margin-left: 4px;
+}
+
+div.container-full > div.bmkoldunism,
+div.container-full > div.bmnecromancy,
+div.container-full > div.bmthaumaturgy,
+div.container-full > div.bmakhu,
+div.container-full > div.bmduranki,
+div.container-full > div.bmdarkthaumaturgy {
+	display: none;
+}
+
+input.bmkoldunismcheck[type="hidden"][value="1"] ~ div.container-full.bmkoldunism,
+input.bmnecromancycheck[type="hidden"][value="1"] ~ div.container-full.bmnecromancy,
+input.bmthaumaturgycheck[type="hidden"][value="1"] ~ div.container-full.bmthaumaturgy,
+input.bmakhucheck[type="hidden"][value="1"] ~ div.container-full.bmakhu,
+input.bmdurankicheck[type="hidden"][value="1"] ~ div.container-full.bmduranki,
+input.bmdarkthaumaturgycheck[type="hidden"][value="1"] ~ div.container-full.bmdarkthaumaturgy {
+	display: flex;
+}
+
+div.container-forms {
+	width: 100%;
+	display: flex;
+}
+
+div.container-shape {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	align-items: center;
+	padding: 0px 2px;
+}
+
+div.shape-item {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+div.shape-item span:first-child {
+	font-style: italic;
+}
+
+div.shape-item:not(:first-child)  {
+	justify-content: space-between;
+}
+
+div.shape-item.note:not(:first-child) {
+	flex-grow: 1;
+	justify-content: center;
+}
+
+div.shape-item.empty {
+	flex-grow: 0.5;
+}
+
+input[type="radio"].shape-select {
+	width: 12%;
+	opacity: 0;
+	position: absolute;
+	height: 1.5em;
+	z-index: 1;
+}
+
+input[type="radio"].shape-select + span {
+	font-size: larger;
+	font-weight: bold;
+}
+
+input[type="radio"].shape-select:checked + span {
+	font-size: larger;
+	font-weight: bold;
+	color: darkred;
+    text-shadow: 2px 2px 5px;
+}
+
+input[type="radio"].shape-select:hover + span {
+	font-size: larger;
+	font-weight: bold;
+	text-shadow: -1px -1px 2px rgba(139,0,0,0.5), 1px 1px 2px
+}
+
+.rite-type {
+	width: 12%;
+	text-align: center;
+}
+
+div.rite-type > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.rite-type > select {
+	width: 95%;
+	font-weight: normal;
+	font-size: 0.83em;
+}
+
+.rite-name {
+	width: 18%;
+	text-align: center;
+}
+
+div.rite-name > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.rite-name > input[type="text"] {
+	width: 95%
+}
+
+.rite-level {
+	width: 15%;
+	text-align: center;
+}
+
+div.rite-level > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.rite-level > select {
+	width: 95%;
+}
+
+.rite-attribute {
+	width: 15%;
+	text-align: center;
+}
+
+div.rite-attribute > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.rite-attribute > select {
+	width: 95%;
+	font-size:0.83em;
+}
+
+.rite-ability {
+	width: 15%;
+	text-align: center;
+}
+
+div.rite-ability > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.rite-ability > select {
+	width: 95%;
+	font-size:0.83em;
+}
+
+.rite-roll {
+	width: 5%;
+	text-align: center;
+}
+
+.rite-dicepool {
+	width: 8%;
+	text-align: center;
+}
+
+div.rite-dicepool > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.rite-dicepool > input[type="number"]  {
+	width: 8%;
+}
+
+.rite-difficulty {
+	width: 8%;
+	text-align: center;
+}
+
+div.rite-difficulty > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.rite-difficulty > input[type="number"].rite-difficulty  {
+	max-width: 95%;
+	width: 2.5em;
+}
+
+.rite-arrow {
+	width: 5%;
+	text-align: center;
+}
+
+div.rite-arrow > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.rite-description {
+	width: 100%;
+}
+
+div.rite-description > div > span {
+	width: 45%;
+	margin-left: 4px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.rite-description > div > textarea.rite-description {
+	width: 45%;
+	height: 5em;
+	margin-left: 4px;
+}
+
+.gift-list {
+	width: 15%;
+	text-align: center;
+}
+
+div.gift-list > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.gift-list > input[type="text"] {
+	width: 95%;
+	font-weight: normal;
+}
+
+.gift-name {
+	width: 20%;
+	text-align: center;
+}
+
+div.gift-name > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.gift-name > input[type="text"] {
+	width: 95%
+}
+
+.gift-level {
+	width: 10%;
+	text-align: center;
+}
+
+div.gift-level > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.gift-level > select {
+	width: 95%;
+}
+
+.gift-attribute {
+	width: 15%;
+	text-align: center;
+}
+
+div.gift-attribute > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.gift-attribute > select {
+	width: 95%;
+}
+
+.gift-ability {
+	width: 15%;
+	text-align: center;
+}
+
+div.gift-ability > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.gift-ability > select {
+	width: 95%;
+}
+
+.gift-roll {
+	width: 5%;
+	text-align: center;
+}
+
+.gift-dicepool {
+	width: 8%;
+	text-align: center;
+}
+
+div.gift-dicepool > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.gift-dicepool > input[type="number"]  {
+	width: 8%;
+}
+
+.gift-difficulty {
+	width: 8%;
+	text-align: center;
+}
+
+div.gift-difficulty > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.gift-difficulty > input[type="number"].gift-difficulty  {
+	max-width: 95%;
+	width: 2.5em;
+}
+
+.gift-arrow {
+	width: 5%;
+	text-align: center;
+}
+
+div.gift-arrow > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.gift-description {
+	width: 100%;
+}
+
+div.gift-description > div > span {
+	width: 45%;
+	margin-left: 4px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.gift-description > div > textarea.gift-description {
+	width: 45%;
+	height: 5em;
+	margin-left: 4px;
+}
+
+div.row-full > div.countermagic {
+	width: fit-content;
+}
+
+div.countermagic {
+	display: flex;
+	justify-content: flex-start;
+}
+
+div.countermagic-span {
+	display: flex;
+	width: 50%;
+	margin-right: 1em;
+	text-align: right;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+div.countermagic-span > span {
+	font-weight: bold;
+}
+
+div.countermagic > select {
+	width: fit-content;
+}
+
+div.countermagic-rep-empty {
+	width: 25%;
+}
+
+div.countermagic-rep {
+	width:50%;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+div.countermagic-rep > span {
+	font-weight: bold;
+}
+
+div.countermagic-rep > input[type="text"] {
+	width: 90%;
+}
+
+.sorcery-rituals-path {
+	width: 12%;
+	text-align: center;
+}
+
+div.sorcery-rituals-path > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.sorcery-rituals-path > input[type="text"] {
+	width: 95%;
+	font-weight: normal;
+	font-size: 0.83em;
+}
+
+.sorcery-rituals-name {
+	width: 18%;
+	text-align: center;
+}
+
+div.sorcery-rituals-name > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.sorcery-rituals-name > input[type="text"] {
+	width: 95%
+}
+
+.sorcery-rituals-level {
+	width: 15%;
+	text-align: center;
+}
+
+div.sorcery-rituals-level > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.sorcery-rituals-level > select {
+	width: 95%;
+}
+
+.sorcery-rituals-attribute {
+	width: 15%;
+	text-align: center;
+}
+
+div.sorcery-rituals-attribute > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.sorcery-rituals-attribute > select {
+	width: 95%;
+	font-size:0.83em;
+}
+
+.sorcery-rituals-ability {
+	width: 15%;
+	text-align: center;
+}
+
+div.sorcery-rituals-ability > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.sorcery-rituals-ability > select {
+	width: 95%;
+	font-size:0.83em;
+}
+
+.sorcery-rituals-roll {
+	width: 5%;
+	text-align: center;
+}
+
+.sorcery-rituals-difficulty {
+	width: 8%;
+	text-align: center;
+}
+
+div.sorcery-rituals-difficulty > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.sorcery-rituals-difficulty > input[type="number"].sorcery-rituals-difficulty  {
+	max-width: 95%;
+	width: 2.5em;
+}
+
+.sorcery-rituals-arrow {
+	width: 5%;
+	text-align: center;
+}
+
+div.sorcery-rituals-arrow > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.sorcery-rituals-description {
+	width: 100%;
+}
+
+div.sorcery-rituals-description > div > div:first-of-type {
+	width: 60%;
+}
+
+div.sorcery-rituals-description > div > div > textarea.sorcery-rituals-description {
+	width: 95%;
+	height: 5em;
+	margin-left: 4px;
+}
+
+div.sorcery-rituals-description > div > div:not(:first-of-type) {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+div.sorcery-rituals-description > div > div > div > span {
+	font-weight: bold;
+}
+
+div.sorcery-rituals-description > div > div > textarea {
+	width: 95%;
+	margin-left: 4px;
+	margin-bottom: 0px;
+}
+
+textarea.sorcery-rituals-cost {
+	height: 1.25em;
+}
+
+textarea.sorcery-rituals-time {
+	height: 1.25em;
+}
+
+div.sheet-powers > div.container-columns > div.trait-doublecolumn > div.container-full > div.repcontainer > div.repitem > div.row-full {
+    flex-wrap: wrap;
+}
+
+.path-practice {
+	width: 15%;
+	text-align: center;
+}
+
+div.path-practice > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.path-practice > input[type="text"] {
+	width: 95%;
+	font-weight: normal;
+}
+
+.path-name {
+	width: 23%;
+	text-align: center;
+}
+
+div.path-name > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.path-name > input[type="text"] {
+	width: 95%
+}
+
+.path-rating {
+	width: 10%;
+	text-align: center;
+}
+
+div.path-rating > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.path-rating > select {
+	width: 95%;
+}
+
+.path-attribute {
+	width: 15%;
+	text-align: center;
+}
+
+div.path-attribute > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.path-attribute > select {
+	width: 95%;
+}
+
+.path-ability {
+	width: 15%;
+	text-align: center;
+}
+
+div.path-ability > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.path-ability > select {
+	width: 95%;
+}
+
+.path-roll {
+	width: 5%;
+	text-align: center;
+}
+
+.path-dicepool {
+	width: 8%;
+	text-align: center;
+}
+
+div.path-dicepool > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.path-dicepool > input[type="number"]  {
+	width: 8%;
+}
+
+.path-difficulty {
+	width: 5%;
+	text-align: center;
+}
+
+div.path-difficulty > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.path-difficulty > input[type="number"].path-difficulty  {
+	max-width: 95%;
+	width: 2.5em;
+}
+
+.path-arrow {
+	width: 5%;
+	text-align: center;
+}
+
+div.path-arrow > span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.path-description {
+	width: 100%;
+}
+
+div.path-description > div.container-columns {
+	flex-wrap: wrap;
+}
+
+/*div.path-description > div > span {
+	width: 45%;
+	margin-left: 4px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.path-description > div > textarea.path-description {
+	width: 45%;
+	height: 5em;
+	margin-left: 4px;
+}*/
+
+div.pathdesc {
+	width:25%;
+	padding-right: 1em;
+	text-align: right;
+}
+
+div.pathaspectname {
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+
+div.pathaspectname > input[type="text"] {
+	width:50%;
+	font-weight: bold;
+	font-size: 1.17em;
+	margin-bottom: 0.25em;
+	text-align:center;
+	padding: 2px;
+}
+
+div.pathdesc > span {
+	font-weight: bold;
+}
+
+div.pathaspectname > span {
+	font-weight: bold;
+}
+
+input.check-rating ~ div.row-full > div.pathdesc > span {
+	font-size: x-small;
+}
+
+div.pathdesc1line,
+div.pathdesc2line,
+div.pathdesc3line,
+div.pathdesc5line {
+	width: 75%;
+}
+
+div.pathdesc1line > textarea {
+	width: 95%;
+	height: 1.25em;
+	margin: 0px;
+}
+
+div.pathdesc2line > textarea {
+	width: 95%;
+	height: 2.5em;
+	margin: 0px;
+}
+
+div.pathdesc3line > textarea {
+	width: 95%;
+	height: 3.75em;
+	margin: 0px;
+}
+
+div.pathdesc5line > textarea {
+	width: 95%;
+	height: 6.25em;
+	margin: 0px;
+}
+
+div.path-options {
+	justify-content: center;
+}
+
+div.path-options > div {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	min-width: 5%;
+	padding: 4px;
+}
+
+
+
+/*Combat Sheet*/
+.sheet-combat {
+	display: flex;
+	flex-direction: column;
+}
+
+div.row-full.soak {
+	justify-content: center;
+}
+
+div.row-full.soak > div > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.soak-title {
+	width: 20%;
+	text-align: right;
+}
+
+div.soak-title > span {
+	width: 20%;
+	text-align: right;
+}
+
+div.soak-attribute {
+	width: 15%
+}
+
+div.soak-attribute > select {
+	width: 100%
+}
+
+div.soak-armor {
+	width: 5%;
+	min-width: fit-content;
+}
+
+div.soak-roll {
+	width: 5%;
+}
+
+/*experience sheet*/
+.sheet-experience {
+	display: flex;
+	flex-direction: column;
+}
+
+div.exp-header {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	margin-bottom: 0.75em
+}
+
+div.exp-head-item {
+	display: flex;
+	width: minmax(min-content, 33%);
+	justify-content: center;
+	align-items: center;
+}
+
+.exp-head-item > h4, 
+.exp-head-item > h5 {
+	text-align: right;
+	margin-left: 2em;
+	/*width: max-content;*/
+	/*padding: 0 10px;*/
+	/*font-size: larger;*/
+}
+
+.exp-head-item > input[type="number"] {
+	padding: 2px;
+	width: 10em;
+	height: fit-content;
+	/*margin: 2px 0;*/
+}
+
+div.exp-row {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.exp-row-item {
+	width: 50%;
+}
+
+.exp-row-value {
+	width: 10%;
+}
+
+.exp-row-date {
+	width: 20%;
+}
+
+span.exp-row-item,
+span.exp-row-value,
+span.exp-row-date {
+	font-size: 1.17em;
+	font-weight: bold;
+	text-align: center;
+}
+/*information Sheet*/
+.sheet-information {
+	display: flex;
+	flex-direction: column;
+}
+
+div.sheet-information > div.row-full {
+	justify-content: center;
+}
+
+div.desc-row {
+	width: 40%;
+	text-align: right;
+}
+
+div.desc-row > span {
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+div.desc-input {
+	width: 60%;
+}
+
+input.desc-input {
+	width: 98%;
+}
+
+textarea.desc-input {
+	width: 95%;
+	height: 12.5em;
+}
+
+/*journal Sheet*/
+.sheet-journal {
+	display: flex;
+	flex-direction: column;
+}
+
+.sheet-journal > div.container-full > div.row-full {
+	justify-content: center;
+}
+
+.sheet-journal > div.container-columns {
+	flex-wrap: wrap;
+}
+
+div.journal-field {
+	width: 28%;
+	text-align: center;
+}
+
+div.journal-field > span,
+div.journal-desc > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+div.journal-field > input[type="text"] {
+	width: 98%;
+}
+
+div.journal-field > select {
+	width: 98%;
+}
+
+div.row-full > div.journal-desc {
+	width: 15%;
+}
+div.journal-description {
+	width: 100%;
+}
+
+textarea.journal-description {
+	width: 95%;
+	height: 3.75em;
+}
+
+div.half-column.bonds,
+div.half-column.vinculum {
+	display: none;
+}
+
+input.bonds[type="hidden"][value="1"] ~ div.bonds,
+input.vinculum[type="hidden"][value="1"] ~ div.vinculum {
+	display: flex;
+}
+
+/*notes sheet*/
+.sheet-notes {
+	display: flex;
+	flex-direction: column;
+}
+
+div.sheet-notes > div.container-columns > div.half-column > div.repcontainer > div.repitem > div.row-full {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.notes-arrow {
+	width: 10%;
+}
+
+input[type="text"].notes-title {
+	width: 70%;
+	margin-left: 4px;
+}
+
+div.notestext {
+	width: 100%;
+}
+
+
+div.notestext > textarea.notestext {
+	width: 95%;
+	height: 7em;
+	margin-left: 4px;
+}
+
+/*gear Sheet*/
+.sheet-gear {
+	display: flex;
+	flex-direction: column;
+}
+
+div.sheet-gear > div.container-columns > div.half-column > div.repcontainer > div.repitem > div.row-full {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+div.sheet-gear > div.container-columns > div.half-column > div.row-full {
+	justify-content: space-between;
+}
+
+div.sheet-gear > div.container-columns > div.half-column > div.row-full > div {
+	text-align: center;
+}
+
+div.sheet-gear > div.container-columns > div.half-column > div.row-full > div > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+.gear-rangedname {
+	width: 35%;
+	margin-left: 4px;
+}
+
+.gear-rangedtype {
+	width: 30%;
+}
+
+.gear-rangedconceal {
+	width: 15%;
+}
+
+.gear-halfarrow {
+	width: 10%;
+}
+
+div.gear-rangeddescription {
+	width: 100%;
+}
+
+div.gear-rangeddescription > textarea.gear-rangeddescription {
+	width: 90%;
+	height: 3em;
+	margin-left: 4px;
+}
+
+.gear-ammoname {
+	width: 35%;
+	margin-left: 4px;
+}
+
+.gear-ammotype {
+	width: 30%;
+}
+
+.gear-ammoamount {
+	width: 15%;
+}
+
+div.gear-ammodescription {
+	width: 100%;
+}
+
+div.gear-ammodescription > textarea.gear-ammodescription {
+	width: 90%;
+	height: 3em;
+	margin-left: 4px;
+}
+
+.gear-meleename {
+	width: 65%;
+	margin-left: 4px;
+}
+
+.gear-meleeconceal {
+	width: 15%;
+}
+
+div.gear-meleedescription {
+	width: 100%;
+}
+
+div.gear-meleedescription > textarea.gear-meleedescription {
+	width: 90%;
+	height: 3em;
+	margin-left: 4px;
+}
+
+.gear-armorname {
+	width: 80%;
+	margin-left: 4px;
+}
+
+div.gear-armordescription {
+	width: 100%;
+}
+
+div.gear-armordescription > textarea.gear-armordescription {
+	width: 90%;
+	height: 3em;
+	margin-left: 4px;
+}
+
+/*dice sheet*/
+.sheet-dice {
+	display: flex;
+	flex-direction: column;
+}
+
+div.row-dice {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+div.dice-name {
+	width: 25%;
+	text-align: center;
+}
+
+div.dice-name > input[type="text"] {
+	width: 95%
+}
+
+div.dice-attribute {
+	width: 20%;
+	text-align: center;
+}
+
+div.dice-attribute > select {
+	width: 95%;
+}
+
+div.dice-ability {
+	width: 20%;
+	text-align: center;
+}
+
+div.dice-ability > select {
+	width: 95%;
+}
+
+div.dice-modifiers {
+	width: 10%;
+	text-align: center;
+}
+
+div.dice-difficulty {
+	width: 10%;
+	text-align: center;
+}
+
+div.dice-roll {
+	width: 10%;
+	text-align: center;
+}
+
+div.dice-name > span ,
+div.dice-attribute > span ,
+div.dice-ability > span ,
+div.dice-modifiers > span,
+div.dice-difficulty > span,
+div.dice-roll > span {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+
+/*Elements*/
+div.line-heading {
+	width: 100%;
+	background-color: transparent;
+	background-image: url(http://i.imgur.com/ikbStK4.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+}
+
+div.line-heading-empty {
+	width: 100%;
+	background-color: transparent;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+}
+
+span.line-heading {
+	font-weight: bold;
+	font-size: large;
+	width: 20%;
+	padding: 0px 10px;
+	background: white;
+	background-size: 100%;
+}
+
+span.line-heading-empty {
+	padding: 0px 10px;
+}
+
+div.line-heading > span.line-heading > input[type=text] {
+	border: none;
+	width: 8em;
+}
+
+div.container-columns {
+	display: flex;
+	justify-content: center;
+	align-content: stretch;
+	align-items: stretch;
+	width: 100%;
+}
+
+div.half-column {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 50%;
+	width: 50%;
+	flex-direction: column;
+	/*align-items: center;
+	align-content: flex-start;*/
+}
+
+div.trait-column {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 33%;
+	align-items: center;
+	align-content: flex-start;
+}
+
+div.trait-doublecolumn {
+	display: flex;
+	flex-basis: 66%;
+	flex-direction: column;
+	align-items: center;
+	align-content: flex-start;
+}
+	
+div.trait-column > div.line-heading:not(:first-of-type) {
+	margin-top: 1em;
+}
+
+h3.trait-heading {
+	width: 100%;
+	text-align: center;
+}
+
+div.container-full {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+div.row-full {
+	display: flex;
+	width: 100%;
+}
+
+div.row-full.desc {
+	flex-wrap: wrap;
+}
+
+input[type="number"].smallinput {
+	width: 2.5em !important;
+	height: 1.25em;
+	padding-right: 0px;
+	
+}
+
+select.left-select {
+	width:100%;
+	/*font-size: medium;*/
+	font-weight:bold;
+	text-align:left;
+	text-align-last:left;
+	border:none;
+	margin: -2px 0;
+}
+
+select.select-trait {
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0px;
+	border: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select.sheet-dots {
+    min-width:7em; 
+    height:20px;
+    font-weight: bold;
+    font-size:x-small;
+    color:black;
+    padding: 0px 0px 0px 0px;
+	line-height:15px;
+	border:none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+	letter-spacing: -0.1em;
+	margin-bottom: 0px;
+}
+
+select.sendrolls {
+	font-weight: bold;
+	color: black;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	margin-left: 4px;
+}
+
+select.disabled-select {
+	pointer-events: none; 
+	appearance: none;
+}
+
+/* ======== hide-arrow to hide things========*/
+input.hide-arrow[type="checkbox"] {
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 0px;
+    left: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+/* -----Fake hide-arrow checkbox----- */
+input.hide-arrow[type="checkbox"] + span::before
+{
+	background: url("http://i.imgur.com/F48kFVc.png");
+	background-size: 12px 25px;
+    background-repeat: no-repeat;
+    background-position: center; 
+	content: "";
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+	position: relative;
+    left: -12px;
+    border-radius: 10px;
+    border:1px solid white;
+    width: 25px;
+    height: 25px;
+    transform: rotate(-90deg);
+
+}
+
+input.hide-arrow[type="checkbox"]:checked + span::before {
+	background: url("http://i.imgur.com/F48kFVc.png");
+	background-size: 12px 25px;
+    background-repeat: no-repeat;
+    background-position: center; 
+	content: "";
+    width: 25px;
+    height: 25px;
+    transform: rotate(0deg);
+    /*content: "ˇ";
+    transform: rotate(0deg);*/
+}
+
+div.expandable {
+    display: none;
+}
+/* -----Hiding areas with hide-arrow ----- */
+
+
+input.hide-arrow:checked ~ div.expandable {
+	display: flex;
+    flex-wrap: wrap
+}
+
+
+/*Health Section*/
+
+div.health-row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	height: 1.5em;
+	padding-left: 2px;
+}
+
+div.health-row.bruisedbonus {
+	justify-content: flex-end;
+	width: max-content;
+	margin-left: auto;
+}
+
+div.health-row > span {
+	display: block;
+	min-width: max-content;
+	font-weight: bold;
+}
+
+div.health-box {
+	/*width: 15px;
+	height: 15px;*/ /*aka font-size+1px*/
+}
+
+div.health-box > input[type="radio"] {
+	position:absolute;
+	display:none;
+	width: 1em;
+	height: 1em;
+	opacity:0;
+}
+
+div.bruisedbonus {
+	/*margin-left: auto;*/
+	margin-right: 5px;
+}
+
+div.bruisedbonus:last-child {
+	margin-right: 0px;
+}
+
+div.health-malus {
+	margin-left: auto;
+	margin-right: 5px;
+}
+
+div.health-box > span {
+	width: 100%;
+	content: "";
+	width: 0.9em;/*13px;*/
+	height: 0.9em; /*13px;*/
+	border: solid 1px black;
+	line-height: 12px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	box-shadow: 0 0 2px #ccc;
+	/*font-size:15px;*/
+}
+
+input[type="hidden"][value=""] + div.health-box > input[type="radio"]:nth-of-type(2),
+input[type="hidden"][value="Bashing"] + div.health-box > input[type="radio"]:nth-of-type(3),
+input[type="hidden"][value="Lethal"] + div.health-box > input[type="radio"]:nth-of-type(4),
+input[type="hidden"][value="Aggravated"] + div.health-box > input[type="radio"]:nth-of-type(1) {
+	display: flex;
+}
+
+input[type="hidden"][value=""] + div.health-box > span::before
+{
+	content:"";
+}
+
+input[type="hidden"][value="Bashing"] + div.health-box > span::before
+{
+	content:"/";
+}
+
+input[type="hidden"][value="Lethal"] + div.health-box > span::before
+{
+	content:"X";
+}
+
+input[type="hidden"][value="Aggravated"] + div.health-box > span::before
+{
+	content:"Ж";
+}
+
+div.health-malus > span {
+	width: 100%;
+	font-style: italic;
+}
+
+/*Hide/Show Extra Bruised levels*/
+input.healthbonus[type="hidden"][value="1"] ~ div > div > div.health-box.bruisedbonus:nth-last-of-type(-n+1),
+input.healthbonus[type="hidden"][value="2"] ~ div > div > div.health-box.bruisedbonus:nth-last-of-type(-n+2),
+input.healthbonus[type="hidden"][value="3"] ~ div > div > div.health-box.bruisedbonus:nth-last-of-type(-n+3) {
+	display: block;
+}
+
+div.health-box.bruisedbonus {
+	display: none;
+}
+ /*hide actual checkbox*/
+input.option[type="checkbox"],
+input.option[type="radio"] {
+	opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+input.option[type="checkbox"] + span::before,
+input.option[type="radio"] + span::before {
+	margin-right: 1px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+	position:relative;
+    content: "";
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    
+    -moz-border-radius: 0%;
+    -webkit-border-radius: 0%;
+    border-radius: 0%;
+	background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+	
+	-moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;    
+}
+
+input.option[type="checkbox"]:checked + span::before,
+input.option[type="radio"]:checked + span::before {
+    content: "✔";
+}
+
+/*Radios Fill to the left*/
+/* Hide actual dot*/
+input.option-check[type="radio"],
+input.trait-radio[type="radio"],
+input.zero[type="radio"],
+input.temp[type="radio"] {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/* Styles common to fake dot*/ 
+input.trait-radio[type="radio"] + span::before,
+input.zero[type="radio"] + span::before,
+input.temp[type="radio"]  + span::before,
+input.multi[type="radio"] + span::before {
+    margin-right: 1px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 12px;
+    height: 12px;
+    
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+    
+    background: #000000;
+}
+	
+/* Remove dot from all radios _after_ selected one */
+input.multi[type="radio"]:checked ~ input.multi[type="radio"] + span::before,
+input.trait-radio[type="radio"]:checked ~ input.trait-radio[type="radio"] + span::before,
+input.zero[type="radio"]:checked ~ input[type="radio"] + span::before,
+input.temp[type="radio"]:checked ~ input[type="radio"] + span::before {
+    content: "";
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+}
+
+/*Special radios*/ 
+input.temp.trait-check+span::before {
+    content: "X";
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    
+    -moz-border-radius: 0%;
+    -webkit-border-radius: 0%;
+    border-radius: 0%;
+	background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+}
+
+input.option-check + span::before {
+	margin-right: 1px;
+    border: solid 1px #a8a8a8;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+
+	width: 12px;
+    height: 12px;
+    font-size: 12px;
+    
+    -moz-border-radius: 0%;
+    -webkit-border-radius: 0%;
+    border-radius: 0%;
+	background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
+}
+
+
+
+input.multi.option-check+span::before {
+	content: "✔";
+	width: 12px;
+    height: 12px;
+    font-size: 12px;
+    
+    -moz-border-radius: 0%;
+    -webkit-border-radius: 0%;
+    border-radius: 0%;
+	background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+}
+
+ 
+input.zero.trait-check:checked + span::before,
+input.zero.trait-radio:checked + span::before,
+input.zero.option-check:checked + span::before {
+    opacity: 0;
+}
+
+input.zero.trait-check:hover + span::before,
+input.zero.trait-radio:hover + span::before, 
+input.zero.option-check:hover + span::before {
+    opacity: 1;
+}
+
+input.zero.trait-check + span::before,
+input.zero.trait-radio + span::before,
+input.zero.option-check + span::before {
+    opacity: .25;
+    font-size: 12px;
+    content: "X";
+	
+	background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+}
+
+
+/*action buttons*/
+button[type=action].action-button {
+	font-weight: bold;
+	/*border: thin solid black;*/
+	border-radius: 5px;
+	background: whitesmoke;
+}
+
+/*roll buttons*/
+button[type=roll].small-roll-button {
+	border: none; 
+}
+
+
+button[type=roll].small-roll-button::before {
+	font-family: 'dicefontd10' !important;
+	content: 'J' !important;
+}
+
+/*Configuration of tab Buttons*/
+.sheet-primary,
+.sheet-background,
+.sheet-meritsflaws,
+.sheet-powers,
+.sheet-combat,
+.sheet-experience,
+.sheet-information,
+.sheet-journal,
+.sheet-notes, 
+.sheet-gear,
+.sheet-dice {
+	display: none;
+}
+
+button.tabbutton {
+	margin-top: 0.5em;
+	width: 14%;
+	height: 2em;
+	position: relative;
+	border-radius: 10px;
+	border: thin solid black;
+	background: transparent;
+	color: black;
+	font-weight: bold;
+	line-height: 2em;
+	text-shadow: 4px 4px 5px rgba(150, 150, 150, 0.5);
+	z-index: 998;
+}
+
+/*show the selected tab*/
+.sheet-tabstoggle[value="primary"] ~ div.sheet-primary,
+.sheet-tabstoggle[value="backgrounds"] ~ div.sheet-background,
+.sheet-tabstoggle[value="meritsflaws"] ~ div.sheet-meritsflaws,
+.sheet-tabstoggle[value="powers"] ~ div.sheet-powers,
+.sheet-tabstoggle[value="combat"] ~ div.sheet-combat,
+.sheet-tabstoggle[value="experience"] ~ div.sheet-experience,
+.sheet-tabstoggle[value="information"] ~ div.sheet-information,
+.sheet-tabstoggle[value="journal"] ~ div.sheet-journal,
+.sheet-tabstoggle[value="notes"] ~ div.sheet-notes,
+.sheet-tabstoggle[value="gear"] ~ div.sheet-gear,
+.sheet-tabstoggle[value="dice"] ~ div.sheet-dice {
+	display: flex;
+}
+
+.sheet-tabstoggle[value="all"] ~ div.sheet-primary,
+.sheet-tabstoggle[value="all"] ~ div.sheet-background,
+.sheet-tabstoggle[value="all"] ~ div.sheet-meritsflaws,
+.sheet-tabstoggle[value="all"] ~ div.sheet-powers,
+.sheet-tabstoggle[value="all"] ~ div.sheet-combat,
+.sheet-tabstoggle[value="all"] ~ div.sheet-experience,
+.sheet-tabstoggle[value="all"] ~ div.sheet-information,
+.sheet-tabstoggle[value="all"] ~ div.sheet-journal,
+.sheet-tabstoggle[value="all"] ~ div.sheet-notes,
+.sheet-tabstoggle[value="all"] ~ div.sheet-gear,
+.sheet-tabstoggle[value="all"] ~ div.sheet-dice {
+	display: flex;
+}
+
+/*Configuration of character-type-specific elements*/
+.element-mortal,
+.element-vampire,
+.element-fera,
+.element-chbreed,
+.element-mage,
+.element-wraith, 
+.element-ghoul,
+.element-sorcerer,
+.element-psychic,
+.element-numina,
+.element-kinfolk {
+	display: none;
+}
+
+div.container-columns.element-mortal,
+div.container-columns.element-vampire,
+div.container-columns.element-fera,
+div.container-columns.element-chbreed,
+div.container-columns.element-mage,
+div.container-columns.element-wraith, 
+div.container-columns.element-ghoul,
+div.container-columns.element-sorcerer,
+div.container-columns.element-psychic,
+div.container-columns.element-numina,
+div.container-columns.element-kinfolk,
+div.container-full.element-mortal,
+div.container-full.element-vampire,
+div.container-full.element-fera,
+div.container-full.element-chbreed,
+div.container-full.element-mage,
+div.container-full.element-wraith, 
+div.container-full.element-ghoul,
+div.container-full.element-sorcerer,
+div.container-full.element-psychic,
+div.container-full.element-numina,
+div.container-full.element-kinfolk,
+div.row-full.element-mortal,
+div.row-full.element-vampire,
+div.row-full.element-fera,
+div.row-full.element-chbreed,
+div.row-full.element-mage,
+div.row-full.element-wraith, 
+div.row-full.element-ghoul,
+div.row-full.element-sorcerer,
+div.row-full.element-psychic,
+div.row-full.element-numina,
+div.row-full.element-kinfolk  {
+	display: none;
+}
+
+.element-garou,
+.element-ajaba,
+.element-ananasi,
+.element-bastet,
+.element-corax,
+.element-kitsune,
+.element-mokole,
+.element-nuwisha,
+.element-ratkin,
+.element-rokea,
+.element-apis,
+.element-camazotz,
+.element-grondr,
+.element-gurahl,
+.element-nagah {
+	display: none;
+}
+
+.element-not-ananasi {
+	display: none;
+}
+
+.element-no-fera {
+	display: none;
+}
+
+.switch-kind[value="mortal"] ~ *.element-mortal,
+.switch-kind[value="vampire"] ~ *.element-vampire,
+.switch-kind[value="fera"] ~ *.element-fera,
+.switch-kind[value="awakened"] ~ *.element-mage,
+.switch-kind[value="wraith"] ~ *.element-wraith {
+	display: block;
+}
+
+.switch-kind[value="mortal"] ~ div.container-columns.element-mortal,
+.switch-kind[value="mortal"] ~ div.container-full.element-mortal,
+.switch-kind[value="mortal"] ~ div.row-full.element-mortal,
+.switch-kind[value="vampire"] ~ div.container-columns.element-vampire,
+.switch-kind[value="vampire"] ~ div.container-full.element-vampire,
+.switch-kind[value="vampire"] ~ div.powers-vampireboost.element-vampire,
+.switch-kind[value="vampire"] ~ div.row-full.element-vampire,
+.switch-kind[value="fera"] ~ div.container-columns.element-fera,
+.switch-kind[value="fera"] ~ div.container-full.element-fera,
+.switch-kind[value="fera"] ~ div.row-full.element-fera,
+.switch-kind[value="awakened"] ~ div.container-columns.element-mage,
+.switch-kind[value="awakened"] ~ div.container-full.element-mage,
+.switch-kind[value="awakened"] ~ div.row-full.element-mage,
+.switch-kind[value="wraith"] ~ div.container-columns.element-wraith, 
+.switch-kind[value="wraith"] ~ div.container-full.element-wraith,
+.switch-kind[value="wraith"] ~ div.row-full.element-wraith {
+	display: flex;
+}
+
+.check-sorcerer[value="1"] ~ *.element-sorcerer,
+.check-sorcerer[value="2"] ~ *.element-psychic,
+.check-sorcerer:not([value="0"]) ~ *.element-numina,
+.check-ghoul[value="1"] ~ *.element-ghoul, 
+.check-kinfolk[value="1"] ~ *.element-kinfolk {
+	display: block;
+}
+
+.check-sorcerer[value="1"] ~ div.container-columns.element-sorcerer,
+.check-sorcerer[value="1"] ~ div.container-full.element-sorcerer,
+.check-sorcerer[value="1"] ~ div.row-full.element-sorcerer,
+.check-sorcerer[value="2"] ~ div.container-columns.element-psychic,
+.check-sorcerer[value="2"] ~ div.container-full.element-psychic,
+.check-sorcerer[value="2"] ~ div.row-full.element-psychic,
+.check-sorcerer:not([value="0"]) ~ div.container-columns.element-numina,
+.check-sorcerer:not([value="0"]) ~ div.container-full.element-numina,
+.check-sorcerer:not([value="0"]) ~ div.row-full.element-numina,
+.check-ghoul[value="1"] ~ div.container-columns.element-ghoul, 
+.check-ghoul[value="1"] ~ div.container-full.element-ghoul, 
+.check-ghoul[value="1"] ~ div.row-full.element-ghoul, 
+.check-kinfolk[value="1"] ~ div.container-columns.element-kinfolk,
+.check-kinfolk[value="1"] ~ div.container-full.element-kinfolk,
+.check-kinfolk[value="1"] ~ div.row-full.element-kinfolk {
+	display: flex;
+}
+
+.switch-kind[value="mortal"] ~ *.sub-kind.element-mortal,
+.switch-kind[value="vampire"] ~ *.sub-kind.element-vampire,
+.switch-kind[value="fera"] ~ *.sub-kind.element-fera,
+.switch-kind[value="awakened"] ~ *.sub-kind.element-mage,
+.switch-kind[value="wraith"] ~ *.sub-kind.element-wraith,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Bastet"] ~ *.element-chbreed.element-bastet,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Kitsune"] ~ *.element-chbreed.element-kitsune,
+.switch-kind[value="awakened"] ~ div.quintPara.element-mage {
+	display: flex;
+}
+
+
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Garou"] ~ *.element-chbreed.element-garou,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Ajaba"] ~ *.element-chbreed.element-ajaba,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Ananasi"] ~ *.element-chbreed.element-ananasi,
+input.switch-kind[value="fera"] + input.switch-chbreed:not([value="Ananasi"]) ~ *.element-chbreed.element-not-ananasi,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Bastet"] ~ *.element-chbreed.element-bastet,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Corax"] ~ *.element-chbreed.element-corax,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Kitsune"] ~ *.element-chbreed.element-kitsune,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Mokole"] ~ *.element-chbreed.element-mokole,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Nuwisha"] ~ *.element-chbreed.element-nuwisha,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Ratkin"] ~ *.element-chbreed.element-ratkin,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Rokea"] ~ *.element-chbreed.element-rokea,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Apis"] ~ *.element-chbreed.element-apis,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Camazotz"] ~ *.element-chbreed.element-camazotz,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Grondr"] ~ *.element-chbreed.element-grondr,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Gurahl"] ~ *.element-chbreed.element-gurahl,
+input.switch-kind[value="fera"] + input.switch-chbreed[value="Nagah"] ~ *.element-chbreed.element-nagah {
+	display: block;
+}
+
+input.switch-kind[value="fera"] ~ *.element-no-fera {
+	display: none !important;
+}
+/*Visibility configuration for powers page */
+div.path-rating1,
+div.path-rating2,
+div.path-rating3,
+div.path-rating4,
+div.path-rating5,
+div.path-rating6 {
+	display: none;
+}
+
+div.bm-pathrating1,
+div.bm-pathrating2,
+div.bm-pathrating3,
+div.bm-pathrating4,
+div.bm-pathrating5 {
+	display: none;
+}
+
+.aspect-option,
+div.aspect-option,
+div.path-options > div.aspect-option,
+.aspect-effects,
+div.aspect-effects, 
+input.check-aspect[value="1"] ~ *.aspect-effects,
+.aspect1,
+div.aspect1,
+.aspect2,
+div.aspect2,
+.aspect3,
+div.aspect3,
+.aspect4,
+div.aspect4,
+.aspect5,
+div.aspect5 {
+	display: none;
+}
+
+input.check-rating[value="1"] ~ div.row-full.path-rating1,
+input.check-rating[value="2"] ~ div.row-full.path-rating1,
+input.check-rating[value="3"] ~ div.row-full.path-rating1,
+input.check-rating[value="4"] ~ div.row-full.path-rating1,
+input.check-rating[value="5"] ~ div.row-full.path-rating1,
+input.check-rating[value="6"] ~ div.row-full.path-rating1,
+input.check-rating[value="2"] ~ div.row-full.path-rating2,
+input.check-rating[value="3"] ~ div.row-full.path-rating2,
+input.check-rating[value="4"] ~ div.row-full.path-rating2,
+input.check-rating[value="5"] ~ div.row-full.path-rating2,
+input.check-rating[value="6"] ~ div.row-full.path-rating2,
+input.check-rating[value="3"] ~ div.row-full.path-rating3,
+input.check-rating[value="4"] ~ div.row-full.path-rating3,
+input.check-rating[value="5"] ~ div.row-full.path-rating3,
+input.check-rating[value="6"] ~ div.row-full.path-rating3,
+input.check-rating[value="4"] ~ div.row-full.path-rating4,
+input.check-rating[value="5"] ~ div.row-full.path-rating4,
+input.check-rating[value="6"] ~ div.row-full.path-rating4,
+input.check-rating[value="5"] ~ div.row-full.path-rating5,
+input.check-rating[value="6"] ~ div.row-full.path-rating5,
+input.check-rating[value="6"] ~ div.row-full.path-rating6 {
+	display: flex;
+}
+
+input.bm-check-rating[value="1"] ~ div.row-full.bm-pathrating1,
+input.bm-check-rating[value="2"] ~ div.row-full.bm-pathrating1,
+input.bm-check-rating[value="3"] ~ div.row-full.bm-pathrating1,
+input.bm-check-rating[value="4"] ~ div.row-full.bm-pathrating1,
+input.bm-check-rating[value="5"] ~ div.row-full.bm-pathrating1,
+input.bm-check-rating[value="2"] ~ div.row-full.bm-pathrating2,
+input.bm-check-rating[value="3"] ~ div.row-full.bm-pathrating2,
+input.bm-check-rating[value="4"] ~ div.row-full.bm-pathrating2,
+input.bm-check-rating[value="5"] ~ div.row-full.bm-pathrating2,
+input.bm-check-rating[value="3"] ~ div.row-full.bm-pathrating3,
+input.bm-check-rating[value="4"] ~ div.row-full.bm-pathrating3,
+input.bm-check-rating[value="5"] ~ div.row-full.bm-pathrating3,
+input.bm-check-rating[value="4"] ~ div.row-full.bm-pathrating4,
+input.bm-check-rating[value="5"] ~ div.row-full.bm-pathrating4,
+input.bm-check-rating[value="5"] ~ div.row-full.bm-pathrating5 {
+	display: flex;
+}
+
+input.check-aspect[value="1"] ~ *.aspect-option,
+input.check-aspect[value="0"] ~ *.aspect-effects {
+	display: flex;
+}
+
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="2"] ~ div.aspect1,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="3"] ~ div.aspect1,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="4"] ~ div.aspect1,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="5"] ~ div.aspect1,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="2"] ~ div.aspect2,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="3"] ~ div.aspect2,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="4"] ~ div.aspect2,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="5"] ~ div.aspect2,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="3"] ~ div.aspect3,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="4"] ~ div.aspect3,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="5"] ~ div.aspect3,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="4"] ~ div.aspect4,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="5"] ~ div.aspect4,
+input.check-aspect[value="1"] ~ input.check-aspectcount[value="5"] ~ div.aspect5 {
+	display: flex;
+}
+
+input.check-vinfo[value="1"] ~ div.versioninfo {
+	display: none;
+}
+
+/*------------- This is the roll template for standard rolls -------------*/
+.sheet-rolltemplate-wod .sheet-regularContainer {
+    width: 230px;
+    height: 190px;
+    padding: 2px;
+    background: url(https://i.imgur.com/puo0z7r.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-wod .sheet-regularHeaderContainer {
+	color: rgb(112, 0, 0);
+    padding: 15px 2px 2px 20px;
+	line-height: 1.2em;
+	font-size: 1.2em;
+    text-align: left;
+}
+ 
+ 
+.sheet-rolltemplate-wod .sheet-regularAttr {
+    padding-left: 20px;
+    font-size: 1.0em;
+    vertical-align: top;
+}
+ 
+.sheet-rolltemplate-wod .sheet-regularResult {
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(112, 0, 0);
+    padding-bottom: 20px;
+}
+ 
+.sheet-rolltemplate-wod .inlinerollresult  {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-wod .inlinerollresult.fullcrit {
+   color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-wod .inlinerollresult.fullfail {
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-wod .inlinerollresult.importantroll {
+	color: #3FB315;
+    border: none;
+}
+
+
+
+
+/*------------- This is the roll template for initiative -------------*/
+.sheet-rolltemplate-wodinitiative .sheet-initiativeContainer {
+    width: 230px;
+    height: 190px;
+    padding: 2px;
+    background: url(https://i.imgur.com/puo0z7r.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-wodinitiative .sheet-initiativeHeader {
+	color: rgb(112, 0, 0);
+    padding: 15px 2px 2px 20px;
+	line-height: 1.2em;
+	font-size: 1.2em;
+    text-align: left;
+}
+ 
+ 
+.sheet-rolltemplate-wodinitiative .sheet-initiativeAttr {
+    padding-left: 20px;
+    font-size: 1.0em;
+    vertical-align: top;
+}
+ 
+.sheet-rolltemplate-wodinitiative .sheet-initiativeResult {
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(112, 0, 0);
+    padding-bottom: 20px;
+}
+ 
+.sheet-rolltemplate-wodinitiative .inlinerollresult  {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-wodinitiative .inlinerollresult.fullcrit {
+   color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-wodinitiative .inlinerollresult.fullfail {
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-wodinitiative .inlinerollresult.importantroll {
+	color: #3FB315;
+    border: none;
+}
+
+
+
+/*------------- This is the roll template for rituals -------------*/
+
+.sheet-rolltemplate-wodritual .sheet-ritualcontainer {
+    width: 230px;
+    height: 375px;
+    padding: 2px;
+    background: url(https://i.imgur.com/puo0z7r.png) top left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    border-spacing: 0;
+
+	
+}
+
+ 
+.sheet-rolltemplate-wodritual .sheet-ritualheader {
+	color: rgb(112, 0, 0);    
+	padding-top: 10%;
+	padding-bottom: 5%;
+	padding-right: 10%;
+	padding-left: 10%;
+	line-height: 1.2em;
+	font-size: 1.2em;
+    text-align: left;
+
+}
+ 
+ 
+.sheet-rolltemplate-wodritual .sheet-rituallevel {
+    padding-left: 10%;
+	padding-right: 10%;
+    font-size: 1.0em;
+    vertical-align: top;	
+
+} 
+ 
+.sheet-rolltemplate-wodritual .sheet-ritualattribute {
+    padding-left: 10%;
+	padding-right: 10%;
+    font-size: 1.0em;
+    vertical-align: top;	
+    max-height: 100 px;	
+
+}
+ 
+.sheet-rolltemplate-wodritual .sheet-ritualresult {
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(112, 0, 0);
+    padding-bottom: 5%;
+}
+
+.sheet-rolltemplate-wodritual .sheet-ritualbookpage {
+    font-size: .9em;
+    text-align: center;
+	font-style: italic;
+    color: rgb(63, 63, 63);
+    margin-bottom: 10%;
+	margin-left: 7%;
+	margin-right:7%;
+}
+ 
+
+.sheet-rolltemplate-wodritual .sheet-ritualdescription {
+    font-size: 1.0em;
+    text-align: left;
+	position: relative; 
+	overflow: auto;  
+    max-height: 150px;
+	color: rgb(112, 0, 0);
+	margin-left: 10%;
+	margin-bottom: 10px;
+	margin-right:15px;
+}
+
+ .sheet-rolltemplate-wodritual .sheet-ritualdescription .scrollbar {
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.sheet-ritualdescription::-webkit-scrollbar {
+    width: 1px;
+
+}
+
+
+.sheet-rolltemplate-wodritual .inlinerollresult  {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-wodritual .inlinerollresult.fullcrit {
+   color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-wodritual .inlinerollresult.fullfail {
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-wodritual .inlinerollresult.importantroll {
+	color: #3FB315;
+    border: none;
+}

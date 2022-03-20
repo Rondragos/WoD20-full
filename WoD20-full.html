@@ -3,20 +3,20 @@
 		<div class="header logo-div"></div>
 		<div class="navigation">
 			<button class="tabbutton" style="margin-left: 0.25em" type="action" name="act_primary" data-i18n="Primary">Primary</button>
-			<button class="tabbutton" type="action" name="act_backgrounds">Backgrounds</button>
-			<button class="tabbutton" type="action" name="act_meritsflaws">Merits&amp;Flaws</button>
-			<button class="tabbutton" type="action" name="act_powers">Powers</button>
-			<button class="tabbutton" type="action" name="act_combat">Combat</button>
-			<button class="tabbutton" type="action" name="act_experience">Experience</button><br>
-			<button class="tabbutton" style="margin-left: 0.25em" type="action" name="act_information">Information</button>
-			<button class="tabbutton" type="action" name="act_journal">Journal</button>
-			<button class="tabbutton" type="action" name="act_notes">Notes</button>
-			<button class="tabbutton" type="action" name="act_gear">Gear</button>
-			<button class="tabbutton" type="action" name="act_dice">Version/Dice</button>
-			<button class="tabbutton" type="action" name="act_all">Show All</button>
+			<button class="tabbutton" type="action" name="act_backgrounds" data-i18n="Backrounds">Backgrounds</button>
+			<button class="tabbutton" type="action" name="act_meritsflaws" data-i18n="MeritsFlaws">Merits&amp;Flaws</button>
+			<button class="tabbutton" type="action" name="act_powers" data-i18n="Powers">Powers</button>
+			<button class="tabbutton" type="action" name="act_combat" data-18n="Combat">Combat</button>
+			<button class="tabbutton" type="action" name="act_experience" data-i18n="Experience">Experience</button><br>
+			<button class="tabbutton" style="margin-left: 0.25em" type="action" name="act_information" data-i18n="Information">Information</button>
+			<button class="tabbutton" type="action" name="act_journal" data-i18n="Journal">Journal</button>
+			<button class="tabbutton" type="action" name="act_notes" data-i18n="Notes">Notes</button>
+			<button class="tabbutton" type="action" name="act_gear" data-i18n="Gear">Gear</button>
+			<button class="tabbutton" type="action" name="act_dice" data-i18n="Version">Version/Dice</button>
+			<button class="tabbutton" type="action" name="act_all" data-i18n="ShowAll">Show All</button>
 		</div>
 		<div class="options">
-			<span>Roll Options:</span>
+			<span data-i18n="RollOptions">Roll Options:</span>
 			<label>
 				<input type="checkbox" name="attr_options" value="1" />
 				<span></span>
@@ -24,16 +24,16 @@
 			<input type="hidden" name="attr_options" />
 			<div class="optionsExpand">
 				<div>
-					<h4> Send Rolls to:</h4>
+					<h4 data-i18n="SendRollsto"> Send Rolls to:</h4>
 					<select class="sendrolls" name="attr_sendRollTo">
-						<option value="" selected>Public</option>
-						<option value="/w ?{Whisper to who?}">Private</option>
-						<option value="/w gm">ST</option>
-						<option value="/w @{character_name}">Myself</option>
+						<option value="" selected data-i18n="Public">Public</option>
+						<option value="/w ?{Whisper to who?}" data-i18n="Private">Private</option>
+						<option value="/w gm" data-i18n="ST">ST</option>
+						<option value="/w @{character_name}" data-i18n="Myself">Myself</option>
 					</select>
 				</div>
 				<div>
-					<h4>Roll Difficulty:</h4>
+					<h4 data-i18n="RollDifficulty">Roll Difficulty:</h4>
 					<div>
 						<input type="radio" class="option" name="attr_askdiff" value="?{Difficulty|6}" checked /><span>Ask</span><br/>
 						<input type="radio" class="option" name="attr_askdiff" value="@{glodiff}" /><span>Fixed:</span>
@@ -42,13 +42,13 @@
 				</div>
 				<div class="line-heading"><span class="line-heading-empty"></span></div>
 				<div>
-					<!--<h4>Wound penalty:</h4>
+					<!--<h4 data-i18n="Woundpenalty">Wound penalty:</h4>
 					<input type="number" disabled="true" name="attr_woundpen" value="@{useHealth}" />-->
-					<h4>Ignore wounds?</h4>
+					<h4 data-i18n="Ignorewounds">Ignore wounds?</h4>
 					<div><input type="checkbox" class="option" name="attr_ignorewound" value="1" /><span></span></div>
 				</div>
 				<div>
-					<h4>Additional Bruised Levels?</h4>
+					<h4 data-i18n="AdditionalBruisedLevels">Additional Bruised Levels?</h4>
 					<div>
 						<!--<input type="checkbox" name="attr_healthBonus" value="1" />-->
 						<input type="radio" name="attr_healthBonus" value="0" class="zero option-check" checked /><span></span> <input type="radio" name="attr_healthBonus" value="1" class="multi option-check"/><span></span>    <input type="radio" name="attr_healthBonus" value="2" class="multi option-check"/><span></span>    <input type="radio" name="attr_healthBonus" value="3" class="multi option-check"/><span></span>
@@ -67,119 +67,119 @@
 				<input type="hidden" class="check-sorcerer" name="attr_numina" />
 				<input type="hidden" class="check-ghoul" name="attr_ghoul" />
 				<input type="hidden" class="check-kinfolk" name="attr_kinfolk" />
-				<div class="grid-item-concept"><h3>Name:</h3></div>
+				<div class="grid-item-concept"><h3 data-i18n="Name">Name:</h3></div>
 				<div class="grid-item-concept"><input type="text" name="attr_character_name" /></div>
-				<div class="grid-item-concept"><h3>Real Name:</h3></div>
+				<div class="grid-item-concept"><h3 data-i18n="RealName">Real Name:</h3></div>
 				<div class="grid-item-concept"><input type="text" name="attr_real_name" /></div>
-				<div class="grid-item-concept"><h3>Kind:</h3></div>
+				<div class="grid-item-concept"><h3 data-i18n="Kind">Kind:</h3></div>
 				<div class="grid-item-concept">
 					<select name="attr_kind" class="left-select">
-						<option value="mortal" selected>Mortal</option>
-						<option value="vampire">Vampire</option>
-						<option value="fera">Fera</option>
-						<option value="awakened">Awakened Mage</option>
-						<option value="wraith">Wraith</option>
+						<option value="mortal" selected data-i18n="Mortal">Mortal</option>
+						<option value="vampire" data-i18n="Vampire">Vampire</option>
+						<option value="fera" data-i18n="Fera">Fera</option>
+						<option value="awakened" data-i18n="AwakenedMage">Awakened Mage</option>
+						<option value="wraith" data-i18n="Wraith">Wraith</option>
 					</select>
 				</div>
-				<div class="grid-item-concept"><h3>Player:</h3></div>
+				<div class="grid-item-concept"><h3 data-i18n="Player">Player:</h3></div>
 				<div class="grid-item-concept"><input type="text" name="attr_player" /></div>
-				<div class="grid-item-concept"><h3>Chronicle:</h3></div>
+				<div class="grid-item-concept"><h3 data-i18n="Chronicle">Chronicle:</h3></div>
 				<div class="grid-item-concept"><input type="text" name="attr_chronicle" /></div>
 				<div class="grid-item-concept sub-kind">
 					<input type="hidden" class="switch-kind" name="attr_kind" />
 					<input type="hidden" class="switch-chbreed" name="attr_chbreed" />
 					<div class="sub-kind element-mortal element-mage">
-						<input type="checkbox" class="option" name="attr_ghoul" value="1" /><span>Ghoul</span>
+						<input type="checkbox" class="option" name="attr_ghoul" value="1" /><span data-i18n="Ghoul">Ghoul</span>
 					</div>
 					<div class="sub-kind element-mortal">
-						<input type="checkbox" class="option" name="attr_numina" value="1" /><span>Sorcerer</span>
+						<input type="checkbox" class="option" name="attr_numina" value="1" /><span data-i18n="Sorcerer">Sorcerer</span>
 					</div>
 					<div class="sub-kind element-mortal">
-						<input type="checkbox" class="option" name="attr_numina" value="2" /><span>Psychic</span>
+						<input type="checkbox" class="option" name="attr_numina" value="2" /><span data-i18n="Psychic">Psychic</span>
 					</div>
 					<div class="sub-kind element-fera">
 						<span>Race:</span>
 						<select name="attr_chbreed" class="left-select">
 							<optgroup label="Living Races">
-								<option value="Garou" selected>Garou</option>
-								<option value="Ajaba">Ajaba</option>
-								<option value="Ananasi">Ananasi</option>
-								<option value="Bastet">Bastet</option>
-								<option value="Corax">Corax</option>
-								<option value="Kitsune">Kitsune</option>
-								<option value="Mokole">Mokolé</option>
-								<option value="Nuwisha">Nuwisha</option>
-								<option value="Ratkin">Ratkin</option>
-								<option value="Rokea">Rokea</option>
+								<option value="Garou" selected data-i18n="Garou">Garou</option>
+								<option value="Ajaba" data-i18n="Ajaba">Ajaba</option>
+								<option value="Ananasi" data-i18n="Ananasi">Ananasi</option>
+								<option value="Bastet" data-i18n="Bastet">Bastet</option>
+								<option value="Corax" data-i18n="Cora">Corax</option>
+								<option value="Kitsune" data-i18n="Kitsune">Kitsune</option>
+								<option value="Mokole" data-i18n="Moloke">Mokolé</option>
+								<option value="Nuwisha" data-i18n="Nuwisha">Nuwisha</option>
+								<option value="Ratkin" data-i18n="Ratkin">Ratkin</option>
+								<option value="Rokea" data-i18n="Rokea">Rokea</option>
 							</optgroup>
 							<optgroup label="Lost Races">
-								<option value="Apis">Apis</option>
-								<option value="Camazotz">Camazotz</option>
-								<option value="Grondr">Grondr</option>
-								<option value="Gurahl">Gurahl</option>
-								<option value="Nagah">Nagah</option>
+								<option value="Apis" data-i18n="Apis">Apis</option>
+								<option value="Camazotz" data-i18n="Camzotz">Camazotz</option>
+								<option value="Grondr" data-i18n="Grondr">Grondr</option>
+								<option value="Gurahl" data-i18n="Gurahl">Gurahl</option>
+								<option value="Nagah" data-i18n="Nagah">Nagah</option>
 							</optgroup>
 						</select>
 					</div>
 					<div class="sub-kind element-chbreed element-bastet">
-						<input type="checkbox" class="option" name="attr_numina" value="1" /><span>Cat Magic</span>
+						<input type="checkbox" class="option" name="attr_numina" value="1" /><span data-i18n="CatMagic">Cat Magic</span>
 					</div>
 					<div class="sub-kind element-chbreed element-kitsune">
-						<input type="checkbox" class="option" name="attr_numina" value="1" /><span>Fox Magic</span>
+						<input type="checkbox" class="option" name="attr_numina" value="1" /><span data-i18n="Fox Magic">Fox Magic</span>
 					</div>
 					<div class="sub-kind element-mortal element-vampire element-mage element-wraith">
-						<input type="checkbox" class="option" name="attr_kinfolk" value="1" /><span>Kinfolk</span>
+						<input type="checkbox" class="option" name="attr_kinfolk" value="1" /><span data-i18n="Kinfolk">Kinfolk</span>
 					</div>
 				</div>
 				<!--<div class="grid-item-concept"></div> <!--blank-->
-				<div class="grid-item-concept"><h3>Nature:</h3></div>
+				<div class="grid-item-concept"><h3 data-i18n="Nature">Nature:</h3></div>
 				<div class="grid-item-concept"><input type="text" name="attr_nature" /></div>
-				<div class="grid-item-concept"><h3>Demeanor:</h3></div>
+				<div class="grid-item-concept"><h3 data-i18n="Demeanor">Demeanor:</h3></div>
 				<div class="grid-item-concept"><input type="text" name="attr_demeanor" /></div>
-				<div class="grid-item-concept"><h3>Concept:</h3></div>
+				<div class="grid-item-concept"><h3 data-i18n="Concept">Concept:</h3></div>
 				<div class="grid-item-concept"><input type="text" name="attr_concept" /></div>
 				<!--Not General items -->
-				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><h3>Essence:</h3></div>
+				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><h3 data-i18n="Essence">Essence:</h3></div>
 				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><input type="text" name="attr_essence" /></div>
-				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><h3>Affiliation:</h3></div>
+				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><h3 data-i18n="Affiliation">Affiliation:</h3></div>
 				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><input type="text" name="attr_affiliation" /></div>
-				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><h3>Society:</h3></div>
+				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><h3 data-i18n="Society">Society:</h3></div>
 				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><input type="text" name="attr_society" /></div>
 				<div class="grid-item-concept element-vampire"><h3>Clan:</h3></div>
-				<div class="grid-item-concept element-ghoul"><h3>Clan/Family:</h3></div>
+				<div class="grid-item-concept element-ghoul"><h3 data-i18n="ClanFamily">Clan/Family:</h3></div>
 				<div class="grid-item-concept element-vampire element-ghoul"><input type="text" name="attr_clan" /></div>
-				<div class="grid-item-concept element-vampire"><h3>Generation:</h3></div>
+				<div class="grid-item-concept element-vampire"><h3 data-i18n="Generation">Generation:</h3></div>
 				<div class="grid-item-concept element-vampire"><input type="text" name="attr_generation" /></div>
-				<div class="grid-item-concept element-ghoul"><h3>Age:</h3></div>
+				<div class="grid-item-concept element-ghoul"><h3 data-i18n="Age">Age:</h3></div>
 				<div class="grid-item-concept element-ghoul"><input type="text" name="attr_age" /></div>
-				<div class="grid-item-concept element-vampire"><h3>Sire:</h3></div>
+				<div class="grid-item-concept element-vampire"><h3 data-i18n="Sire">Sire:</h3></div>
 				<div class="grid-item-concept element-vampire"><input type="text" name="attr_sire" /></div>
-				<div class="grid-item-concept element-ghoul"><h3>Domitor:</h3></div>
+				<div class="grid-item-concept element-ghoul"><h3 data-i18n="Domitor">Domitor:</h3></div>
 				<div class="grid-item-concept element-ghoul"><input type="text" name="attr_domitor" /></div>
-				<div class="grid-item-concept element-fera"><h3>Breed:</h3></div>
+				<div class="grid-item-concept element-fera"><h3 data-i18n="Breed">Breed:</h3></div>
 				<div class="grid-item-concept element-fera"><input type="text" name="attr_breed" /></div>
-				<div class="grid-item-concept element-kinfolk"><h3>Kin to:</h3></div>
+				<div class="grid-item-concept element-kinfolk"><h3 data-i18n="Kin">Kin to:</h3></div>
 				<div class="grid-item-concept element-kinfolk"><input type="text" name="attr_kinto" /></div>
-				<div class="grid-item-concept element-chbreed element-garou element-gurahl element-mokole element-nagah element-nuwisha element-rokea element-apis"><h3>Auspice:</h3></div>
+				<div class="grid-item-concept element-chbreed element-garou element-gurahl element-mokole element-nagah element-nuwisha element-rokea element-apis"><h3 data-i18n="Auspice">Auspice:</h3></div>
 				<div class="grid-item-concept element-chbreed element-garou element-gurahl element-mokole element-nagah element-nuwisha element-rokea element-apis"><input type="text" name="attr_auspice" /></div>
-				<div class="grid-item-concept element-chbreed element-ajaba element-ananasi element-ratkin"><h3>Aspect:</h3></div>
+				<div class="grid-item-concept element-chbreed element-ajaba element-ananasi element-ratkin"><h3 data-i18n="Aspect">Aspect:</h3></div>
 				<div class="grid-item-concept element-chbreed element-ajaba element-ananasi element-ratkin"><input type="text" name="attr_aspect" /></div>
-				<div class="grid-item-concept element-chbreed element-bastet"><h3>Pryio:</h3></div>
+				<div class="grid-item-concept element-chbreed element-bastet"><h3 data-i18n="Pryio">Pryio:</h3></div>
 				<div class="grid-item-concept element-chbreed element-bastet"><input type="text" name="attr_pryio" /></div>
-				<div class="grid-item-concept element-chbreed element-kitsune"><h3>Path:</h3></div>
+				<div class="grid-item-concept element-chbreed element-kitsune"><h3 data-i18n="Path">Path:</h3></div>
 				<div class="grid-item-concept element-chbreed element-kitsune"><input type="text" name="attr_path" /></div>
-				<div class="grid-item-concept element-chbreed element-garou element-bastet element-corax element-gurahl element-kinfolk"><h3>Tribe:</h3></div>
+				<div class="grid-item-concept element-chbreed element-garou element-bastet element-corax element-gurahl element-kinfolk"><h3 data-i18n="Tribe">Tribe:</h3></div>
 				<div class="grid-item-concept element-chbreed element-garou element-bastet element-corax element-gurahl element-kinfolk"><input type="text" name="attr_tribe" /></div>
-				<div class="grid-item-concept element-chbreed element-ananasi"><h3>Faction:</h3></div>
+				<div class="grid-item-concept element-chbreed element-ananasi"><h3 data-i18n="Faction">Faction:</h3></div>
 				<div class="grid-item-concept element-chbreed element-ananasi"><input type="text" name="attr_faction" /></div>
-				<div class="grid-item-concept element-chbreed element-mokole"><h3>Stream/Varna:</h3></div>
+				<div class="grid-item-concept element-chbreed element-mokole"><h3 data-i18n="StreamVarna">Stream/Varna:</h3></div>
 				<div class="grid-item-concept element-chbreed element-mokole"><input type="text" name="attr_stream_varna" /></div>
 			</div>
-			<div class="line-heading"><span class="line-heading">Attributes</span></div>
+			<div class="line-heading"><span class="line-heading" data-i18n="Attributes">Attributes</span></div>
 			<div class="container-columns">
 				<div class="trait-column">
-					<h3 class="trait-heading">Physical</h3>
-					<h4 class="attribute">Strength</h4>
+					<h3 class="trait-heading" data-i18n="Physical">Physical</h3>
+					<h4 class="attribute" data-i18n="Strength">Strength</h4>
 					<select class="sheet-dots attribute" name="attr_strength">
                         <option value="0">0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
                         <option value="1" selected>1&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -193,7 +193,7 @@
                         <option value="9">9&#9899; </option>
             		</select>
 					<input type="text" name="attr_strength_spec" class="attribute"/>
-					<h4 class="attribute">Dexterity</h4>
+					<h4 class="attribute" data-i18n="Dexterity">Dexterity</h4>
 					<select class="sheet-dots attribute" name="attr_dexterity">
                         <option value="0">0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
                         <option value="1" selected>1&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -207,7 +207,7 @@
                         <option value="9">9&#9899; </option>
             		</select>
 					<input type="text" name="attr_dexterity_spec" class="attribute"/>
-					<h4 class="attribute">Stamina</h4>
+					<h4 class="attribute" data-i18n="Stamina">Stamina</h4>
 					<select class="sheet-dots attribute" name="attr_stamina">
                         <option value="0">0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
                         <option value="1" selected>1&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -223,8 +223,8 @@
 					<input type="text" name="attr_stamina_spec" class="attribute"/>
 				</div>
 				<div class="trait-column">
-					<h3 class="trait-heading">Social</h3>
-					<h4 class="attribute">Charisma</h4>
+					<h3 class="trait-heading" data-i18n="Social">Social</h3>
+					<h4 class="attribute" data-i18n="Charisma">Charisma</h4>
 					<select class="sheet-dots attribute" name="attr_charisma">
                         <option value="0">0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
                         <option value="1" selected>1&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -238,7 +238,7 @@
                         <option value="9">9&#9899; </option>
             		</select>
 					<input type="text" name="attr_charisma_spec" class="attribute"/>
-					<h4 class="attribute">Manipulation</h4>
+					<h4 class="attribute" data-i18n="Manipulation">Manipulation</h4>
 					<select class="sheet-dots attribute" name="attr_manipulation">
                         <option value="0">0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
                         <option value="1" selected>1&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -252,7 +252,7 @@
                         <option value="9">9&#9899; </option>
             		</select>
 					<input type="text" name="attr_manipulation_spec" class="attribute"/>
-					<h4 class="attribute">Appearance</h4>
+					<h4 class="attribute" data-i18n="Appearance">Appearance</h4>
 					<select class="sheet-dots attribute" name="attr_appearance">
                         <option value="0">0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
                         <option value="1" selected>1&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -268,8 +268,8 @@
 					<input type="text" name="attr_appearance_spec" class="attribute"/>
 				</div>
 				<div class="trait-column">
-					<h3 class="trait-heading">Mental</h3>
-					<h4 class="attribute">Perception</h4>
+					<h3 class="trait-heading" data-i18n="Mental">Mental</h3>
+					<h4 class="attribute" data-i18n="Perception">Perception</h4>
 					<select class="sheet-dots attribute" name="attr_perception">
                         <option value="0">0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
                         <option value="1" selected>1&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -283,7 +283,7 @@
                         <option value="9">9&#9899; </option>
             		</select>
 					<input type="text" name="attr_perception_spec" class="attribute"/>
-					<h4 class="attribute">Intelligence</h4>
+					<h4 class="attribute" data-i18n="Intelligence">Intelligence</h4>
 					<select class="sheet-dots attribute" name="attr_intelligence">
                         <option value="0">0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
                         <option value="1" selected>1&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -297,7 +297,7 @@
                         <option value="9">9&#9899; </option>
             		</select>
 					<input type="text" name="attr_intelligence_spec" class="attribute"/>
-					<h4 class="attribute">Wits</h4>
+					<h4 class="attribute" data-i18n="Wits">Wits</h4>
 					<select class="sheet-dots attribute" name="attr_wits">
                         <option value="0">0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
                         <option value="1" selected>1&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -313,7 +313,7 @@
 					<input type="text" name="attr_wits_spec" class="attribute"/>
 				</div>
 			</div>
-			<div class="line-heading"><span class="line-heading">Abilities</span></div>
+			<div class="line-heading"><span class="line-heading" data-i18n="Abilities">Abilities</span></div>
 			<div class="container-columns">
 				<div class="trait-column">
 					<h3 class="trait-heading">Talents</h3>

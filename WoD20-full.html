@@ -316,9 +316,9 @@
 			<div class="line-heading"><span class="line-heading" data-i18n="Abilities">Abilities</span></div>
 			<div class="container-columns">
 				<div class="trait-column">
-					<h3 class="trait-heading">Talents</h3>
+					<h3 class="trait-heading" data-i18n="Talents">Talents</h3>
 					<div class="trait">
-						<div class="ability"><span>Alertness</span></div>
+						<div class="ability"><span data-i18n="Alertness">Alertness</span></div>
 						<button class="small-roll-button" type='roll' name='roll_alertnessRoll' title="Alertness Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Alertness}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Alertness}} {{skill_num=@{alertness}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{alertness}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_alertness">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -335,7 +335,7 @@
 						<input type="text" name="attr_alertness_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Athletics</span></div>
+						<div class="ability"><span data-i18n="Athleics">Athletics</span></div>
 						<button class="small-roll-button" type='roll' name='roll_athleticsRoll' title="Athletics Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Athletics}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Athletics}} {{skill_num=@{athletics}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{athletics}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_athletics">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -352,7 +352,7 @@
 						<input type="text" name="attr_athletics_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Awareness</span></div>
+						<div class="ability"><span data-i18n="Awareness">Awareness</span></div>
 						<button class="small-roll-button" type='roll' name='roll_awarenessRoll' title="Awareness Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Awareness}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Awareness}} {{skill_num=@{awareness}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{awareness}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_awareness">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -369,7 +369,7 @@
 						<input type="text" name="attr_awareness_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Brawl</span></div>
+						<div class="ability"><span data-i18n="Brawl">Brawl</span></div>
 						<button class="small-roll-button" type='roll' name='roll_brawlRoll' title="Brawl Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Brawl}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Brawl}} {{skill_num=@{brawl}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{brawl}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_brawl">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -386,7 +386,7 @@
 						<input type="text" name="attr_brawl_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Empathy</span></div>
+						<div class="ability"><span data-i18n="Empathy">Empathy</span></div>
 						<button class="small-roll-button" type='roll' name='roll_empathyRoll' title="Empathy Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Empathy}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Empathy}} {{skill_num=@{empathy}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{empathy}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_empathy">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -403,7 +403,7 @@
 						<input type="text" name="attr_empathy_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Expression</span></div>
+						<div class="ability"><span data-i18n="Expression">Expression</span></div>
 						<button class="small-roll-button" type='roll' name='roll_expressionRoll' title="Expression Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Expression}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Expression}} {{skill_num=@{expression}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{expression}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_expression">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -420,7 +420,7 @@
 						<input type="text" name="attr_expression_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Intimidation</span></div>
+						<div class="ability"><span data-i18n="Intimidation">Intimidation</span></div>
 						<button class="small-roll-button" type='roll' name='roll_intimidationRoll' title="Intimidation Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Intimidation}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Intimidation}} {{skill_num=@{intimidation}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{intimidation}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_intimidation">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -437,7 +437,7 @@
 						<input type="text" name="attr_intimidation_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Intuition</span></div>
+						<div class="ability"><span data-i18n="Intuition">Intuition</span></div>
 						<button class="small-roll-button" type='roll' name='roll_intuitionRoll' title="Intuition Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Intuition}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Intuition}} {{skill_num=@{intuition}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{intuition}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_intuition">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -454,7 +454,7 @@
 						<input type="text" name="attr_intuition_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Leadership</span></div>
+						<div class="ability"><span data-i18n="Leadership">Leadership</span></div>
 						<button class="small-roll-button" type='roll' name='roll_leadershipRoll' title="Leadership Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Leadership}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Leadership}} {{skill_num=@{leadership}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{leadership}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_leadership">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -471,7 +471,7 @@
 						<input type="text" name="attr_leadership_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Primal Urge</span></div>
+						<div class="ability"><span data-i18n="PrimalUrge">Primal Urge</span></div>
 						<button class="small-roll-button" type='roll' name='roll_PrimalUrgeRoll' title="Primal Urge Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Primal Urge}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Primal Urge}} {{skill_num=@{PrimalUrge}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{PrimalUrge}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_PrimalUrge">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -488,7 +488,7 @@
 						<input type="text" name="attr_PrimalUrge_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Streetwise</span></div>
+						<div class="ability"><span data-i18n="Streetwise">Streetwise</span></div>
 						<button class="small-roll-button" type='roll' name='roll_streetwiseRoll' title="Streetwise Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Streetwise}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Streetwise}} {{skill_num=@{streetwise}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{streetwise}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_streetwise">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -505,7 +505,7 @@
 						<input type="text" name="attr_streetwise_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Subterfuge</span></div>
+						<div class="ability"><span data-i18n="Subtrefuge">Subterfuge</span></div>
 						<button class="small-roll-button" type='roll' name='roll_subterfugeRoll' title="Subterfuge Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Subterfuge}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Subterfuge}} {{skill_num=@{subterfuge}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{subterfuge}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_subterfuge">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -608,7 +608,7 @@
 					</div>
 				</div>
 				<div class="trait-column">
-					<h3 class="trait-heading">Skills</h3>
+					<h3 class="trait-heading" data-i18n="Skills">Skills</h3>
 					<div class="trait">
 						<div class="ability"><span>Animal Ken</span></div>
 						<button class="small-roll-button" type='roll' name='roll_AnimalKenRoll' title="Animal Ken Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Animal Ken}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Animal Ken}} {{skill_num=@{AnimalKen}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{AnimalKen}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
@@ -627,7 +627,7 @@
 						<input type="text" name="attr_AnimalKen_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Crafts</span></div>
+						<div class="ability"><span data-i18n="Crafts">Crafts</span></div>
 						<button class="small-roll-button" type='roll' name='roll_craftsRoll' title="Crafts Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Crafts}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Crafts}} {{skill_num=@{crafts}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{crafts}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_crafts">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -644,7 +644,7 @@
 						<input type="text" name="attr_crafts_spec" class="ability" placeholder="mandatory" title="Requires Specialisation regardless of trait value"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Drive</span></div>
+						<div class="ability"><span data-i18n="Drive">Drive</span></div>
 						<button class="small-roll-button" type='roll' name='roll_driveRoll' title="Drive Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Drive}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Drive}} {{skill_num=@{drive}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{drive}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_drive">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -661,7 +661,7 @@
 						<input type="text" name="attr_drive_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Etiquette</span></div>
+						<div class="ability"><span data-i18n="Etiquette">Etiquette</span></div>
 						<button class="small-roll-button" type='roll' name='roll_etiquetteRoll' title="Etiquette Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Etiquette}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Etiquette}} {{skill_num=@{etiquette}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{etiquette}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_etiquette">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -678,7 +678,7 @@
 						<input type="text" name="attr_etiquette_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Firearms</span></div>
+						<div class="ability"><span data-i18n="Firearms">Firearms</span></div>
 						<button class="small-roll-button" type='roll' name='roll_firearmsRoll' title="Firearms Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Firearms}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Firearms}} {{skill_num=@{firearms}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{firearms}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_firearms">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -695,7 +695,7 @@
 						<input type="text" name="attr_firearms_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Larceny</span></div>
+						<div class="ability"><span data-i18n="Larceny">Larceny</span></div>
 						<button class="small-roll-button" type='roll' name='roll_larcenyRoll' title="Larceny Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Larceny}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Larceny}} {{skill_num=@{larceny}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{larceny}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_larceny">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -712,7 +712,7 @@
 						<input type="text" name="attr_larceny_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Martial Arts</span></div>
+						<div class="ability"><span data-i18n="Martial">Martial Arts</span></div>
 						<button class="small-roll-button" type='roll' name='roll_MartialArtsRoll' title="Martial Arts Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Martial Arts}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Martial Arts}} {{skill_num=@{MartialArts}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{MartialArts}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_MartialArts">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -729,7 +729,7 @@
 						<input type="text" name="attr_MartialArts_spec" class="ability" placeholder="mandatory" title="Requires Specialisation regardless of trait value" />
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Meditation</span></div>
+						<div class="ability"><span data-i18n="Meditation">Meditation</span></div>
 						<button class="small-roll-button" type='roll' name='roll_meditationRoll' title="Meditation Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Meditation}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Meditation}} {{skill_num=@{meditation}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{meditation}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_meditation">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -746,7 +746,7 @@
 						<input type="text" name="attr_meditation_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Melee</span></div>
+						<div class="ability"><span data-i18n="Melee">Melee</span></div>
 						<button class="small-roll-button" type='roll' name='roll_meleeRoll' title="Melee Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Melee}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Melee}} {{skill_num=@{melee}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{melee}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_melee">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -763,7 +763,7 @@
 						<input type="text" name="attr_melee_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Performance</span></div>
+						<div class="ability"><span data-i18n="Performance">Performance</span></div>
 						<button class="small-roll-button" type='roll' name='roll_performanceRoll' title="Performance Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Performance}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Performance}} {{skill_num=@{performance}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{performance}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_performance">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -780,7 +780,7 @@
 						<input type="text" name="attr_performance_spec" class="ability" placeholder="mandatory" title="Requires Specialisation regardless of trait value"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Research</span></div>
+						<div class="ability"><span data-i18n="Research">Research</span></div>
 						<button class="small-roll-button" type='roll' name='roll_researchRoll' title="Research Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Research}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Research}} {{skill_num=@{research}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{research}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_research">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -797,7 +797,7 @@
 						<input type="text" name="attr_research_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Stealth</span></div>
+						<div class="ability"><span data-i18n="Stealth">Stealth</span></div>
 						<button class="small-roll-button" type='roll' name='roll_stealthRoll' title="Stealth Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Stealth}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Stealth}} {{skill_num=@{stealth}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{stealth}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_stealth">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -814,7 +814,7 @@
 						<input type="text" name="attr_stealth_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Survival</span></div>
+						<div class="ability"><span data-i18n="Survival">Survival</span></div>
 						<button class="small-roll-button" type='roll' name='roll_survivalRoll' title="Survival Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Survival}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Survival}} {{skill_num=@{survival}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{survival}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_survival">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -900,9 +900,9 @@
 					</div>
 				</div>
 				<div class="trait-column">
-					<h3 class="trait-heading">Knowledges</h3>
+					<h3 class="trait-heading" data-i18n="Knowledges">Knowledges</h3>
 					<div class="trait">
-						<div class="ability"><span>Academics</span></div>
+						<div class="ability"><span data-i18n="Academics">Academics</span></div>
 						<button class="small-roll-button" type='roll' name='roll_academicsRoll' title="Academics Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Academics}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Academics}} {{skill_num=@{academics}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{academics}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_academics">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -919,7 +919,7 @@
 						<input type="text" name="attr_academics_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Area&nbsp;Knowledge</span></div>
+						<div class="ability"><span data-i18n="ArealKnowledge">Area&nbsp;Knowledge</span></div>
 						<button class="small-roll-button" type='roll' name='roll_AreaKnowledgeRoll' title="Area&nbsp;Knowledge Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Area&nbsp;Knowledge}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Area&nbsp;Knowledge}} {{skill_num=@{AreaKnowledge}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{AreaKnowledge}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_AreaKnowledge">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -936,7 +936,7 @@
 						<input type="text" name="attr_AreaKnowledge_spec" class="ability" placeholder="mandatory" title="Requires Specialisation regardless of trait value"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Computer</span></div>
+						<div class="ability"><span data-i18n="Computer">Computer</span></div>
 						<button class="small-roll-button" type='roll' name='roll_computerRoll' title="Computer Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Computer}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Computer}} {{skill_num=@{computer}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{computer}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_computer">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -953,7 +953,7 @@
 						<input type="text" name="attr_computer_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Enigmas</span></div>
+						<div class="ability"><span data-i18n="Enigmas">Enigmas</span></div>
 						<button class="small-roll-button" type='roll' name='roll_enigmasRoll' title="Enigmas Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Enigmas}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Enigmas}} {{skill_num=@{enigmas}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{enigmas}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_enigmas">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -970,7 +970,7 @@
 						<input type="text" name="attr_enigmas_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Esoterica</span></div>
+						<div class="ability"><span data-i18n="Esoterica">Esoterica</span></div>
 						<button class="small-roll-button" type='roll' name='roll_esotericaRoll' title="Esoterica Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Esoterica}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Esoterica}} {{skill_num=@{esoterica}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{esoterica}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_esoterica">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -987,7 +987,7 @@
 						<input type="text" name="attr_esoterica_spec" class="ability" placeholder="mandatory" title="Requires Specialisation regardless of trait value"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Finance</span></div>
+						<div class="ability"><span data-i18n="Finace">Finance</span></div>
 						<button class="small-roll-button" type='roll' name='roll_financeRoll' title="Finance Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Finance}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Finance}} {{skill_num=@{finance}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{finance}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_finance">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1004,7 +1004,7 @@
 						<input type="text" name="attr_finance_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Investigation</span></div>
+						<div class="ability"><span data-i18n="Investigation">Investigation</span></div>
 						<button class="small-roll-button" type='roll' name='roll_investigationRoll' title="Investigation Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Investigation}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Investigation}} {{skill_num=@{investigation}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{investigation}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_investigation">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1021,7 +1021,7 @@
 						<input type="text" name="attr_investigation_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Law</span></div>
+						<div class="ability"><span data-i18n="Law">Law</span></div>
 						<button class="small-roll-button" type='roll' name='roll_lawRoll' title="Law Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Law}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Law}} {{skill_num=@{law}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{law}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_law">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1038,7 +1038,7 @@
 						<input type="text" name="attr_law_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Medicine</span></div>
+						<div class="ability"><span data-i18n="Medicine">Medicine</span></div>
 						<button class="small-roll-button" type='roll' name='roll_medicineRoll' title="Medicine Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Medicine}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Medicine}} {{skill_num=@{medicine}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{medicine}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_medicine">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1055,7 +1055,7 @@
 						<input type="text" name="attr_medicine_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Occult</span></div>
+						<div class="ability"><span data-i18n="Occult">Occult</span></div>
 						<button class="small-roll-button" type='roll' name='roll_occultRoll' title="Occult Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Occult}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Occult}} {{skill_num=@{occult}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{occult}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_occult">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1072,7 +1072,7 @@
 						<input type="text" name="attr_occult_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Politics</span></div>
+						<div class="ability"><span data-i18n="Politics">Politics</span></div>
 						<button class="small-roll-button" type='roll' name='roll_politicsRoll' title="Politics Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Politics}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Politics}} {{skill_num=@{politics}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{politics}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_politics">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1089,7 +1089,7 @@
 						<input type="text" name="attr_politics_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Rituals</span></div>
+						<div class="ability"><span data-i18n="Rituals">Rituals</span></div>
 						<button class="small-roll-button" type='roll' name='roll_ritualsRoll' title="Rituals Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Rituals}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Rituals}} {{skill_num=@{rituals}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{rituals}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_rituals">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1106,7 +1106,7 @@
 						<input type="text" name="attr_rituals_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Science</span></div>
+						<div class="ability"><span data-i18n="Science">Science</span></div>
 						<button class="small-roll-button" type='roll' name='roll_scienceRoll' title="Science Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Science}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Science}} {{skill_num=@{science}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{science}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_science">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1123,7 +1123,7 @@
 						<input type="text" name="attr_science_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span>Technology</span></div>
+						<div class="ability"><span data-i18n="Technology">Technology</span></div>
 						<button class="small-roll-button" type='roll' name='roll_technologyRoll' title="Technology Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Technology}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Technology}} {{skill_num=@{technology}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{technology}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_technology">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1195,9 +1195,9 @@
 			<div class="line-heading"><span class="line-heading-empty"></span></div>
 			<div class="container-columns">
 				<div class="trait-column">
-					<div class="line-heading"><span class="line-heading">Virtues</span></div>
+					<div class="line-heading"><span class="line-heading" data-i18n="Virtues">Virtues</span></div>
 					<div class="trait">
-						<h4 class="virtue">Conscience</h4>
+						<h4 class="virtue" data-i18n="Conscience">Conscience</h4>
 						<select class="sheet-dots virtue" name="attr_conscience">
 							<option value="0">&#9898;&#9898;&#9898;&#9898;&#9898;</option>
 							<option value="1" selected>&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1209,7 +1209,7 @@
 						<button class="small-roll-button" type='roll' name='roll_conscienceRoll' title="Conscience Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Conscience}} {{attr=Conscience}} {{attr_num=@{conscience}}} {{mod_num=?{Modifier|0}}} {{result=[[{(@{conscience}+?{Modifier|0})d10sd}>@{askdiff}f1]]}} '></button>
 					</div>
 					<div class="trait">
-						<h4 class="virtue">Conviction</h4>
+						<h4 class="virtue" data-i18n="Conviction">Conviction</h4>
 						<select class="sheet-dots virtue" name="attr_conviction">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
 							<option value="1">&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1221,7 +1221,7 @@
 						<button class="small-roll-button" type='roll' name='roll_convictionRoll' title="Conviction Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Conviction}} {{attr=Conviction}} {{attr_num=@{conviction}}} {{mod_num=?{Modifier|0}}} {{result=[[{(@{conviction}+?{Modifier|0})d10sd}>@{askdiff}f1]]}} '></button>
 					</div>
 					<div class="trait">
-						<h4 class="virtue">Self-Control</h4>
+						<h4 class="virtue" data-i18n="SelfControl">Self-Control</h4>
 						<select class="sheet-dots virtue" name="attr_selfcontrol">
 							<option value="0">&#9898;&#9898;&#9898;&#9898;&#9898;</option>
 							<option value="1" selected>&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1233,7 +1233,7 @@
 						<button class="small-roll-button" type='roll' name='roll_selfcontrolRoll' title="Self-Control Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Self-Control}} {{attr=Self-Control}} {{attr_num=@{selfcontrol}}} {{mod_num=?{Modifier|0}}} {{result=[[{(@{selfcontrol}+?{Modifier|0})d10sd}>@{askdiff}f1]]}} '></button>
 					</div>
 					<div class="trait">
-						<h4 class="virtue">Instinct</h4>
+						<h4 class="virtue" data-i18n="Instinct">Instinct</h4>
 						<select class="sheet-dots virtue" name="attr_instinct">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
 							<option value="1">&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1245,7 +1245,7 @@
 						<button class="small-roll-button" type='roll' name='roll_instinctRoll' title="Instinct Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Instinct}} {{attr=Instinct}} {{attr_num=@{instinct}}} {{mod_num=?{Modifier|0}}} {{result=[[{(@{instinct}+?{Modifier|0})d10sd}>@{askdiff}f1]]}} '></button>
 					</div>
 					<div class="trait">
-						<h4 class="virtue">Courage</h4>
+						<h4 class="virtue" data-i18n="Courage">Courage</h4>
 						<select class="sheet-dots virtue" name="attr_courage">
 							<option value="0">&#9898;&#9898;&#9898;&#9898;&#9898;</option>
 							<option value="1" selected>&#9899;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1256,7 +1256,7 @@
 						</select>
 						<button class="small-roll-button" type='roll' name='roll_courageRoll' title="Courage Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Courage}} {{attr=Courage}} {{attr_num=@{courage}}} {{mod_num=?{Modifier|0}}} {{result=[[{(@{courage}+?{Modifier|0})d10sd}>@{askdiff}f1]]}} '></button>
 					</div>
-					<div class="line-heading"><span class="line-heading">Path of Enlightenment</span></div>
+					<div class="line-heading"><span class="line-heading" data-i18n="PartofEnlightenment">Path of Enlightenment</span></div>
 					<div class="pool-row">
 						<input type="text" name="attr_PathoEname" placeholder="Humanity" />
 						<button class="small-roll-button" type='roll' name='roll_pathoeRoll' title="Path Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Path of Enlightenment}} {{attr=Path of Enlightenment}} {{attr_num=@{pathoe}}} {{mod_num=?{Modifier|0}}} {{result=[[{(@{pathoe}+?{Modifier|0})d10sd}>@{askdiff}f1]]}} '></button>
@@ -1286,7 +1286,7 @@
 					<input type="hidden" class="check-sorcerer" name="attr_numina" />
 					<input type="hidden" class="check-ghoul" name="attr_ghoul" />
 					<input type="hidden" class="check-kinfolk" name="attr_kinfolk" />
-					<div class="line-heading"><span class="line-heading">Willpower</span></div>
+					<div class="line-heading"><span class="line-heading" data-i18n="Willpower">Willpower</span></div>
 					<div class="pool-row">
 						<input type="radio" name="attr_willpower_max" value="1" class="trait-radio" checked="checked" /><span></span>    <input type="radio" name="attr_willpower_max" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_willpower_max" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_willpower_max" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_willpower_max" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_willpower_max" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_willpower_max" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_willpower_max" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_willpower_max" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_willpower_max" value="10" class="trait-radio" /><span></span>
 					</div>
@@ -1295,11 +1295,11 @@
 					</div>
 					<div class="pool-row">
 						<h5>
-							<span>Roll:</span> 
+							<span data-i18n="Roll">Roll:</span> 
 							<button class="small-roll-button" type='roll' name='roll_willpower' title="Willpower roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Willpower}} {{attr=Willpower}} {{attr_num=@{willpower|max}}} {{mod_num=?{Modifier|0}}} {{hp_mod=?{Wound penalties|Normal,@{useHealth}|No,0|Yes,@{health}}}} {{result=[[{(@{willpower|max}+?{Modifier|0}+?{Wound penalties|Normal,@{useHealth}|No,0|Yes,@{health}})d10sd}>@{askdiff}f1]]}}'></button>
 						</h5>
 					</div>
-					<div class="line-heading element-vampire element-ghoul element-chbreed element-ananasi"><span class="line-heading">Blood Pool</span></div>
+					<div class="line-heading element-vampire element-ghoul element-chbreed element-ananasi"><span class="line-heading" data-i18n="BloodPool">Blood Pool</span></div>
 					<div class="pool-row zero blood element-vampire element-ghoul element-chbreed element-ananasi">
 						<input type="hidden" name="attr_bloodpool_max" />
 						<input type="hidden" name="attr_bloodpool" />
@@ -1310,10 +1310,10 @@
 						<input type="radio" style="margin-left: 6px" name="attr_bloodpool" value="41" class="temp trait-check"/><span></span>    <input type="radio" name="attr_bloodpool" value="42" class="temp trait-check"/><span></span>    <input type="radio" name="attr_bloodpool" value="43" class="temp trait-check"/><span></span>    <input type="radio" name="attr_bloodpool" value="44" class="temp trait-check"/><span></span>    <input type="radio" name="attr_bloodpool" value="45" class="temp trait-check"/><span></span>    <input type="radio" name="attr_bloodpool" value="46" class="temp trait-check"/><span></span>    <input type="radio" name="attr_bloodpool" value="47" class="temp trait-check"/><span></span>    <input type="radio" name="attr_bloodpool" value="48" class="temp trait-check"/><span></span>    <input type="radio" name="attr_bloodpool" value="49" class="temp trait-check"/><span></span>    <input type="radio" name="attr_bloodpool" value="50" class="temp trait-check"/><span></span>
 					</div>
 					<div class="pool-row element-vampire element-ghoul element-chbreed element-ananasi">
-						<h5><span>Maximum Bloodpool:</span><input type="number" name="attr_bloodpool_max" value="10"/></h5>
-						<h5><span>Blood per Turn:</span><input type="number" name="attr_bppt" value="1"/></h5>
+						<h5><span data-i18n="MaximumBloodpool">Maximum Bloodpool:</span><input type="number" name="attr_bloodpool_max" value="10"/></h5>
+						<h5><span data-i18n="BloodperTurn">Blood per Turn:</span><input type="number" name="attr_bppt" value="1"/></h5>
 					</div>
-					<div class="line-heading element-chbreed element-not-ananasi"><span class="line-heading">Rage:</span></div>
+					<div class="line-heading element-chbreed element-not-ananasi"><span class="line-heading" data-i18n="Rage">Rage:</span></div>
 					<div class= "pool-row zero element-chbreed element-not-ananasi">
 						<input type="radio" name="attr_rage_max" value="0" class="zero trait-radio" checked="checked" /><span></span> <input type="radio" name="attr_rage_max" value="1" class="trait-radio" /><span></span>    <input type="radio" name="attr_rage_max" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_rage_max" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_rage_max" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_rage_max" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_rage_max" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_rage_max" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_rage_max" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_rage_max" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_rage_max" value="10" class="trait-radio" /><span></span>
 					</div>
@@ -1322,11 +1322,11 @@
 					</div>
 					<div class="pool-row element-chbreed element-not-ananasi">
 						<h5>
-							<span>Roll:</span> 
+							<span data-i18n="Roll">Roll:</span> 
 							<button class="small-roll-button" type='roll' name='roll_rage' title="Rage roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=rage}} {{attr=rage}} {{attr_num=@{rage|max}}} {{mod_num=?{Modifier|0}}} {{hp_mod=?{Wound penalties|Normal,@{useHealth}|No,0|Yes,@{health}}}} {{result=[[{(@{rage|max}+?{Modifier|0}+?{Wound penalties|Normal,@{useHealth}|No,0|Yes,@{health}})d10sd}>@{askdiff}f1]]}}'></button>
 						</h5>
 					</div>
-					<div class="line-heading element-fera element-kinfolk"><span class="line-heading">Gnosis</span></div>
+					<div class="line-heading element-fera element-kinfolk"><span class="line-heading" data-i18n="Gnosis">Gnosis</span></div>
 					<div class="pool-row zero element-fera element-kinfolk">
 						<input type="radio" name="attr_gnosis_max" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_gnosis_max" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_gnosis_max" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_gnosis_max" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_gnosis_max" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_gnosis_max" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_gnosis_max" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_gnosis_max" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_gnosis_max" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_gnosis_max" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_gnosis_max" value="10" class="trait-radio" /><span></span>
 					</div>
@@ -1335,11 +1335,11 @@
 					</div>
 					<div class="pool-row element-fera element-kinfolk">
 						<h5>
-							<span>Roll:</span>
+							<span data-i18n="Roll">Roll:</span>
 							<button class="small-roll-button" type='roll' name='roll_gnosis' title="Gnosis roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=gnosis}} {{attr=gnosis}} {{attr_num=@{gnosis|max}}} {{mod_num=?{Modifier|0}}} {{hp_mod=?{Wound penalties|Normal,@{useHealth}|No,0|Yes,@{health}}}} {{result=[[{(@{gnosis|max}+?{Modifier|0}+?{Wound penalties|Normal,@{useHealth}|No,0|Yes,@{health}})d10sd}>@{askdiff}f1]]}}'></button>
 						</h5>
 					</div>
-					<div class="line-heading element-numina"><span class="line-heading">Mana</span></div>
+					<div class="line-heading element-numina"><span class="line-heading" data-i18n="Mana">Mana</span></div>
 					<div class="pool-row zero element-numina">
 						<input type="radio" name="attr_mana_max" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_mana_max" value="1" class="trait-radio" /><span></span>    <input type="radio" name="attr_mana_max" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_mana_max" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_mana_max" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_mana_max" value="5" class="trait-radio" /><span></span>
 					</div>
@@ -1348,7 +1348,7 @@
 					</div>
 				<!-- Quintessece & Paradox - Wheel -->
 					<div class="line-heading element-mage"><span class="line-heading-empty"></span></div>
-					<div class="line-heading-empty element-mage"><span class="line-heading">Quintessence</span></div>
+					<div class="line-heading-empty element-mage"><span class="line-heading" data-i18n="Quintessence">Quintessence</span></div>
 					<div class="quintPara element-mage">
 						<span>•</span>
 						<div>
@@ -1519,7 +1519,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="line-heading-empty element-mage"><span class="line-heading">Paradox</span></div>
+					<div class="line-heading-empty element-mage"><span class="line-heading" data-i18n="Paradox">Paradox</span></div>
 				</div>
 				<div class="trait-column">
 					<input type="hidden" class="switch-kind" name="attr_kind" />
@@ -1527,10 +1527,10 @@
 					<input type="hidden" class="check-sorcerer" name="attr_numina" />
 					<input type="hidden" class="check-ghoul" name="attr_ghoul" />
 					<input type="hidden" class="check-kinfolk" name="attr_kinfolk" />
-					<div class="line-heading"><span class="line-heading">Health</span></div>
+					<div class="line-heading"><span class="line-heading" data-i18n="Health">Health</span></div>
 					<input type="hidden" class="healthbonus" name="attr_healthBonus" value="" />
 					<div class="health-row">
-						<span>Bruised</span>
+						<span data-i18n="Bruised">Bruised</span>
 						<div class="health-row bruisedbonus">
 							<input type="hidden" class="bruisedbonus" name="attr_BruisedBonus1" value="" />
 							<div class="health-box bruisedbonus">
@@ -1567,7 +1567,7 @@
 						</div>
 					</div>
 					<div class="health-row">
-						<span>Hurt</span>
+						<span data-i18n="Hurt">Hurt</span>
 						<div class="health-malus">
 							<span>-1</span>
 						</div>
@@ -1581,7 +1581,7 @@
 						</div>
 					</div>
 					<div class="health-row">
-						<span>Injured</span>
+						<span data-i18n="Injured">Injured</span>
 						<div class="health-malus">
 							<span>-1</span>
 						</div>
@@ -1595,7 +1595,7 @@
 						</div>
 					</div>
 					<div class="health-row">
-						<span>Wounded</span>
+						<span data-i18n="Wounded">Wounded</span>
 						<div class="health-malus">
 							<span>-2</span>
 						</div>
@@ -1609,7 +1609,7 @@
 						</div>
 					</div>
 					<div class="health-row">
-						<span>Mauled</span>
+						<span data-i18n="Mauled">Mauled</span>
 						<div class="health-malus">
 							<span>-2</span>
 						</div>
@@ -1623,7 +1623,7 @@
 						</div>
 					</div>
 					<div class="health-row">
-						<span>Crippled</span>
+						<span data-i18n="Crippled">Crippled</span>
 						<div class="health-malus">
 							<span>-5</span>
 						</div>
@@ -1637,7 +1637,7 @@
 						</div>
 					</div>
 					<div class="health-row">
-						<span>Incapacitated</span>
+						<span data-i18n="Incapacitated">Incapacitated</span>
 						<input type="hidden" name="attr_Incapacitated" value="" />
 						<div class="health-box">
 							<input type="radio" name="attr_Incapacitated" value="" checked />
@@ -1647,7 +1647,7 @@
 							<span></span>
 						</div>
 					</div>
-					<div class="line-heading element-fera element-kinfolk"><span class="line-heading">Renown&amp;Rank</span></div>
+					<div class="line-heading element-fera element-kinfolk"><span class="line-heading" data-i18n="RenownRank">Renown&amp;Rank</span></div>
 					<div class="row-full rank element-fera element-kinfolk">
 						<input type="hidden" class="switch-kind" name="attr_kind" />
 						<input type="hidden" class="switch-chbreed" name="attr_chbreed" />
@@ -1657,35 +1657,35 @@
 							<option value="0" selected>0 - Kinfolk</option>
 						</div>
 						<div class="rank element-chbreed element-garou"><select class="select-trait" name="attr_rank">
-							<option value="0" selected>0 - Cub</option>
-							<option value="1">1 - Cliath</option>
-							<option value="2">2 - Fostern</option>
-							<option value="3">3 - Adren</option>
-							<option value="4">4 - Athro</option>
-							<option value="5">5 - Elder</option>
-							<option value="6">6 - Legend</option>
+							<option value="0" selected data-i18n="0Cub">0 - Cub</option>
+							<option value="1" data-i18n="1Cliath">1 - Cliath</option>
+							<option value="2" data-i18n="2Fostern">2 - Fostern</option>
+							<option value="3" data-i18n="3Adren">3 - Adren</option>
+							<option value="4" data-i18n="4Athro">4 - Athro</option>
+							<option value="5" data-i18n="5Elder">5 - Elder</option>
+							<option value="6" data-i18n="6Legend">6 - Legend</option>
 						</div>
 						<div class="rank element-chbreed element-ajaba element-ananasi element-nuwisha element-rokea element-apis element-grondr element-camazotz"><select class="select-trait" name="attr_rank">
 							<option value="0" selected>Rank 0</option>
-							<option value="1">Rank 1</option>
-							<option value="2">Rank 2</option>
-							<option value="3">Rank 3</option>
-							<option value="4">Rank 4</option>
-							<option value="5">Rank 5</option>
-							<option value="6">Rank 6 - Legend</option>
+							<option value="1" data-i18n="Rank1">Rank 1</option>
+							<option value="2" data-i18n="Rank2">Rank 2</option>
+							<option value="3" data-i18n="Rank3">Rank 3</option>
+							<option value="4" data-i18n="Rank4">Rank 4</option>
+							<option value="5" data-i18n="Rank5">Rank 5</option>
+							<option value="6" data-i18n="Rank6Legend">Rank 6 - Legend</option>
 						</div>
 						<div class="rank element-chbreed element-bastet"><select class="select-trait" name="attr_rank">
-							<option value="0" selected>0 - Cub</option>
-							<option value="1">1 - Tekhmet</option>
-							<option value="2">2 - Aka</option>
-							<option value="3">3 - Tilau</option>
-							<option value="4">4 - Hani</option>
-							<option value="5">5 - Bon Bhat</option>
-							<option value="6">6 - Legend</option>
+							<option value="0" selected data-i18n="0Cub">0 - Cub</option>
+							<option value="1" data-i18n="1Tekhmet">1 - Tekhmet</option>
+							<option value="2" data-i18n="2Aka">2 - Aka</option>
+							<option value="3" data-i18n="3Tilau">3 - Tilau</option>
+							<option value="4" data-i18n="4Hani">4 - Hani</option>
+							<option value="5" data-i18n="5BonBhat">5 - Bon Bhat</option>
+							<option value="6" data-i18n="6Legend">6 - Legend</option>
 						</div>
 						<div class="rank element-chbreed element-corax"><select class="select-trait" name="attr_rank">
 							<option value="0" selected>0 - Cub</option>
-							<option value="1">1 - Oviculum</option>
+							<option value="1" data-i18n="1">1 - Oviculum</option>
 							<option value="2">2 - Neocornix</option>
 							<option value="3">3 - Ales</option>
 							<option value="4">4 - Volucris</option>
@@ -1694,48 +1694,48 @@
 						</div>
 						<div class="rank element-chbreed element-gurahl"><select class="select-trait" name="attr_rank">
 							<option value="0" selected>0 - Cub</option>
-							<option value="1">1 - Kovi</option>
-							<option value="2">2 - Verde</option>
-							<option value="3">3 - Sorna</option>
-							<option value="4">4 - Talchwi</option>
-							<option value="5">5 - Matae</option>
-							<option value="6">6 - Legend</option>
+							<option value="1" data-i18n="1Kovi">1 - Kovi</option>
+							<option value="2" data-i18n="2Verde">2 - Verde</option>
+							<option value="3" data-i18n="3Sorna">3 - Sorna</option>
+							<option value="4" data-i18n="4Talchwi">4 - Talchwi</option>
+							<option value="5" data-i18n="5Matae">5 - Matae</option>
+							<option value="6" data-i18n="6Legend">6 - Legend</option>
 						</div>
 						<div class="rank element-chbreed element-kitsune"><select class="select-trait" name="attr_rank">
-							<option value="0" selected>0 - Cub</option>
-							<option value="1">1 - Yakan</option>
-							<option value="2">2 - Kiko</option>
-							<option value="3">3 - Koryo</option>
-							<option value="4">4 - Reiko</option>
-							<option value="5">5 - Tenko</option>
-							<option value="6">6 - Legend</option>
+							<option value="0" selected data-i18n="0Cub">0 - Cub</option>
+							<option value="1" data-i18n="1Yakan">1 - Yakan</option>
+							<option value="2" data-i18n="2Kiko">2 - Kiko</option>
+							<option value="3" data-i18n="3Koryo">3 - Koryo</option>
+							<option value="4" data-i18n="4Reiko">4 - Reiko</option>
+							<option value="5" data-i18n="5Tenko">5 - Tenko</option>
+							<option value="6" data-i18n="6Legend">6 - Legend</option>
 						</div>
 						<div class="rank element-chbreed element-mokole"><select class="select-trait" name="attr_rank">
-							<option value="0" selected>0 - Uninitiated</option>
-							<option value="1">1 - Hatchling</option>
-							<option value="2">2 - Son/Daughter</option>
-							<option value="3">3 - Brother/Sister</option>
-							<option value="4">4 - Father/Mother</option>
-							<option value="5">5 - Grandfather/Grandmother</option>
-							<option value="6">6 - Legend</option>
+							<option value="0" selected data-i18n="0Uninitiated">0 - Uninitiated</option>
+							<option value="1" data-i18n="1Hatchling">1 - Hatchling</option>
+							<option value="2" data-i18n="2SonDougther">2 - Son/Daughter</option>
+							<option value="3" data-i18n="3BrotherSister">3 - Brother/Sister</option>
+							<option value="4" data-i18n="4FatherMother">4 - Father/Mother</option>
+							<option value="5" data-i18n="5GrandfatherGrandmother">5 - Grandfather/Grandmother</option>
+							<option value="6" data-i18n="6Legend">6 - Legend</option>
 						</div>
 						<div class="rank element-chbreed element-nagah"><select class="select-trait" name="attr_rank">
-							<option value="0" selected>0 - Opnening Eye</option>
-							<option value="1">1 - Singing Brook</option>
-							<option value="2">2 - Razored Arrow</option>
-							<option value="3">3 - Silken Noose</option>
-							<option value="4">4 - Thunder Chakram</option>
-							<option value="5">5 - Silver Coil</option>
-							<option value="6">6 - Mouth of the Sesha</option>
+							<option value="0" selected data-i18n="0OpeningEye">0 - Opnening Eye</option>
+							<option value="1" data-i18n="1SingingBrook">1 - Singing Brook</option>
+							<option value="2" data-i18n="2RazoredArrow">2 - Razored Arrow</option>
+							<option value="3" data-i18n="3SilkenNoose">3 - Silken Noose</option>
+							<option value="4" data-i18n="4Thunder">4 - Thunder Chakram</option>
+							<option value="5" data-i18n="5SilverCoil">5 - Silver Coil</option>
+							<option value="6" data-i18n="6MouthoftheSesha">6 - Mouth of the Sesha</option>
 						</div>
 						<div class="rank element-chbreed element-ratkin"><select class="select-trait" name="attr_rank">
-							<option value="0" selected>0 - Cub</option>
-							<option value="1">1 - Rakka</option>
-							<option value="2">2 - Voto</option>
-							<option value="3">3 - Tava</option>
-							<option value="4">4 - Teppen</option>
-							<option value="5">5 - Rrrrr't</option>
-							<option value="6">6 - Legend</option>
+							<option value="0" selected data-i18n="0Cub">0 - Cub</option>
+							<option value="1" data-i18n="1Rakka">1 - Rakka</option>
+							<option value="2" data-i18n="2Voto">2 - Voto</option>
+							<option value="3" data-i18n="3Tava">3 - Tava</option>
+							<option value="4" data-i18n="4Teppen">4 - Teppen</option>
+							<option value="5" data-i18n="5Rrrrrt">5 - Rrrrr't</option>
+							<option value="6" data-i18n="6Legend">6 - Legend</option>
 						</div>
 					</div>
 					<div class="line-heading rank element-kinfolk"><span class="line-heading"><input type="text" name="attr_renown1" placeholder="Renown Type" /> </span></div>
@@ -1757,112 +1757,112 @@
 					<div class="pool-row element-chbreed element-kitsune">
 						<span class="rank">Temp.:</span><input type="number" name="attr_chietemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-ajaba element-ananasi element-bastet element-nuwisha element-ratkin"><span class="line-heading">Cunning</span></div>
+					<div class="line-heading rank element-chbreed element-ajaba element-ananasi element-bastet element-nuwisha element-ratkin"><span class="line-heading" data-i18n="Cunning">Cunning</span></div>
 					<div class="pool-row zero element-chbreed element-ajaba element-ananasi element-bastet element-nuwisha element-ratkin">
 						<input type="radio" name="attr_cunning" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_cunning" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_cunning" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_cunning" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_cunning" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_cunning" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_cunning" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_cunning" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_cunning" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_cunning" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_cunning" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-ajaba element-ananasi element-bastet element-nuwisha element-ratkin">
 						<span class="rank">Temp.:</span><input type="number" name="attr_cunningtemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-ajaba element-bastet"><span class="line-heading">Ferocity</span></div>
+					<div class="line-heading rank element-chbreed element-ajaba element-bastet"><span class="line-heading" data-i18n="Ferocity">Ferocity</span></div>
 					<div class="pool-row zero element-chbreed element-ajaba element-bastet">
 						<input type="radio" name="attr_ferocity" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_ferocity" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_ferocity" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_ferocity" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_ferocity" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_ferocity" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_ferocity" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_ferocity" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_ferocity" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_ferocity" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_ferocity" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-ajaba element-bastet">
 						<span class="rank">Temp.:</span><input type="number" name="attr_ferocitytemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-corax element-garou element-mokole element-nuwisha"><span class="line-heading">Glory</span></div>
+					<div class="line-heading rank element-chbreed element-corax element-garou element-mokole element-nuwisha"><span class="line-heading" data-i18n="Glory">Glory</span></div>
 					<div class="pool-row zero element-chbreed element-corax element-garou element-mokole element-nuwisha">
 						<input type="radio" name="attr_glory" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_glory" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_glory" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_glory" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_glory" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_glory" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_glory" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_glory" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_glory" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_glory" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_glory" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-corax element-garou element-mokole element-nuwisha">
 						<span class="rank">Temp.:</span><input type="number" name="attr_glorytemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-rokea"><span class="line-heading">Harmony</span></div>
+					<div class="line-heading rank element-chbreed element-rokea"><span class="line-heading" data-i18n="Harmony">Harmony</span></div>
 					<div class="pool-row zero element-chbreed element-rokea">
 						<input type="radio" name="attr_harmony" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_harmony" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_harmony" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_harmony" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_harmony" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_harmony" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_harmony" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_harmony" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_harmony" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_harmony" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_harmony" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-rokea">
 						<span class="rank">Temp.:</span><input type="number" name="attr_harmonytemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-bastet element-corax element-garou element-gurahl element-mokole"><span class="line-heading">Honor</span></div>
+					<div class="line-heading rank element-chbreed element-bastet element-corax element-garou element-gurahl element-mokole"><span class="line-heading" data-i18n="Honor">Honor</span></div>
 					<div class="pool-row zero element-chbreed element-bastet element-corax element-garou element-gurahl element-mokole">
 						<input type="radio" name="attr_honor" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_honor" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_honor" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_honor" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_honor" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_honor" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_honor" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_honor" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_honor" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_honor" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_honor" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-bastet element-corax element-garou element-gurahl element-mokole">
 						<span class="rank">Temp.:</span><input type="number" name="attr_honortemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-nuwisha"><span class="line-heading">Humor</span></div>
+					<div class="line-heading rank element-chbreed element-nuwisha"><span class="line-heading" data-i18n="Humor">Humor</span></div>
 					<div class="pool-row zero element-chbreed element-nuwisha">
 						<input type="radio" name="attr_humor" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_humor" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_humor" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_humor" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_humor" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_humor" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_humor" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_humor" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_humor" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_humor" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_humor" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-nuwisha">
 						<span class="rank">Temp.:</span><input type="number" name="attr_humortemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-ratkin"><span class="line-heading">Infamy</span></div>
+					<div class="line-heading rank element-chbreed element-ratkin"><span class="line-heading"data-i18n="Infamy">Infamy</span></div>
 					<div class="pool-row zero element-chbreed element-ratkin">
 						<input type="radio" name="attr_infamy" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_infamy" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_infamy" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_infamy" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_infamy" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_infamy" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_infamy" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_infamy" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_infamy" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_infamy" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_infamy" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-ratkin">
 						<span class="rank">Temp.:</span><input type="number" name="attr_infamytemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-rokea"><span class="line-heading">Innovation</span></div>
+					<div class="line-heading rank element-chbreed element-rokea"><span class="line-heading" data-i18n="Innovation">Innovation</span></div>
 					<div class="pool-row zero element-chbreed element-rokea">
 						<input type="radio" name="attr_innovation" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_innovation" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_innovation" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_innovation" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_innovation" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_innovation" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_innovation" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_innovation" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_innovation" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_innovation" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_innovation" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-rokea">
 						<span class="rank">Temp.:</span><input type="number" name="attr_innovationtemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-kitsune"><span class="line-heading">Kagayaki</span></div>
+					<div class="line-heading rank element-chbreed element-kitsune"><span class="line-heading" data-i18n="Kagayaki">Kagayaki</span></div>
 					<div class="pool-row zero element-chbreed element-kitsune">
 						<input type="radio" name="attr_kagayaki" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_kagayaki" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_kagayaki" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_kagayaki" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_kagayaki" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_kagayaki" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_kagayaki" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_kagayaki" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_kagayaki" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_kagayaki" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_kagayaki" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-kitsune">
 						<span class="rank">Temp.:</span><input type="number" name="attr_kagayakitemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-ananasi"><span class="line-heading">Obedience</span></div>
+					<div class="line-heading rank element-chbreed element-ananasi"><span class="line-heading" data-i18n="Obedience">Obedience</span></div>
 					<div class="pool-row zero element-chbreed element-ananasi">
 						<input type="radio" name="attr_obedience" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_obedience" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_obedience" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_obedience" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_obedience" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_obedience" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_obedience" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_obedience" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_obedience" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_obedience" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_obedience" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-ananasi">
 						<span class="rank">Temp.:</span><input type="number" name="attr_obediencetemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-ajaba element-ratkin"><span class="line-heading">Obligation</span></div>
+					<div class="line-heading rank element-chbreed element-ajaba element-ratkin"><span class="line-heading" data-i18n="Obligation">Obligation</span></div>
 					<div class="pool-row zero element-chbreed element-ajaba element-ratkin">
 						<input type="radio" name="attr_obligation" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_obligation" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_obligation" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_obligation" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_obligation" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_obligation" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_obligation" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_obligation" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_obligation" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_obligation" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_obligation" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-ajaba element-ratkin">
 						<span class="rank">Temp.:</span><input type="number" name="attr_obligationtemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-gurahl"><span class="line-heading">Succor</span></div>
+					<div class="line-heading rank element-chbreed element-gurahl"><span class="line-heading" data-i18n="Succor">Succor</span></div>
 					<div class="pool-row zero element-chbreed element-gurahl">
 						<input type="radio" name="attr_succor" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_succor" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_succor" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_succor" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_succor" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_succor" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_succor" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_succor" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_succor" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_succor" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_succor" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-gurahl">
 						<span class="rank">Temp.:</span><input type="number" name="attr_succortemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-kitsune"><span class="line-heading">Toru</span></div>
+					<div class="line-heading rank element-chbreed element-kitsune"><span class="line-heading" data-i18n="Toru">Toru</span></div>
 					<div class="pool-row zero element-chbreed element-kitsune">
 						<input type="radio" name="attr_toru" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_toru" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_toru" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_toru" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_toru" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_toru" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_toru" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_toru" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_toru" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_toru" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_toru" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-kitsune">
 						<span class="rank">Temp.:</span><input type="number" name="attr_torutemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-rokea"><span class="line-heading">Valor</span></div>
+					<div class="line-heading rank element-chbreed element-rokea"><span class="line-heading" data-i18n="Valor">Valor</span></div>
 					<div class="pool-row zero element-chbreed element-rokea">
 						<input type="radio" name="attr_valor" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_valor" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_valor" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_valor" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_valor" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_valor" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_valor" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_valor" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_valor" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_valor" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_valor" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-rokea">
 						<span class="rank">Temp.:</span><input type="number" name="attr_valortemp" value="0" />
 					</div>
-					<div class="line-heading rank element-chbreed element-ananasi element-garou element-gurahl element-mokole"><span class="line-heading">Wisdom</span></div>
+					<div class="line-heading rank element-chbreed element-ananasi element-garou element-gurahl element-mokole"><span class="line-heading" data-i18n="Wisdom">Wisdom</span></div>
 					<div class="pool-row zero element-chbreed element-ananasi element-garou element-gurahl element-mokole">
 						<input type="radio" name="attr_wisdom" value="0" class="zero trait-radio" checked /><span></span> <input type="radio" name="attr_wisdom" value="1" class="trait-radio"/><span></span>    <input type="radio" name="attr_wisdom" value="2" class="trait-radio" /><span></span>    <input type="radio" name="attr_wisdom" value="3" class="trait-radio" /><span></span>    <input type="radio" name="attr_wisdom" value="4" class="trait-radio" /><span></span>    <input type="radio" name="attr_wisdom" value="5" class="trait-radio" /><span></span>    <input type="radio" name="attr_wisdom" value="6" class="trait-radio" /><span></span>    <input type="radio" name="attr_wisdom" value="7" class="trait-radio" /><span></span>    <input type="radio" name="attr_wisdom" value="8" class="trait-radio" /><span></span>    <input type="radio" name="attr_wisdom" value="9" class="trait-radio" /><span></span>    <input type="radio" name="attr_wisdom" value="10" class="trait-radio" /><span></span>
 					</div>
 					<div class="pool-row element-chbreed element-ananasi element-garou element-gurahl element-mokole">
 						<span class="rank">Temp.:</span><input type="number" name="attr_wisdomtemp" value="0" />
 					</div>
-					<div class="line-heading element-vampire element-ghoul"><span class="line-heading">Clan Weakness:</span></div>
+					<div class="line-heading element-vampire element-ghoul"><span class="line-heading" data-i18n="ClanWeakness">Clan Weakness:</span></div>
 					<div class="row-full element-vampire element-ghoul"><">
 						<textarea class="clanweakness" name="attr_Weakness"></textarea>
 					</div>

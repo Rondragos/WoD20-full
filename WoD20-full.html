@@ -3,7 +3,7 @@
 		<div class="header logo-div"></div>
 		<div class="navigation">
 			<button class="tabbutton" style="margin-left: 0.25em" type="action" name="act_primary" data-i18n="Primary">Primary</button>
-			<button class="tabbutton" type="action" name="act_backgrounds" data-i18n="Backrounds">Backgrounds</button>
+			<button class="tabbutton" type="action" name="act_backgrounds" data-i18n="Backgrounds">Backgrounds</button>
 			<button class="tabbutton" type="action" name="act_meritsflaws" data-i18n="MeritsFlaws">Merits&amp;Flaws</button>
 			<button class="tabbutton" type="action" name="act_powers" data-i18n="Powers">Powers</button>
 			<button class="tabbutton" type="action" name="act_combat" data-i18n="Combat">Combat</button>
@@ -105,9 +105,9 @@
 								<option value="Ajaba" data-i18n="Ajaba">Ajaba</option>
 								<option value="Ananasi" data-i18n="Ananasi">Ananasi</option>
 								<option value="Bastet" data-i18n="Bastet">Bastet</option>
-								<option value="Corax" data-i18n="Cora">Corax</option>
+								<option value="Corax" data-i18n="Corax">Corax</option>
 								<option value="Kitsune" data-i18n="Kitsune">Kitsune</option>
-								<option value="Mokole" data-i18n="Moloke">Mokolé</option>
+								<option value="Mokole" data-i18n="Mokole">Mokolé</option>
 								<option value="Nuwisha" data-i18n="Nuwisha">Nuwisha</option>
 								<option value="Ratkin" data-i18n="Ratkin">Ratkin</option>
 								<option value="Rokea" data-i18n="Rokea">Rokea</option>
@@ -145,7 +145,7 @@
 				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><input type="text" name="attr_affiliation" /></div>
 				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><h3 data-i18n="Society">Society:</h3></div>
 				<div class="grid-item-concept element-mage element-sorcerer element-psychic element-no-fera"><input type="text" name="attr_society" /></div>
-				<div class="grid-item-concept element-vampire"><h3>Clan:</h3></div>
+				<div class="grid-item-concept element-vampire"><h3 data-i18n="Clan">Clan:</h3></div>
 				<div class="grid-item-concept element-ghoul"><h3 data-i18n="ClanFamily">Clan/Family:</h3></div>
 				<div class="grid-item-concept element-vampire element-ghoul"><input type="text" name="attr_clan" /></div>
 				<div class="grid-item-concept element-vampire"><h3 data-i18n="Generation">Generation:</h3></div>
@@ -335,7 +335,7 @@
 						<input type="text" name="attr_alertness_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span data-i18n="Athleics">Athletics</span></div>
+						<div class="ability"><span data-i18n="Athletics">Athletics</span></div>
 						<button class="small-roll-button" type='roll' name='roll_athleticsRoll' title="Athletics Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Athletics}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Athletics}} {{skill_num=@{athletics}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{athletics}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_athletics">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -505,7 +505,7 @@
 						<input type="text" name="attr_streetwise_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span data-i18n="Subtrefuge">Subterfuge</span></div>
+						<div class="ability"><span data-i18n="Subterfuge">Subterfuge</span></div>
 						<button class="small-roll-button" type='roll' name='roll_subterfugeRoll' title="Subterfuge Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Subterfuge}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Subterfuge}} {{skill_num=@{subterfuge}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{subterfuge}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_subterfuge">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -712,7 +712,7 @@
 						<input type="text" name="attr_larceny_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span data-i18n="Martial">Martial Arts</span></div>
+						<div class="ability"><span data-i18n="MartialArts">Martial Arts</span></div>
 						<button class="small-roll-button" type='roll' name='roll_MartialArtsRoll' title="Martial Arts Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Martial Arts}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Martial Arts}} {{skill_num=@{MartialArts}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{MartialArts}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_MartialArts">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -831,7 +831,7 @@
 						<input type="text" name="attr_survival_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<input type="text" name="attr_prof1_name" class="ability-name" placeholder="Professional Skill 1" data-i18n-placeholder="ProfessionalSkill1"/>
+						<input type="text" name="attr_prof1_name" class="ability-name" placeholder="Professional Skill 1" data-i18n-placeholder="ProfSkill1"/>
 						<button class="small-roll-button" type='roll' name='roll_prof1Roll' title="Professional Skill 1 Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Professional Skill 1}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Professional Skill 1}} {{skill_num=@{prof1}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{prof1}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_prof1">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -848,7 +848,7 @@
 						<input type="text" name="attr_prof1_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<input type="text" name="attr_prof2_name" class="ability-name" placeholder="Professional Skill 2" data-i18n-placeholder="ProfessionalSkill2"/>
+						<input type="text" name="attr_prof2_name" class="ability-name" placeholder="Professional Skill 2" data-i18n-placeholder="ProfSkill2"/>
 						<button class="small-roll-button" type='roll' name='roll_prof2Roll' title="Professional Skill 2 Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Professional Skill 2}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Professional Skill 2}} {{skill_num=@{prof2}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{prof2}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_prof2">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -865,7 +865,7 @@
 						<input type="text" name="attr_prof2_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<input type="text" name="attr_prof3_name" class="ability-name" placeholder="Professional Skill 3" data-i18n-placeholder="ProfessionalSkill3"/>
+						<input type="text" name="attr_prof3_name" class="ability-name" placeholder="Professional Skill 3" data-i18n-placeholder="ProfSkill3"/>
 						<button class="small-roll-button" type='roll' name='roll_prof3Roll' title="Professional Skill 3 Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Professional Skill 3}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Professional Skill 3}} {{skill_num=@{prof3}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{prof3}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_prof3">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -882,7 +882,7 @@
 						<input type="text" name="attr_prof3_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<input type="text" name="attr_prof4_name" class="ability-name" placeholder="Professional Skill 4" data-i18n-placeholder="ProfessionalSkill4"/>
+						<input type="text" name="attr_prof4_name" class="ability-name" placeholder="Professional Skill 4" data-i18n-placeholder="ProfSkill4"/>
 						<button class="small-roll-button" type='roll' name='roll_prof4Roll' title="Professional Skill 4 Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Professional Skill 3}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Professional Skill 3}} {{skill_num=@{prof4}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{prof4}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_prof4">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -919,7 +919,7 @@
 						<input type="text" name="attr_academics_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<div class="ability"><span data-i18n="ArealKnowledge">Area&nbsp;Knowledge</span></div>
+						<div class="ability"><span data-i18n="AreaKnowledge">Area&nbsp;Knowledge</span></div>
 						<button class="small-roll-button" type='roll' name='roll_AreaKnowledgeRoll' title="Area&nbsp;Knowledge Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Area&nbsp;Knowledge}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Area&nbsp;Knowledge}} {{skill_num=@{AreaKnowledge}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{AreaKnowledge}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_AreaKnowledge">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -987,7 +987,7 @@
 						<input type="text" name="attr_esoterica_spec" class="ability" placeholder="mandatory" data-i18n-placeholder="mandatory" title="Requires Specialisation regardless of trait value" />
 					</div>
 					<div class="trait">
-						<div class="ability"><span data-i18n="Finace">Finance</span></div>
+						<div class="ability"><span data-i18n="Finance">Finance</span></div>
 						<button class="small-roll-button" type='roll' name='roll_financeRoll' title="Finance Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Finance}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Finance}} {{skill_num=@{finance}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{finance}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_finance">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1140,7 +1140,7 @@
 						<input type="text" name="attr_technology_spec" class="ability" placeholder="mandatory" data-i18n-placeholder="mandatory" title="Requires Specialisation regardless of trait value" />
 					</div>
 					<div class="trait">
-						<input type="text" name="attr_expert1_name" class="ability-name" placeholder="Expert Knowledge 1" data-i18n-placeholder="ExpertKnowledge1"/>
+						<input type="text" name="attr_expert1_name" class="ability-name" placeholder="Expert Knowledge 1" data-i18n-placeholder="ExpertKnow1"/>
 						<button class="small-roll-button" type='roll' name='roll_expert1Roll' title="Expert Skill 1 Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Expert Skill 1}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Expert Skill 1}} {{skill_num=@{expert1}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{expert1}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_expert1">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1157,7 +1157,7 @@
 						<input type="text" name="attr_expert1_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<input type="text" name="attr_expert2_name" class="ability-name" placeholder="Expert Knowledge 2" data-i18n-placeholder="ExpertKnowledge2"/>
+						<input type="text" name="attr_expert2_name" class="ability-name" placeholder="Expert Knowledge 2" data-i18n-placeholder="ExpertKnow2"/>
 						<button class="small-roll-button" type='roll' name='roll_expert2Roll' title="Expert Skill 2 Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Expert Skill 2}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Expert Skill 2}} {{skill_num=@{expert2}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{expert2}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_expert2">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1174,7 +1174,7 @@
 						<input type="text" name="attr_expert2_spec" class="ability"/>
 					</div>
 					<div class="trait">
-						<input type="text" name="attr_expert3_name" class="ability-name" placeholder="Expert Knowledge 3" data-i18n-placeholder="ExpertKnowledge3"/>
+						<input type="text" name="attr_expert3_name" class="ability-name" placeholder="Expert Knowledge 3" data-i18n-placeholder="ExpertKnow3"/>
 						<button class="small-roll-button" type='roll' name='roll_expert3Roll' title="Expert Skill 3 Roll" value='@{sendRollTo} &{template:wod} {{name=@{character_name}}} {{roll_name=Expert Skill 3}} {{attr=Attribute}} {{attr_num=?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}}} {{skill=Expert Skill 3}} {{skill_num=@{expert3}}} {{mod_num=?{Modifier|0}}} {{hp_mod=@{useHealth}}} {{result=[[{(?{Attribute|Strength,@{strength}@{strengthmod}@{potenceaskq}|Dexterity,@{dexterity}@{dexteritymod}@{celerityaskq}|Stamina,@{stamina}@{staminamod}|Charisma,@{Charisma}@{Charismamod}|Manipulation,@{Manipulation}@{Manipulationmod}|Appearance,@{Appearance}@{Appearancemod}|Perception,@{Perception}@{Perceptionmod}|Intelligence,@{Intelligence}@{Intelligencemod}|Wits,@{Wits}@{Witsmod}}+@{expert3}+?{Modifier|0}+@{useHealth})d10sd}>@{askdiff}f1]]}} '></button>
 						<select class="sheet-dots ability" name="attr_expert3">
 							<option value="0" selected>&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -1267,16 +1267,16 @@
 					<div class="pool-row">
 						<span>Path-Sins:</span><input type="checkbox" class="hide-arrow" name="attr_pathsinsshow" /><span></span>
 						<div class="expandable">
-							<div class="pool-row"><span class="moral">10</span><textarea type="text" class="moral" name="attr_moralpath10" placeholder="Selfish thoughts" data-i18n-placeholder="Selfishthoughts" /></textarea></div>
-							<div class="pool-row"><span class="moral">9</span><textarea type="text" class="moral" name="attr_moralpath9" placeholder="Minor selfish acts" data-i18n-placeholder="Minorselfishacts" /></textarea></div>
-							<div class="pool-row"><span class="moral">8</span><textarea type="text" class="moral" name="attr_moralpath8" placeholder="Injury to another (accidental or otherwise)" data-i18n-placeholder="Injurytoanotheraccidentalorotherwise" /></textarea></div>
-							<div class="pool-row"><span class="moral">7</span><textarea type="text" class="moral" name="attr_moralpath7" placeholder="Theft" data-i18n-placeholder="Theft" /></textarea></div>
-							<div class="pool-row"><span class="moral">6</span><textarea type="text" class="moral" name="attr_moralpath6" placeholder="Accidental violation (drinking a vessel dry out of starvation)" data-i18n-placeholder="Accidentalviolationdrinkingavesseldryoutofstarvation" /></textarea></div>
-							<div class="pool-row"><span class="moral">5</span><textarea type="text" class="moral" name="attr_moralpath5" placeholder="Intentional property damage" data-i18n-placeholder="Intentionalpropertydamage" /></textarea></div>
-							<div class="pool-row"><span class="moral">4</span><textarea type="text" class="moral" name="attr_moralpath4" placeholder="Impassioned violation (manslaughter, killing a vessel in frenzy)" data-i18n-placeholder="Impassionedviolationmanslaughterkillingavesselinfrenzy" /></textarea></div>
-							<div class="pool-row"><span class="moral">3</span><textarea type="text" class="moral" name="attr_moralpath3" placeholder="Planned violation (outright murder, savored exsanguination)" data-i18n-placeholder="Plannedviolationoutrightmurdersavoredexsanguination" /></textarea></div>
-							<div class="pool-row"><span class="moral">2</span><textarea type="text" class="moral" name="attr_moralpath2" placeholder="Casual violation (thoughtless killing, feeding past satiation)" data-i18n-placeholder="Casualviolationthoughtlesskillingfeedingpastsatiation" /></textarea></div>
-							<div class="pool-row"><span class="moral">1</span><textarea type="text" class="moral" name="attr_moralpath1" placeholder="Utter perversion or heinous acts" data-i18n-placeholder="Utterperversionorheinousacts" /></textarea></div>	
+							<div class="pool-row"><span class="moral">10</span><textarea type="text" class="moral" name="attr_moralpath10" placeholder="Selfish thoughts" data-i18n-placeholder="Path10-ph" /></textarea></div>
+							<div class="pool-row"><span class="moral">9</span><textarea type="text" class="moral" name="attr_moralpath9" placeholder="Minor selfish acts" data-i18n-placeholder="Path09-ph" /></textarea></div>
+							<div class="pool-row"><span class="moral">8</span><textarea type="text" class="moral" name="attr_moralpath8" placeholder="Injury to another (accidental or otherwise)" data-i18n-placeholder="Path08-ph" /></textarea></div>
+							<div class="pool-row"><span class="moral">7</span><textarea type="text" class="moral" name="attr_moralpath7" placeholder="Path07-ph" data-i18n-placeholder="Theft" /></textarea></div>
+							<div class="pool-row"><span class="moral">6</span><textarea type="text" class="moral" name="attr_moralpath6" placeholder="Accidental violation (drinking a vessel dry out of starvation)" data-i18n-placeholder="Path06-ph" /></textarea></div>
+							<div class="pool-row"><span class="moral">5</span><textarea type="text" class="moral" name="attr_moralpath5" placeholder="Intentional property damage" data-i18n-placeholder="Path05-ph" /></textarea></div>
+							<div class="pool-row"><span class="moral">4</span><textarea type="text" class="moral" name="attr_moralpath4" placeholder="Impassioned violation (manslaughter, killing a vessel in frenzy)" data-i18n-placeholder="Path04-ph" /></textarea></div>
+							<div class="pool-row"><span class="moral">3</span><textarea type="text" class="moral" name="attr_moralpath3" placeholder="Planned violation (outright murder, savored exsanguination)" data-i18n-placeholder="Path03-ph" /></textarea></div>
+							<div class="pool-row"><span class="moral">2</span><textarea type="text" class="moral" name="attr_moralpath2" placeholder="Casual violation (thoughtless killing, feeding past satiation)" data-i18n-placeholder="Path02-ph" /></textarea></div>
+							<div class="pool-row"><span class="moral">1</span><textarea type="text" class="moral" name="attr_moralpath1" placeholder="Utter perversion or heinous acts" data-i18n-placeholder="Path01-ph" /></textarea></div>	
 						</div>
 					</div>
 				</div>
@@ -1720,7 +1720,7 @@
 							<option value="6" data-i18n="6Legend">6 - Legend</option>
 						</div>
 						<div class="rank element-chbreed element-nagah"><select class="select-trait" name="attr_rank">
-							<option value="0" selected data-i18n="0OpeningEye">0 - Opnening Eye</option>
+							<option value="0" selected data-i18n="0OpeningEye">0 - Opening Eye</option>
 							<option value="1" data-i18n="1SingingBrook">1 - Singing Brook</option>
 							<option value="2" data-i18n="2RazoredArrow">2 - Razored Arrow</option>
 							<option value="3" data-i18n="3SilkenNoose">3 - Silken Noose</option>
@@ -1738,7 +1738,7 @@
 							<option value="6" data-i18n="6Legend">6 - Legend</option>
 						</div>
 					</div>
-					<div class="line-heading rank element-kinfolk"><span class="line-heading"><input type="text" name="attr_renown1" placeholder="Renown Type" data-i18n-placeholder="RenownTpe" /> </span></div>
+					<div class="line-heading rank element-kinfolk"><span class="line-heading"><input type="text" name="attr_renown1" placeholder="Renown Type" data-i18n-placeholder="RenownType" /> </span></div>
 					<div class="pool-row element-kinfolk">
 						<span class="rank">Temp.:</span><input type="number" name="attr_renown1temp" value="0" />
 					</div>
@@ -1871,9 +1871,9 @@
 		</div>
 <!-- Background Sheet -->
 		<div class="sheet-background">
-			<div class="line-heading"><span class="line-heading" data-i18n="Backrounds">Backgrounds</span></div>
+			<div class="line-heading"><span class="line-heading" data-i18n="Backgrounds">Backgrounds</span></div>
 			<div class="row-full">
-				<div class="back-name"><span data-i18n="Backround">Background</span></div>
+				<div class="back-name"><span data-i18n="Background">Background</span></div>
 				<div class="back-rating"><span data-i18n="Rating">Rating</span></div>
 				<div class="back-desc"><span data-i18n="Description">Description</span></div>
 				<div class="back-arrow"><span></span></div>
@@ -1898,7 +1898,7 @@
 					<input type="text" class="back-desc" name="attr_backdesc" title="Short description of meaning" />
 					<input type="checkbox" class="hide-arrow back-arrow" name="attr_backdescshow" /><span></span> 
 					<div class="expandable back-description">
-						<textarea name="attr_backdescription" class="back-description" placeholder="Full description" data-i18n-placeholder="Fulldescription></textarea>
+						<textarea name="attr_backdescription" class="back-description" placeholder="Full description" data-i18n-placeholder="Fulldescription"></textarea>
 					</div>
 				</div>
 			</fieldset>
@@ -2172,7 +2172,7 @@
 							<div class="discipline-name">
 								<input type="text" name="attr_discname" />
 								<select name="attr_discphysselect" class="discphyscheck">
-									<option value="0" selected data-i18n="Choose Discipline">Choose Discipline</option>
+									<option value="0" selected data-i18n="ChooseDiscipline">Choose Discipline</option>
 									<option value="1" data-i18n="Potence">Potence</option>
 									<option value="2" data-i18n="Celerity">Celerity</option>
 									<option value="3" data-i18n="Fortitude">Fortitude</option>
@@ -2276,7 +2276,7 @@
 								<option value="@{Wits}@{Witsmod}" data-i18n="Wits">Wits</option>
 							</optgroup>
 							<optgroup label="Other" data-i18n-label="Other">
-								<option value="@{willpower|max}" data-i18n="">Willpower</option>
+								<option value="@{willpower|max}" data-i18n="Willpower">Willpower</option>
 								<option value="0" selected data-i18n="None">None</option>
 							</optgroup>
 						</select></div>
@@ -2308,7 +2308,7 @@
 								<option value="@{Firearms}" data-i18n="Firearms">Firearms</option>
 								<option value="@{Larceny}" data-i18n="Larceny">Larceny</option>
 								<option value="@{MartialArts}" data-i18n="MartialArts">Martial Arts</option>
-								<option value="@{Meditation}" data-i18n="Mediation">Meditation</option>
+								<option value="@{Meditation}" data-i18n="Meditation">Meditation</option>
 								<option value="@{Melee}" data-i18n="Melee">Melee</option>
 								<option value="@{Performance}" data-i18n="Performance">Performance</option>
 								<option value="@{Research}" data-i18n="Research">Research</option>
@@ -2325,7 +2325,7 @@
 								<option value="@{Computer}" data-i18n="Computer">Computer</option>
 								<option value="@{Enigmas}" data-i18n="Enigmas">Enigmas</option>
 								<option value="@{Esoterica}" data-i18n="Esoterica">Esoterica</option>
-								<option value="@{Finance}" data-i18n="F">Finance</option>
+								<option value="@{Finance}" data-i18n="Finance">Finance</option>
 								<option value="@{Investigation}" data-i18n="Investigation">Investigation</option>
 								<option value="@{Law}" data-i18n="Law">Law</option>
 								<option value="@{Medicine}" data-i18n="Medicine">Medicine</option>
@@ -2414,7 +2414,7 @@
 								<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 							</optgroup>
 							<optgroup label="Skills" data-i18n-label="Skills">
-								<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+								<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 								<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 								<option value="@{Drive}" data-i18n="Drive">Drive</option>
 								<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -2521,7 +2521,7 @@
 					<div class="line-heading"><span class="line-heading" data-i18n="Koldunism">Koldunism</span></div>
 					<div class="bm-path">
 						<div class="row-full">
-							<div class="bm-path-label"><span data-i18n="PrimaryPath´">Primary Path:</span></div>
+							<div class="bm-path-label"><span data-i18n="PrimaryPath">Primary Path:</span></div>
 							<div class="bm-path-title"><input type="text" name="attr_bmkoldunismprimaryname" placeholder="Path of ..." data-i18n-placeholder="Pathof" title="Primary Path Name"/></div>
 							<div class="bm-path-rating"><select class="sheet-dots" name="attr_bmkoldunismprimaryrating">
 								<option value="0" selected>0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -2590,7 +2590,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -2690,7 +2690,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -2790,7 +2790,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -2890,7 +2890,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -2990,7 +2990,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -3048,7 +3048,7 @@
 					<fieldset class="repeating_koldunism">
 						<div class="bm-path">
 							<div class="row-full">
-								<div class="bm-path-label"><span>Secondary Path:</span></div>
+								<div class="bm-path-label"><span data-i18n="secondarypath">Secondary Path:</span></div>
 								<div class="bm-path-title"><input type="text" name="attr_bmkoldunismname" placeholder="Path of ..." data-i18n-placeholder="Pathof" title="Secondary Path Name"/></div>
 								<div class="bm-path-rating"><select class="sheet-dots" name="attr_bmkoldunismrating">
 									<option value="0" selected>0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -3117,7 +3117,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -3217,7 +3217,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -3317,7 +3317,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -3417,7 +3417,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -3517,7 +3517,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -3636,7 +3636,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -3765,7 +3765,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -3865,7 +3865,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -3965,7 +3965,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -4065,7 +4065,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -4165,7 +4165,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -4223,7 +4223,7 @@
 					<fieldset class="repeating_necromancy">
 						<div class="bm-path">
 							<div class="row-full">
-								<div class="bm-path-label"><span>Secondary Path:</span></div>
+								<div class="bm-path-label"><span data-i18n="secondarypath">Secondary Path:</span></div>
 								<div class="bm-path-title"><input type="text" name="attr_bmnecromancyname" placeholder="Path of ..." data-i18n-placeholder="Pathof" title="Secondary Path Name"/></div>
 								<div class="bm-path-rating"><select class="sheet-dots" name="attr_bmnecromancyrating">
 									<option value="0" selected>0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -4292,7 +4292,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -4392,7 +4392,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -4442,7 +4442,7 @@
 									</div>
 									<div class="row-full">
 										<textarea name="attr_bmnecromancydescription2" class="bm-path-description" placeholder="Full description" data-i18n-placeholder="Fulldescription"></textarea>
-										<textarea name="attr_bmnecromancysystem2" class="bm-path-description" placeholder="System annotations" data-i18n-placeholder="Systemannotations	"></textarea>
+										<textarea name="attr_bmnecromancysystem2" class="bm-path-description" placeholder="System annotations" data-i18n-placeholder="Systemannotations"></textarea>
 									</div>
 								</div>
 							</div>
@@ -4492,7 +4492,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -4592,7 +4592,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -4692,7 +4692,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -4811,7 +4811,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -4940,7 +4940,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -5040,7 +5040,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -5140,7 +5140,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -5240,7 +5240,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -5340,7 +5340,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -5398,7 +5398,7 @@
 					<fieldset class="repeating_thaumaturgy">
 						<div class="bm-path">
 							<div class="row-full">
-								<div class="bm-path-label"><span>Secondary Path:</span></div>
+								<div class="bm-path-label"><span data-i18n="secondarypath">Secondary Path:</span></div>
 								<div class="bm-path-title"><input type="text" name="attr_bmthaumaturgyname" placeholder="Path of ..." data-i18n-placeholder="Pathof" title="Secondary Path Name"/></div>
 								<div class="bm-path-rating"><select class="sheet-dots" name="attr_bmthaumaturgyrating">
 									<option value="0" selected>0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -5467,7 +5467,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -5567,7 +5567,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -5667,7 +5667,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -5767,7 +5767,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -5867,7 +5867,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -5986,7 +5986,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -6115,7 +6115,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -6215,7 +6215,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -6315,7 +6315,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -6415,7 +6415,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -6515,7 +6515,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -6573,7 +6573,7 @@
 					<fieldset class="repeating_akhu">
 						<div class="bm-path">
 							<div class="row-full">
-								<div class="bm-path-label"><span>Secondary Path:</span></div>
+								<div class="bm-path-label"><span data-i18n="secondarypath">Secondary Path:</span></div>
 								<div class="bm-path-title"><input type="text" name="attr_bmakhuname" placeholder="Path of ..." data-i18n-placeholder="Pathof" title="Secondary Path Name"/></div>
 								<div class="bm-path-rating"><select class="sheet-dots" name="attr_bmakhurating">
 									<option value="0" selected>0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -6642,7 +6642,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -6742,7 +6742,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -6842,7 +6842,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -6942,7 +6942,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -7042,7 +7042,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -7161,7 +7161,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -7290,7 +7290,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -7390,7 +7390,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -7490,7 +7490,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -7590,7 +7590,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -7690,7 +7690,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -7748,7 +7748,7 @@
 					<fieldset class="repeating_duranki">
 						<div class="bm-path">
 							<div class="row-full">
-								<div class="bm-path-label"><span>Secondary Path:</span></div>
+								<div class="bm-path-label"><span data-i18n="secondarypath">Secondary Path:</span></div>
 								<div class="bm-path-title"><input type="text" name="attr_bmdurankiname" placeholder="Path of ..." data-i18n-placeholder="Pathof" title="Secondary Path Name"/></div>
 								<div class="bm-path-rating"><select class="sheet-dots" name="attr_bmdurankirating">
 									<option value="0" selected>0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -7817,7 +7817,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -7917,7 +7917,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -8017,7 +8017,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -8117,7 +8117,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -8217,7 +8217,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -8336,7 +8336,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -8465,7 +8465,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -8565,7 +8565,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -8665,7 +8665,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -8765,7 +8765,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -8865,7 +8865,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -8923,7 +8923,7 @@
 					<fieldset class="repeating_darkthaumaturgy">
 						<div class="bm-path">
 							<div class="row-full">
-								<div class="bm-path-label"><span>Secondary Path:</span></div>
+								<div class="bm-path-label"><span data-i18n="secondarypath">Secondary Path:</span></div>
 								<div class="bm-path-title"><input type="text" name="attr_bmdarkthaumaturgyname" placeholder="Path of ..." data-i18n-placeholder="Pathof" title="Secondary Path Name"/></div>
 								<div class="bm-path-rating"><select class="sheet-dots" name="attr_bmdarkthaumaturgyrating">
 									<option value="0" selected>0&#9898;&#9898;&#9898;&#9898;&#9898;</option>
@@ -8992,7 +8992,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -9092,7 +9092,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -9192,7 +9192,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -9292,7 +9292,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -9392,7 +9392,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -9511,7 +9511,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -9663,12 +9663,12 @@
 								<optgroup label="Physical" data-i18n-label="Physical">
 									<option value="@{strength}@{strengthmod}@{potenceask}" data-i18n="Strength">Strength</option>
 									<option value="@{dexterity}@{dexteritymod}@{celerityask}" data-i18n="Dexterity">Dexterity</option>
-									<option value="@{stamina}@{staminamod}" data-i18n="Stamina=">Stamina</option>
+									<option value="@{stamina}@{staminamod}" data-i18n="Stamina">Stamina</option>
 								</optgroup>
 								<optgroup label="Social" data-i18n-label="Social">
-									<option value="@{Charisma}@{Charismamod}" selected data-i18n="Charisma=">Charisma</option>
-									<option value="@{Manipulation}@{Manipulationmod}" data-i18n="Manipulation=">Manipulation</option>
-									<option value="@{Appearance}@{Appearancemod}" data-i18n="Appearance=">Appearance</option>
+									<option value="@{Charisma}@{Charismamod}" selected data-i18n="Charisma">Charisma</option>
+									<option value="@{Manipulation}@{Manipulationmod}" data-i18n="Manipulation">Manipulation</option>
+									<option value="@{Appearance}@{Appearancemod}" data-i18n="Appearance">Appearance</option>
 								</optgroup>
 								<optgroup label="Mental" data-i18n-label="Mental">
 									<option value="@{Perception}@{Perceptionmod}" data-i18n="Perception">Perception</option>
@@ -9702,7 +9702,7 @@
 									<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 								</optgroup>
 								<optgroup label="Skills" data-i18n-label="Skills">
-									<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+									<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 									<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 									<option value="@{Drive}" data-i18n="Drive">Drive</option>
 									<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -9803,17 +9803,17 @@
 				</div>
 			</div>
 			<div class="container-full element-fera element-kinfolk">
-				<div class="line-heading"><span class="line-heading">Gifts</span></div>
+				<div class="line-heading"><span class="line-heading" data-i18n="Gifts">Gifts</span></div>
 				<div class="row-full">
-					<div class="gift-name"><span>Gift</span></div>
-					<div class="gift-level"><span>Level</span></div>
-					<div class="gift-list"><span>List</span></div>
-					<div class="gift-attribute"><span>Attribute</span></div>
-					<div class="gift-ability"><span>Ability</span></div>
+					<div class="gift-name"><span data-i18n="Gift">Gift</span></div>
+					<div class="gift-level"><span data-i18n="Level">Level</span></div>
+					<div class="gift-list"><span data-i18n="List">List</span></div>
+					<div class="gift-attribute"><span data-i18n="Attribute">Attribute</span></div>
+					<div class="gift-ability"><span data-i18n="Ability">Ability</span></div>
 					<div class="gift-roll"><span></span></div>
 					<!--<div class="discpow-dicepool"><span>Dice Pool</span></div>-->
-					<div class="gift-difficulty"><span>Diff.</span></div>
-					<div class="gift-arrow"><span>Desc.</span></div>
+					<div class="gift-difficulty"><span data-i18n="Diff">Diff.</span></div>
+					<div class="gift-arrow"><span data-i18n="Desc">Desc.</span></div>
 				</div>
 				<fieldset class="repeating_gifts">
 					<div class="row-full">
@@ -9871,7 +9871,7 @@
 								<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 							</optgroup>
 							<optgroup label="Skills" data-i18n-label="Skills">
-								<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+								<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 								<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 								<option value="@{Drive}" data-i18n="Drive">Drive</option>
 								<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -9957,7 +9957,7 @@
 								<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 							</optgroup>
 							<optgroup label="Skills" data-i18n-label="Skills">
-								<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+								<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 								<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 								<option value="@{Drive}" data-i18n="Drive">Drive</option>
 								<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -10104,7 +10104,7 @@
 										<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 									</optgroup>
 									<optgroup label="Skills" data-i18n-label="Skills">
-										<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+										<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 										<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 										<option value="@{Drive}" data-i18n="Drive">Drive</option>
 										<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -10251,7 +10251,7 @@
 								<option value="@{Hobby5}" data-i18n="HobbyTalent5">Hobby Talent 5</option>
 							</optgroup>
 							<optgroup label="Skills" data-i18n-label="Skills">
-								<option value="@{AnimalKen}" data-i18n="Animal">Animal Ken</option>
+								<option value="@{AnimalKen}" data-i18n="AnimalKen">Animal Ken</option>
 								<option value="@{Crafts}" data-i18n="Crafts">Crafts</option>
 								<option value="@{Drive}" data-i18n="Drive">Drive</option>
 								<option value="@{Etiquette}" data-i18n="Etiquette">Etiquette</option>
@@ -10320,7 +10320,7 @@
 										<div class="pathdesc1line"><textarea name="attr_pathcost"></textarea></div>
 									</div>
 									<div class="row-full">
-										<div class="pathdesc"><span data-i18n="Modifires">Modifiers:</span></div>
+										<div class="pathdesc"><span data-i18n="Modifiers">Modifiers:</span></div>
 										<div class="pathdesc2line"><textarea name="attr_pathmodifiers"></textarea></div>
 									</div>
 									<div class="row-full">

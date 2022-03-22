@@ -1,562 +1,409 @@
 {
-	"Primary"
-	"Backrounds"
-	"MeritsFlaws"
-	"Powers"
-	"Combat"
-	"Experience"
-	"Information"
-	"Journal"
-	"Notes"
-	"Gear"
-	"Version"
-	"ShowAll"
-	"RollOptions"
-	"SendRollsTo"
-	"Public"
-	"Private"
-	"ST"
-	"Myself"
-	"RollDifficulty"
-	"Woundpenalty"
-	"Ignorewounds"
-	"AdditionalBruisedLevels"
-	"Name"
-	"RealName"
-	"Kind"
-	"Mortal"
-	"Vampire"
-	"Fera"
-	"AwakenedMage"
-	"Wraith"
-	"Player"
-	"Chronicle"
-	"Ghoul"
-	"Sorcerer"
-	"Psychic"
-	"Garou"
-	"Ajaba"
-	"Ananasi"
-	"Bastet"
-	"Cora"
-	"Kitsune"
-	"Moloke"
-	"Nuwisha"
-	"Ratkin"
-	"Rokea"
-	"Apis"
-	"Camazotz"
-	"Grondr"
-	"Gurahl"
-	"Nagah"
-	"CatMagic"
-	"Fox Magic"
-	"Kinfolk"
-	"Nature"
-	"Demeanor"
-	"Concept"
-	"Essence"
-	"Affiliation"
-	"Society"
-	"ClanFamily"
-	"Generation"
-	"Age"
-	"Sire"
-	"Domitor"
-	"Breed"
-	"Kinto"
-	"Auspice"
-	"Aspect"
-	"Pryio"
-	"Path"
-	"Tribe"
-	"Faction"
-	"StreamVarna"
-	"Attributes"
-	"Physical"
-	"Strength"
-	"Dexterity"
-	"Stamina"
-	"Social"
-	"Charisma"
-	"Manipulation"
-	"Appearance"
-	"Mental"
-	"Perception"
-	"Intelligence"
-	"Wits"
-	"Abilities"
-	"Talents"
-	"Alertness"
-	"Athletics"
-	"Awareness"
-	"Brawl"
-	"Empathy"
-	"Expression"
-	"Intimidation"
-	"Intuition"
-	"Leadership"
-	"PrimalUrge"
-	"Streetwise"
-	"Subterfuge"
-	"Hobbytalent"
-	"Skills"
-	"AnimalKen"
-	"Crafts"
-	"Dive"
-	"Etiquette"
-	"Firearms"
-	"Larceny"
-	"MaterialArts"
-	"Meditation"
-	"Melee"
-	"Performance"
-	"Research"
-	"Stealth"
-	"Survival"
-	"ProfessionalSkill"
-	"Knowledges"
-	"Academics"
-	"ArealKnowledge"
-	"Computer"
-	"Enigmas"
-	"Esoterica"
-	"Finance"
-	"Investigation"
-	"Law"
-	"Medicine"
-	"Occult"
-	"Politics"
-	"Rituals"
-	"Science"
-	"Technology"
-	"Expert Knowledge"
-	"Virtues"
-	"Conscience"
-	"Convition"
-	"SelfControl"
-	"Instinct"
-	"Courage"
-	"PartofEnlightenment"
-	"Willpower"
-	"Roll"
-	"BloodPool"
-	"MaximumBloodpool"
-	"BloodperTurn"
-	"Rage"
-	"Gnosis"
-	"Mana"
-	"Quintessence"
-	"Paradox"
-	"Health"
-	"Bruised"
-	"Hurt"
-	"Injured"
-	"Wounded"
-	"mauled"
-	"Crippled"
-	"Incapacatiated"
-	"RenownRank"
-	"0Cub"
-	"1Cliath"
-	"2Fostern"
-	"3Adren"
-	"4Athro"
-	"5Elder"
-	"6Legend"
-	"Rank1"
-	"Rank2"
-	"Rank3"
-	"Rank4"
-	"Rank5"
-	"Rank6Legend"
-	"0Cub"
-	"1Thekhmet"
-	"2Aka"
-	"3Tilau"
-	"4Hani"
-	"5BonBhat"
-	"6Legend"
-	"0Cub"
-	"1Oviculum"
-	"2Neocornix"
-	"3Ales"
-	"4Colucris"
-	"5Corvus"
-	"6Legend"
-	"0Cub"
-	"1Kovi"
-	"2Verde"
-	"3Sorna"
-	"4Talchwi"
-	"5Matae"
-	"6Legend"
-	"0Cub"
-	"1Yakan"
-	"2Kiko"
-	"3Koryo"
-	"4Reiko"
-	"5Tenko"
-	"6Legend"
-	"0Uninitiated"
-	"1Hatchling"
-	"2SonDoughter"
-	"3BrotherSister"
-	"4FatherMother"
-	"5GrandfatherGrandmother"
-	"6Legend"
-	"0OpneningEye"
-	"1SingingBrook"
-	"2RazoredArrow"
-	"3SilkenNoose"
-	"4ThunderChakram"
-	"5SilverCoil"
-	"6MouthoftheSesha"
-	"0Cub"
-	"1Rakka"
-	"2Voto"
-	"3Tava"
-	"4Teppen"
-	"5Rrrrrt"
-	"6Legend"
-	"Cunning"
-	"Ferocity"
-	"Glory"
-	"Harmony"
-	"Honor"
-	"Humor"
-	"Infamy"
-	"Innovation"
-	"Kagayaki"
-	"Obedience"
-	"Obligaton"
-	"Succor"
-	"Toru"
-	"Valor"
-	"Wisdom"
-	"ClanWeakness"
-	"Backrounds"
-	"Backround"
-	"Rating"
-	"Description"
-	"PooledBackgrounds"
-	"Background"
-	"Rating"
-	"Anchor"
-	"Contributed"
-	"Desciption"
-	"MertisFlaws"
-	"Merits"
-	"Merit"
-	"PointValue"
-	"Type"
-	"Description"
-	"Flaws"
-	"Flaw"
-	"PointValue"
-	"Type"
-	"Description"
-	"Powers"
-	"VampiricPowers"
-	"IncreasedPhysicalAttributes"
-	"Attribute"
-	"Rating"
-	"Increased"
-	"Strenght"
-	"Dexterity"
-	"Stamina"
-	"Disciplines"
-	"Discipline"
-	"Physical"
-	"BloodMagic"
-	"ChooseDiscipline"
-	"Potence"
-	"Celerity"
-	"Fortitude"
-	"ChooseDiscipline"
-	"Koldunism"
-	"Necromancy"
-	"Thaumaturgy"
-	"Akhu"
-	"DurAnKi"
-	"DarkThaumaturgy"
-	"Willpower"
-	"BloodPool"
-	"MaximumBloodpool"
-	"BloodperTurn"
-	"LernedDisciplinePowers"
-	"Discipline"
-	"Rating"
-	"PowerName"
-	"Attribute"
-	"Ability"
-	"DicePool"
-	"Diff"
-	"Desc"
-	"Strenght"
-	"Dexterity"
-	"Stamina"
-	"Charisma"
-	"Manipulation"
-	"Appearance"
-	"Perception"
-	"Intelligence"
-	"Wits"
-	"Willpower"
-	"None"
-	"Alertness"
-	"Athletics"
-	"Awareness"
-	"Brwal"
-	"Empathy"
-	"Expression"
-	"Intimidation"
-	"Intuition"
-	"Leadership"
-	"PrimalUrge"
-	"Streetwise"
-	"Subterfuge"
-	"AnimalKen"
-	"Crafts"
-	"Drive"
-	"Etiquette"
-	"Firearms"
-	"Larceny"
-	"MaterialArts"
-	"Melee"
-	"Performance"
-	"Research"
-	"Stealth"
-	"Survival"
-	"Academics"
-	"AreaKnowledge"
-	"Computer"
-	"Enigmas"
-	"Esoterica"
-	"Finance"
-	"Investigation"
-	"Law"
-	"Meidicine"
-	"Occult"
-	"Politics"
-	"Technology"
-	"Discipline"
-	"None"
-	"Description"
-	"System"
-	"CombinationDisciplinePowers"
-	"CombinationPower"
-	"Attribute"
-	"Ability"
-	"Diff"
-	"Desc"
-	"DisciplineRequirements"
-	"Desecription"
-	"System"
-	"PrimaryPath"
-	"KoldunismRituals"
-	"Necromancy"
-	"NecromancyRituals"
-	"Thaumaturgy"
-	"ThaumaturgyRituals"
-	"Akhu"
-	"AkhuRituals"
-	"DurAnKi"
-	"DurAnKiRituals"
-	"DarkThaumaturgy"
-	"DarkThaumaturgyRituals"
-	"spiritualPowers"
-	"Rites"
-	"RiteName"
-	"Level"
-	"Type"
-	"Attribute"
-	"Ability"
-	"DicePool"
-	"Diff"
-	"Desc"
-	"Accord"
-	"Caern"
-	"Death"
-	"Mystic"
-	"Punischment"
-	"Renown"
-	"Seasonal"
-	"Minor"
-	"Homestead"
-	"Milestones"
-	"Gnosis"
-	"LearnedCountermagics"
-	"RitualName"
-	"Path"
-	"Level"
-	"Attribute"	
-	"Ability"
-	"Diff"
-	"Desc"
-	"Cost"
-	"Time"
-	"Willpower"
-	"Mana"
-	"SorceryParths"
-	"PsychicPaths"
-	"Path"
-	"Rating"
-	"Practice"
-	"Attribute"
-	"Ability"
-	"DicePool"
-	"Diff"
-	"Desc"
-	"Aspected"
-	"ofAspects"
-	"2Aspects"
-	"3Aspects"
-	"4Aspects"
-	"5Aspects"
-	"PathDescription"
-	"Cost"
-	"Modifires"
-	"Time"
-	"Duration"
-	"Associated"
-	"PriceofFailure"
-	"Effects"
-	"Aspect"
-	"Combat"
-	"Soaking"
-	"Attribute"
-	"Armor"
-	"Bashing"
-	"Stamina"
-	"None"
-	"Experience"
-	"Experiencetospend"
-	"Totalspent"
-	"TOtalexperienceearned"
-	"EarnedExP"
-	"Expenditure"
-	"ExPspent"
-	"IngameDate"
-	"RealDate"
-	"Description"
-	"Age"
-	"ApparentAge"
-	"PlaceofBirth"
-	"DateofBirth"
-	"RIP"
-	"Hair"
-	"Eyes"
-	"Skin"
-	"Ethnicity"
-	"Nationality"
-	"Height"
-	"Weight"
-	"Sex"
-	"Gender"
-	"History"
-	"Journal"
-	"ShowSections"
-	"BloodBond"
-	"Vinculum"
-	"Boons"
-	"Debtor"
-	"ToWhom"
-	"Type"
-	"Desc"
-	"Trivial"
-	"Minor"
-	"Major"
-	"Life"
-	"None"
-	"BloodBonds"
-	"Who"
-	"ToTarget"
-	"ToMe"
-	"Desc"
-	"NoBloodBond"
-	"FirstDrink"
-	"SecondDrink"
-	"FullBloodBond"
-	"Notes"
-	"PossessionsGear"
-	"RangedWeapons"
-	"Ammunition"
-	"Name"
-	"Type"
-	"Conceal"
-	"AmmoName"
-	"TypeCaliber"
-	"Amount"
-	"MeleeWeapons"
-	"Name"
-	"Conceal"
-	"ArmorShields"
-	"Name"
-	"VersionInfo"
-	"HideVersionInfo"
-	"DiceOptions"
-	"Name"
-	"Attribute"
-	"Abillity"
-	"Modifiers"
-	"Difficulty"
-	<!-- Placeholder data-i18n-paceholder"" -->
-	"HobbyTalent1"
-	"HobbyTalent2"
-	"HobbyTalent3"
-	"HobbyTalent4"
-	"HobbyTalent5"
-	"mandatory"
-	"ProfessionalSkill1"
-	"ProfessionalSkill2"
-	"ProfessionalSkill3"
-	"ProfessionalSkill4"
-	"ExpertKnowledge1"
-	"ExpertKnowledge2"
-	"ExpertKnowledge3"
-	"Humanity"
-	"Selfishthoughts"
-	"Minorselfishacts"
-	"Injurytoanotheraccidentalorotherwise"
-	"Theft"
-	"Accidentalviolationdrinkingavesseldryoutofstarvation"
-	"Intentionalpropertydamage"
-	"Impassionedviolationmanslaughterkillingavesselinfrenzy"
-	"Plannedviolationoutrightmurdersavoredexsanguination"
-	"Casualviolationthoughtlesskillingfeedingpastsatiation"
-	"Utterperversionorheinousacts"
-	"RitualCost"
-	"CastingTime"
-	"Aspectname"
-	"RenownType"
-	"Fulldescription"
-	"ReqDiscipline1"
-	"ReqDiscipline2"
-	"ReqDiscipline3"
-	"Systemannotations"
-	"Pathof"
-	"PowerName2"
-	"PowerName3"
-	"PowerName4"
-	"PowerName5"
-	"Title"
-	<!-- Line 9368 -->
-	"ShapechangingForms"
-	"Nochange"
-	"Homid"
-	"Glabro"
-	"Crinos"
-	"Hispo"
-	"Lupus"
-	"SpiritualPowers"
-	<!--Label data-i18n-label"" -->
-	"LivingRaces"
-	"LostRaces"
-	"Physical"
-	"Social"
-	"Mental"
-	"Other"
-	"Talents"
-	"Knowledges"
-	}
+	"AdditionalBruisedLevels":"Zus&auml;tzliche Gesundheitsstufen?",
+	"Affiliation":"Zugeh&ouml;rigkeit:",
+	"Age":"Alter:",
+	"Ajaba":"Ajaba",
+	"Ananasi":"Ananasi",
+	"Apis":"Apis",
+	"Aspect":"Aspekt",
+	"Attributes":"Attribute",
+	"Auspice":"Vorzeichen:",
+	"AwakenedMage":"Erwachter Magus",
+	"Backgrounds":"Hintergründe",
+	"Bastet":"Bastet",
+	"Breed":"Brut:",
+	"Camzotz":"Camazotz",
+	"CatMagic":"Katzenmagie",
+	"Charisma":"Charisma",	
+	"Chronicle":"Chronik:",
+	"ClanFamily":"Clan/Familie:",
+	"Combat":"Kampf",
+	"Concept":"Konzept:",
+	"Corax":"Corax",
+	"Demeanor":"Verhalten:",
+	"Dexterity":"Geschick",
+	"Domitor":"Domitor:",
+	"Essence":"Essenz:",
+	"Experience":"Erfahrung",
+	"Faction":"Fraktion:",
+	"Fera":"Fera",
+	"Fox Magic":"Fuchsmagie",
+	"Garou":"Garou",
+	"Gear":"Ausrüstung",
+	"Generation":"Generation:",
+	"Ghoul":"Ghul",
+	"Grondr":"Grondr",
+	"Gurahl":"Gurahl",
+	"Ignorewounds":"Wunden ignorieren?",
+	"Information":"Information",
+	"Journal":"Journal",
+	"Kind":"Art:",
+	"Kinfolk":"Blutsgeschwister",
+	"Kinto":"Blutsverwandt mit:",
+	"Kitsune":"Kitsune",
+	"Manipulation":"Manipulation",
+	"Appearance":"Erscheinungsbild",
+	"Mental":"Geistig",
+	"Perception":"Wahrnehmung",
+	"Intelligence":"Intelligenz",
+	"Wits":"Geistesschärfe",
+	"Abilities":"Fähigkeiten",
+	"Talents":"Talente",
+	"Alertness":"Aufmerksamkeit",
+	"Athletics":"Sportlichkeit",
+	"Awareness":"Magiegespür",
+	"Brawl":"Handgemenge",
+	"Empathy":"Empathie",
+	"Expression":"Ausdruck",
+	"Intimidation":"Einschüchtern",
+	"Intuition":"Intuition",
+	"Leadership":"Führungsqualitäten",
+	"PrimalUrge":"Instinkte",
+	"Streetwise":"Szenekenntnis",
+	"Subtrefuge":"Ausflüchte",
+	"HobbyTalent1":"Hobbytalent 1",
+	"HobbyTalent2":"Hobbytalent 2",
+	"HobbyTalent3":"Hobbytalent 3",
+	"HobbyTalent4":"Hobbytalent 4",
+	"HobbyTalent5":"Hobbytalent 5",
+	"Skills":"Fertigkeiten",
+	"Crafts":"Handwerk",
+	"mandatory":"erforderlich",
+	"Drive":"Fahren",
+	"Etiquette":"Etikette",
+	"Firearms":"Schusswaffen",
+	"Larceny":"Diebstahl",
+	"MartialArts":"Kampfkunst",
+	"Meditation":"Meditation",
+	"Melee":"Nahkampf",
+	"Performance":"Vortrag",
+	"Research":"Recherche",
+	"Stealth":"Heimlichkeit",
+	"Survival":"Überleben",
+	"ProfSkill1":"Berufsfertigkeit 1",
+	"ProfSkill2":"Berufsfertigkeit 2",
+	"ProfSkill3":"Berufsfertigkeit 3",
+	"ProfSkill4":"Berufsfertigkeit 4",
+	"Knowledges":"Kenntnisse",
+	"Academics":"Akademisches&nbsp;Wissen",
+	"AreaKnowledge":"Ortskenntnis",
+	"Computer":"Computer",
+	"Enigmas":"Rätsel",
+	"Esoterica":"Esoterisches&nbsp;Wissen",
+	"Finance":"Finanzen",
+	"Investigation":"Nachforschungen",
+	"Law":"Gesetzeskenntnis",
+	"Medicine":"Medizin",
+	"Occult":"Okkultismus",
+	"Politics":"Politik",
+	"Rituals":"Rituale",
+	"Science":"Naturwissenschaft",
+	"Technology":"Technologie",
+	"ExpertKnow1":"Expertenwissen 1",
+	"ExpertKnow2":"Expertenwissen 2",
+	"ExpertKnow3":"Expertenwissen 3",
+	"Virtues":"Tugenden",
+	"Conscience":"Gewissen",
+	"Conviction":"Überzeugung",
+	"SelfControl":"Selbstbeherrschung",
+	"Instinct":"Instinkt",
+	"Courage":"Mut",
+	"PartofEnlightenment":"Pfad der Erleuchtung",
+	"Humanity":"Menschlichkeit",
+	"Path10-ph":"selbstsüchtige Gedanken",
+	"Path09-ph":"kleinere selbstsüchtige Handlungen",
+	"Path08-ph":" jemanden verletzen (ob beabsichtigt oder nicht)",
+	"Path07-ph":"Diebstahl",
+	"Path06-ph":"unbeabsichtigtes Vergehen (aus Hunger ein Gefäß austrinken)",
+	"Path05-ph":"absichtliche Sachbeschädigung",
+	"Path04-ph":"Vergehen im Affekt (Totschlag, ein Gefäß in Raserei töten)",
+	"Path03-ph":"geplantes Vergehen (Mord, sadistisches Ausbluten)",
+	"Path02-ph":"beiläufiges Vergehen (gedankenloses Töten, Trinken obwohl man satt ist)",
+	"Path01-ph":"vollkommene Perversion oder abartigste Handlungen",
+	"Willpower":"Willenskraft",
+	"Roll":"Wurf:",
+	"BloodPool":"Blutvorrat",
+	"MaximumBloodpool":"Maximaler Blutvorrat:",
+	"BloodperTurn":"Blut pro Runde:",
+	"Rage":"Zorn:",
+	"Gnosis":"Gnosis",
+	"Mana":"Mana",
+	"Quintessence":"Quintessenz",
+	"Paradox":"Paradox",
+	"Health":"Gesundheit",
+	"Bruised":"Blaue&nbsp;Flecken",
+	"Hurt":"Verletzt",
+	"Injured":"Schwer&nbsp;verletzt",
+	"Wounded":"Verwundet",
+	"Mauled":"Schwer&nbsp;verwundet",
+	"Crippled":"Verkrüppelt",
+	"Incapacitated":"Außer&nbsp;Gefecht",
+	"RenownRank":"Ruf&amp;Rang",
+	"0Cub":"0 - Welpe",
+	"1Cliath":"1 - Cliath",
+	"2Fostern":"2 - Pflegling",
+	"3Adren":"3 - Adren",
+	"4Athro":"4 - Athro",
+	"5Elder":"5 - Ältester",
+	"6Legend":"6 - Legende",
+	"Rank1":"Rang 1",
+	"Rank2":"Rang 2",
+	"Rank3":"Rang 3",
+	"Rank4":"Rang 4",
+	"Rank5":"Rang 5",
+	"Rank6Legend":"Rang 6 - Legende",
+	"1Tekhmet":"1 - Tekhmet",
+	"2Aka":"2 - Aka",
+	"3Tilau":"3 - Tilau",
+	"4Hani":"4 - Hani",
+	"5BonBhat":"5 - Bon Bhat",
+	"1Oviculum":"1 - Oviculum",
+	"2Neocornix":"2 - Neocornix",
+	"3Ales":"3 - Ales",
+	"4Volucris":"4 - Volucris",
+	"5Corvus":"5 - Corvus",
+	"1Kovi":"1 - Kovi",
+	"2Verde":"2 - Verde",
+	"3Sorna":"3 - Sorna",
+	"4Talchwi":"4 - Talchwi",
+	"5Matae":"5 - Matae",
+	"1Yakan":"1 - Yakan",
+	"2Kiko":"2 - Kiko",
+	"3Koryo":"3 - Koryo",
+	"4Reiko":"4 - Reiko",
+	"5Tenko":"5 - Tenko",
+	"0Uninitiated":"0 - Uninitiiert",
+	"1Hatchling":"1 - Schlüpfling",
+	"2SonDougther":"2 - Sohn/Tochter",
+	"3BrotherSister":"3 - Bruder/Schwester",
+	"4FatherMother":"4 - Vater/Mutter",
+	"5GrandfatherGrandmother":"5 - Großvater/Großmutter",
+	"0OpeningEye":"0 - Öffnendes Auge",
+	"1SingingBrook":"1 - Singender Bach",
+	"2RazoredArrow":"2 - Rasiermesserpfeil",
+	"3SilkenNoose":"3 - Seidene Schlinge",
+	"4Thunder":"4 - Donner-Chakram",
+	"5SilverCoil":"5 - Silberschlinge",
+	"6MouthoftheSesha":"6 - Mund der Sesha",
+	"1Rakka":"1 - Rakka",
+	"2Voto":"2 - Voto",
+	"3Tava":"3 - Tava",
+	"4Teppen":"4 - Teppen",
+	"5Rrrrrt":"5 - Rrrrr't",
+	"RenownType":"Ruf-Art",
+	"Cunning":"List",
+	"Ferocity":"Wildheit",
+	"Glory":"Ruhm",
+	"Harmony":"Harmonie",
+	"Honor":"Eher",
+	"Humor":"Humor",
+	"Infamy":"Ruchlosigkeit",
+	"Innovation":"Einfallsreichtum",
+	"Kagayaki":"Kagayaki",
+	"Obedience":"Gehorsam",
+	"Obligation":"Pflicht",
+	"Succor":"Beistand",
+	"Toru":"Toru",
+	"Valor":"Tapferkeit",
+	"Wisdom":"Weisheit",
+	"ClanWeakness":"Clansschwäche:",
+	"Backround":"Hintergrund",
+	"Rating":"Wert",
+	"Description":"Beschreibung",
+	"Fulldescription":"Ausführliche Beschreibung",
+	"Background":"Hintergrund",
+	"Anchor":"Anker",
+	"Contributed":"Beigetragen",
+	"Merits":"Vorz&uuml;ge",
+	"Merit":"Vorzug",
+	"PointValue":"Punktwert",
+	"Type":"Typ",
+	"Flaws":"Schw&auml;chen",
+	"Flaw":"Schw&auml;che",
+	"VampiricPowers":"Vampirische Kr&auml;fte",
+	"IncreasedPhysicalAttributes":"Erh&ouml;hte physische Attribute",
+	"Attribute":"Attribut",
+	"Increased":"Erhöht",
+	"Disciplines":"Disziplinen",
+	"Discipline":"Disziplin",
+	"BloodMagic":"Blutmagie?",
+	"ChooseDiscipline":"W&auml;hle Disziplin",
+	"Potence":"Stärke",
+	"Celerity":"Geschwindigkeit",
+	"Fortitude":"Seelenstärke",
+	"Koldunism":"Koldunismus",
+	"Necromancy":"Nekromantie",
+	"Thaumaturgy":"Thaumaturgie",
+	"Akhu":"Akhu",
+	"DurAnKi":"Dur-An-Ki",
+	"DarkThaumaturgy":"Dunkle Thaumaturgie",
+	"LearnedDisciplinePowers":"Erlernte Disziplinkr&auml;fte",
+	"PowerName":"Name der Kraft",
+	"Ability":"Fähigkeit",
+	"Diff":"Schw.",
+	"Desc":"Beschr.",
+	"None":"Keine",
+	"AnimalKen":"Tierkunde",
+	"System":"System",
+	"CombinationDisciplinePowers":"Kombinationsdisziplinskräfte",
+	"CombinationPower":"Disziplinskraft",
+	"DisciplineRequirements":"Disziplinsvoraussetzungen:",
+	"ReqDiscipline1":"Erf. Disziplin 1",
+	"ReqDiscipline2":"Erf. Disziplin 2",
+	"ReqDiscipline3":"Erf. Disziplin 3",
+	"Systemannotations":"Systemanmerkungen",
+	"Pathof":"Pfad des ...",
+	"PowerName1":"Kraft 1",
+	"PowerName2":"Kraft 2",
+	"PowerName3":"Kraft 3",
+	"PowerName4":"Kraft 4",
+	"PowerName5":"Kraft 5",
+	"KoldunismRituals":"Koldunismus Rituale",
+	"Level":"Stufe",
+	"PrimaryPath":"Primärpfad:",
+	"NecromanyRituals":"Nekromantie Rituale",
+	"ThaumaturgyRituals":"Thaumaturgie Rituale",
+	"AkhuRituals":"Akhu Rituale",
+	"DurAnKiRituals":"Dur-An-Ki Rituale",
+	"DarkThaumaturgyRituals":"Dunkle Thaumaturgie Rituale",
+	"ShapechangingForms":"Gestalten",
+	"Homid":"Homid",
+	"Nochange":"Keine Änderung",
+	"Glabro":"Glabro",
+	"Crinos":"Crinos",
+	"Hispo":"Hispo",
+	"Lupus":"Lupus",
+	"SpiritualPowers":"Spirituelle Kr&auml;fte",
+	"Rites":"Riten",
+	"RiteName":"Ritus",
+	"Accord":"Einstimmung",
+	"Caern":"Caern",
+	"Death":"Todes-",
+	"Mystic":"Mystisch",
+	"Punischment":"Straf-",
+	"Renown":"Ruf",
+	"Seasonal":"Jahreszeitlich",
+	"Minor":"Minderer",
+	"Homestead":"Heimat",
+	"Milestones":"Meilenstein",
+	"LearnedCountermagics":"Erlernte Gegenzauber",
+	"RitualName":"Ritualname",
+	"Cost":"Kosten:",
+	"Time":"Dauer:",
+	"SorceryPaths":"Zaubereipfade",
+	"PsychicPaths":"Psionische Pfade",
+	"Practice":"Praktik",
+	"Aspected":"Aspekte",
+	"ofAspects":"Anz. der Aspekte",
+	"2Aspects":"2 Aspekte",
+	"3Aspects":"3 Aspekte",
+	"4Aspects":"4 Aspekte",
+	"5Aspects":"5 Aspekte",
+	"PathDescription":"Pfadbeschreibung",
+	"Duration":"Dauer:",
+	"AssociatedSpheres":"Assoziierte Sphären:",
+	"PriceofFailure":"Preis des Fehlschlags:",
+	"Effects":"Effekte",
+	"Aspectname":"Aspektname",
+	"Soaking":"Absorbieren",
+	"Armor":"Rüstung",
+	"Bashing":"Schlag",
+	"Lethal":"Tödlich",
+	"Aggravated":"Schwer&nbsp;heilbar",
+	"Initiative":"Initiative:",
+	"Experiencetospend":"Offene Erfahrungspunkte:",
+	"Totalspent":"Ausgegebene Erfahrung:",
+	"Totalexperienceearned":"Gesammelte Erfahrung:",
+	"EarnedExP":"Erhaltene EP:",
+	"Expenditure":"Steigerung",
+	"ExPspent":"EP ausgegeben",
+	"IngameDate":"Spieldatum",
+	"RealDate":"Reales Datum",
+	"ApparentAge":"Scheinbares Alter:",
+	"PlaceofBirth":"Geburtsort:",
+	"DateofBirth":"Geburtsdatum:",
+	"RIP":"Todestag:",
+	"Hair":"Haare:",
+	"Eyes":"Augen:",
+	"Skin":"Haut:",
+	"Etnicity":"Ethnie:",
+	"Nationality":"Nationalit&auml;t:",
+	"Height":"Gr&ouml;&szlig;e:",
+	"Weight":"Gewicht:",
+	"Sex":"Bio. Geschlecht:",
+	"Gender":"Soz. Geschlecht:",
+	"History":"Hintergrund",
+	"ShowSections":"Zeige Bereiche:",
+	"BloodBonds":"Blutsb&auml;nder",
+	"Vinculum":"Vinculum",
+	"Debtor":"Schuldner",
+	"ToWhom":"an wen",
+	"Trivial":"Trivialer",
+	"Major":"Gr&ouml;&szlig;erer",
+	"Life":"Unlebensschuld",
+	"Who":"Wer",
+	"ToTarget":"Zum Ziel",
+	"ToMe":"Zu mir",
+	"NoBloodBond":"Kein Blutsband",
+	"FirstDrink":"Erster Schluck",
+	"SecondDrink":"Zweiter Schluck",
+	"FullBloodBond":"Volles Blutsband",
+	"Title":"Titel",
+	"PossessionsGear":"Besitz&amp;Ausr&uuml;stung",
+	"RangedWeapons":"Fernwaffen",
+	"Conceal":"Versteck",
+	"Ammunition":"Munition",
+	"AmmoName":"Munitionsbezeichnung",
+	"TypeCaliber":"Typ/Kaliber",
+	"Amount":"Menge",
+	"MeleeWeapons":"Nahkampfwaffen",
+	"ArmorShields":"R&uuml;stung&amp;Schilde",
+	"VersionInfo":"Versionsinfo",
+	"HideVersionInfo":"Verstecke Versionsinfo:",
+	"DiceOptions":"W&uuml;rfeloptionen",
+	"Modifiers":"Modifikatoren",
+	"Difficulty":"Schwierigkeit",
+	"PooledBackgrounds":"Gemeinsame Hintergr&uuml;nde",
+	"Clan":"Clan:",
+	"secondarypath":"Sekund&auml;rpfad:",
+	"Gifts":"Gaben",
+	"Gift":"Gabe",
+	"List":"Liste",
+	"MeritsFlaws":"Vorz&uuml;ge&amp;Schw&auml;chen",
+	"Mokole":"Mokolé",
+	"Mortal":"Sterblicher",
+	"Myself":"Mir",
+	"Nagah":"Nagah",
+	"Name":"Name",
+	"Nature":"Wesen:",
+	"Notes":"Notizen",
+	"Nuwisha":"Nuwisha",
+	"Path":"Pfad",
+	"Physical":"Körperlich?",
+	"Player":"Spieler:",
+	"Powers":"Kräfte",
+	"Primary":"Prim&auml;r",
+	"Private":"Privat",
+	"Pryio":"Pryio:",
+	"Psychic":"Psioniker",
+	"Public":"&Ouml;ffnetlich",
+	"Ratkin":"Rattenkind",
+	"RealName":"Echter Name:",
+	"Rokea":"Rokea",
+	"RollDifficulty":"Schwiergkeit:",
+	"RollOptions":"W&uuml;rfeloptionen:",
+	"ST":"Erz&auml;hler",
+	"SendRollsto":"Sende W&uuml;rfe an:",
+	"ShowAll":"Alles zeigen",
+	"Sire":"Erschaffer:",
+	"Social":"Sozial",
+	"Society":"Gesellschaft:",
+	"Sorcerer":"Zauberer",
+	"Stamina":"Widerstandskraft",
+	"StreamVarna":"Strom/Varna:",
+	"Strength":"K&ouml;rperkraft",
+	"Tribe":"Stamm:",
+	"Vampire":"Vampir",
+	"Version":"Version/Würfelpools",
+	"Wraith":"Todesalb",
+}

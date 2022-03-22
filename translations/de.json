@@ -529,4 +529,28 @@
 	"RitualCost"
 	"CastingTime"
 	"Aspectname"
+	"RenownType"
+	"Fulldescription"
+	"ReqDiscipline1"
+	"ReqDiscipline2"
+	"ReqDiscipline3"
+	"Systemannotations"
+	"Pathof"
+	"PowerName2"
+	"PowerName3"
+	"PowerName4"
+	"PowerName5"
+	"Title"
+	<!-- Line 9368 -->
+	"ShapechangingForms"
+	
+	<!--Label data-i18n-label"" -->
+	"LivingRaces"
+	"LostRaces"
+	"Physical"
+	"Social"
+	"Mental"
+	"Other"
+	"Talents"
+	"Knowledges"
 	}

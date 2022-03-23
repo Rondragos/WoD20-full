@@ -406,5 +406,7 @@
 	"Vampire":"Vampire",
 	"Version":"Version/Dice",
 	"Wraith":"Wraith",
-	"Boons":"Boons"
+	"Boons":"Boons",
+	"Ask":"Ask",
+	"Fixed":"Fixed"
 }

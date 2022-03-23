@@ -35,8 +35,8 @@
 				<div>
 					<h4 data-i18n="RollDifficulty">Roll Difficulty:</h4>
 					<div>
-						<input type="radio" class="option" name="attr_askdiff" value="?{Difficulty|6}" checked /><span>Ask</span><br/>
-						<input type="radio" class="option" name="attr_askdiff" value="@{glodiff}" /><span>Fixed:</span>
+						<input type="radio" class="option" name="attr_askdiff" value="?{Difficulty|6}" checked /><span data-i18n="Ask">Ask</span><br/>
+						<input type="radio" class="option" name="attr_askdiff" value="@{glodiff}" /><span data-i18n="Fixed">Fixed:</span>
 						<input type="number" class="smallinput" name="attr_glodiff" value="6" min="2" max="10" step="1" />
 					</div>
 				</div>
@@ -60,7 +60,7 @@
 <!-- Primary Sheet -->
 		<div class="sheet-primary">
 			<!-- Primary Sheet head: Name, Nature, Demeanor, etc. -->
-			<div class="line-heading"><span class="line-heading">Primary</span></div>
+			<div class="line-heading"><span class="line-heading" data-i18n="Primary">Primary</span></div>
 			<div class="grid-concept">
 				<input type="hidden" class="switch-kind" name="attr_kind" />
 				<input type="hidden" class="switch-chbreed" name="attr_chbreed" />

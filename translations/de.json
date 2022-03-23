@@ -60,7 +60,7 @@
 	"Leadership":"Führungsqualitäten",
 	"PrimalUrge":"Instinkte",
 	"Streetwise":"Szenekenntnis",
-	"Subtrefuge":"Ausflüchte",
+	"Subterfuge":"Ausflüchte",
 	"HobbyTalent1":"Hobbytalent 1",
 	"HobbyTalent2":"Hobbytalent 2",
 	"HobbyTalent3":"Hobbytalent 3",
@@ -406,4 +406,5 @@
 	"Vampire":"Vampir",
 	"Version":"Version/Würfelpools",
 	"Wraith":"Todesalb",
+	"Boons":"Gefallen"
 }
